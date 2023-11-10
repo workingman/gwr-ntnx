@@ -1,0 +1,25 @@
+netsuite.suitelet customscript_gwr_script1_abc {
+  scriptid = "customscript_gwr_script1_abc"
+  isinactive = false
+  name = "gwr abc"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteScripts_gwr_sa3_js@duv.path
+  scriptdeployments = {
+    scriptdeployment = {
+      customdeploy_gwr_script1_abc = {
+        scriptid = "customdeploy_gwr_script1_abc"
+        allemployees = false
+        allpartners = false
+        allroles = false
+        isdeployed = true
+        isonline = false
+        loglevel = "DEBUG"
+        status = "TESTING"
+        title = "gwr_depl1"
+      }
+    }
+  }
+  _alias = "gwr abc"
+}

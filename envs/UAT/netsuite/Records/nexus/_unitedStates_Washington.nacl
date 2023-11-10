@@ -1,0 +1,14 @@
+netsuite.nexus _unitedStates_Washington {
+  country = "_unitedStates"
+  state = {
+    name = "Washington"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxAgency = {
+    name = "Tax Agency WA"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  description = "WA"
+  identifier = "_unitedStates_Washington"
+  _alias = "_unitedStates_Washington"
+}
