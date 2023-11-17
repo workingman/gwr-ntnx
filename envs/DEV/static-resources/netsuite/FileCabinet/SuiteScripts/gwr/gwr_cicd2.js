@@ -6,9 +6,7 @@ define(['N/record', 'N/search'],
 
 // 20231031-133953
 // 20231101-104040
-// 20231107-215316
-// 20231107-215830
-// 20231107-220730
+// 20231107-215316 km
        
 /*     
  * @param{record} record
@@ -23,7 +21,7 @@ define(['N/record', 'N/search'],
          * @param {ServerResponse} scriptContext.response - Suitelet response
          * @since 2015.2
          */
-
+// KM code 20231117-101649
         const onRequest = (scriptContext) => { // more code from geoff
 //kgr code
 //more changes for me.
