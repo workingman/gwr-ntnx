@@ -6,9 +6,8 @@ define(['N/log'],
     /**
  * @param{log} log
  */
-// 20231031-085222x
-       //abc
-       //def
+// 20231031-085222
+       // gr code 20231117-103902
     (log) => {
         /**
          * Defines the Suitelet script trigger point.
@@ -22,7 +21,7 @@ define(['N/log'],
         }
 
         return {onRequest}
-
+// km code 20231117-103759
     });
 
     // 20231031-085259
