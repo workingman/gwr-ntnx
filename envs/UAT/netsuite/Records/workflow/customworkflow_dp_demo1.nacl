@@ -3,7 +3,7 @@ netsuite.workflow customworkflow_dp_demo1 {
   initcontexts = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
   initoncreate = true
   initonvieworupdate = false
-  initsavedsearchcondition = netsuite.savedsearch.instance.customsearch_dp_demo2_search.scriptid
+  initsavedsearchcondition = netsuite.savedsearch.instance.customsearch_dp_search_1.scriptid
   inittriggertype = "AFTERSUBMIT"
   isinactive = false
   islogenabled = false
@@ -20,7 +20,7 @@ netsuite.workflow customworkflow_dp_demo1 {
       workflowstate434 = {
         scriptid = "workflowstate434"
         donotexitworkflow = false
-        name = "Refreshed Name"
+        name = "Set Eligible Date"
         positionx = 243
         positiony = 133
         workflowactions = {
@@ -46,6 +46,42 @@ netsuite.workflow customworkflow_dp_demo1 {
           }
         }
         index = 0
+      }
+      workflowstate460 = {
+        scriptid = "workflowstate460"
+        donotexitworkflow = false
+        name = "Update DP Prospect"
+        positionx = 273
+        positiony = 273
+        workflowactions = {
+          ONENTRY = {
+            triggertype = "ONENTRY"
+            createrecordaction = {
+              workflowaction1327 = {
+                scriptid = "workflowaction1327"
+                contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
+                eventtypes = "CREATE"
+                isinactive = false
+                recordtype = netsuite.customrecord_dp_prospect.attr.scriptid
+                schedulemode = "DELAY"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+                fieldsettings = {
+                  fieldsetting = {
+                    customrecord_dp_prospect_custrecord_dp_prospect_field@uuvuuu = {
+                      targetfield = netsuite.customrecord_dp_prospect.field.custom_custrecord_dp_prospect_field.scriptid
+                      valuetext = "Prospect has been set"
+                      index = 0
+                    }
+                  }
+                }
+                index = 0
+              }
+            }
+          }
+        }
+        index = 1
       }
     }
   }

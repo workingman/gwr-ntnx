@@ -357,6 +357,8 @@ netsuite.transactionForm custform_gwr_udemy_test {
         id = "TRANSACTIONSYSTEMINFORMATION"
         label = "System Information"
         visible = true
+        
+        index = 0
         fieldGroups = {
           defaultFieldGroup = {
             fields = {
@@ -402,7 +404,6 @@ netsuite.transactionForm custform_gwr_udemy_test {
             }
           }
         }
-        index = 0
       }
       TRANSACTIONCOMMUNICATION = {
         id = "TRANSACTIONCOMMUNICATION"
@@ -1207,6 +1208,8 @@ netsuite.transactionForm custform_gwr_udemy_test {
                     sameRowAsPrevious = false
                     index = 8
                   }
+                  
+                  
                   custbody_itr_doc_number = {
                     id = netsuite.transactionbodycustomfield.instance.custbody_itr_doc_number.scriptid
                     label = "GWR Amp doc number"

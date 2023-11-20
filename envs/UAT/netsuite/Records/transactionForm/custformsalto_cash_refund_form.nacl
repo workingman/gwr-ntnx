@@ -1369,6 +1369,33 @@ netsuite.transactionForm custformsalto_cash_refund_form {
         id = "TRANSACTIONSYSTEMINFORMATION"
         label = "System Information"
         visible = true
+        
+        subItems = {
+          subList = {
+            SYSTEMNOTES = {
+              id = "SYSTEMNOTES"
+              label = "System Notes"
+              visible = true
+              neverEmpty = false
+              index = 0
+            }
+            ACTIVEWORKFLOWS = {
+              id = "ACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = true
+              neverEmpty = false
+              index = 1
+            }
+            WORKFLOWHISTORY = {
+              id = "WORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = true
+              neverEmpty = false
+              index = 2
+            }
+          }
+        }
+        index = 8
         fieldGroups = {
           defaultFieldGroup = {
             fields = {
@@ -1414,32 +1441,6 @@ netsuite.transactionForm custformsalto_cash_refund_form {
             }
           }
         }
-        subItems = {
-          subList = {
-            SYSTEMNOTES = {
-              id = "SYSTEMNOTES"
-              label = "System Notes"
-              visible = true
-              neverEmpty = false
-              index = 0
-            }
-            ACTIVEWORKFLOWS = {
-              id = "ACTIVEWORKFLOWS"
-              label = "Active Workflows"
-              visible = true
-              neverEmpty = false
-              index = 1
-            }
-            WORKFLOWHISTORY = {
-              id = "WORKFLOWHISTORY"
-              label = "Workflow History"
-              visible = true
-              neverEmpty = false
-              index = 2
-            }
-          }
-        }
-        index = 8
       }
       TRANSACTIONADDRESS = {
         id = "TRANSACTIONADDRESS"
@@ -1557,6 +1558,8 @@ netsuite.transactionForm custformsalto_cash_refund_form {
                     sameRowAsPrevious = false
                     index = 9
                   }
+                  
+                  
                   custbody_itr_doc_number = {
                     id = netsuite.transactionbodycustomfield.instance.custbody_itr_doc_number.scriptid
                     label = "GWR Amp doc number"

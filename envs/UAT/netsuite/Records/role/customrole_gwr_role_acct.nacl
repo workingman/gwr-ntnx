@@ -26,7 +26,7 @@ netsuite.role customrole_gwr_role_acct {
       }
       TRAN_INVADJST = {
         permkey = "TRAN_INVADJST"
-        permlevel = "EDIT"
+        permlevel = "FULL"
       }
       TRAN_AUTO_CASH = {
         permkey = "TRAN_AUTO_CASH"
@@ -42,7 +42,7 @@ netsuite.role customrole_gwr_role_acct {
       }
       TRAN_CASHSALE = {
         permkey = "TRAN_CASHSALE"
-        permlevel = "EDIT"
+        permlevel = "FULL"
       }
       TRAN_CHARGE = {
         permkey = "TRAN_CHARGE"

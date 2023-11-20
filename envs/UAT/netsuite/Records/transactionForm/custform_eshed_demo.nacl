@@ -879,6 +879,7 @@ netsuite.transactionForm custform_eshed_demo {
               index = 0
             }
           }
+          
           defaultFieldGroup = {
             fields = {
               MIDDLE = {
@@ -1050,6 +1051,8 @@ netsuite.transactionForm custform_eshed_demo {
                     sameRowAsPrevious = false
                     index = 7
                   }
+                  
+                  
                   custbody_itr_doc_number = {
                     id = netsuite.transactionbodycustomfield.instance.custbody_itr_doc_number.scriptid
                     label = "GWR Amp doc number"

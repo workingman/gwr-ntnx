@@ -1,13 +1,13 @@
-netsuite.workflow customworkflowworkflow5_v2_2_3 {
-  scriptid = "customworkflowworkflow5_v2_2_3"
-  description = "All Sales Orders require one level of approval from the Revenue Analyst or Revenue Manager roles. If the Sales Order is over $100,000 it requires another level of approval from someone in the Revenue Manager role who WAS NOT the first approver."
+netsuite.workflow customworkflow_gwr_approval_workflow {
+  scriptid = "customworkflow_gwr_approval_workflow"
+  description = "2 level approval workflow"
   initcontexts = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
   initoncreate = true
   initonvieworupdate = false
   isinactive = false
   islogenabled = true
   keephistory = "ALWAYS"
-  name = "GWR Amp |SO Approval V2 - for prod 2 23"
+  name = "GWR approval workflow"
   recordtypes = "SALESORDER"
   releasestatus = "RELEASED"
   runasadmin = true
@@ -121,7 +121,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
               workflowaction329 = {
                 scriptid = "workflowaction329"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                field = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowcustomfields.workflowcustomfield.custworkflow4_7_3.scriptid
+                field = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowcustomfields.workflowcustomfield.custworkflow4_7_3.scriptid
                 isinactive = false
                 schedulemode = "DELAY"
                 valuechecked = false
@@ -208,7 +208,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
             workflowtransition244 = {
               scriptid = "workflowtransition244"
               contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-              tostate = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate108.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate108.scriptid
               initcondition = {
                 type = "VISUAL_BUILDER"
               }
@@ -372,7 +372,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
               workflowaction432 = {
                 scriptid = "workflowaction432"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                field = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowcustomfields.workflowcustomfield.custworkflow12_2.scriptid
+                field = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowcustomfields.workflowcustomfield.custworkflow12_2.scriptid
                 isinactive = false
                 schedulemode = "DELAY"
                 valuechecked = false
@@ -390,9 +390,9 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
           workflowtransition = {
             workflowtransition245 = {
               scriptid = "workflowtransition245"
-              buttonaction = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate108.workflowactions.BEFORELOAD.addbuttonaction.workflowaction334.scriptid
+              buttonaction = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate108.workflowactions.BEFORELOAD.addbuttonaction.workflowaction334.scriptid
               contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-              tostate = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate109.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate109.scriptid
               initcondition = {
                 type = "VISUAL_BUILDER"
               }
@@ -415,7 +415,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
               workflowaction335 = {
                 scriptid = "workflowaction335"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                field = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate109.workflowstatecustomfields.workflowstatecustomfield.custwfstate2_7_3.scriptid
+                field = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate109.workflowstatecustomfields.workflowstatecustomfield.custwfstate2_7_3.scriptid
                 isinactive = false
                 schedulemode = "DELAY"
                 valuechecked = true
@@ -437,7 +437,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
               workflowaction336 = {
                 scriptid = "workflowaction336"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                field = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowcustomfields.workflowcustomfield.custworkflow5_7_3.scriptid
+                field = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowcustomfields.workflowcustomfield.custworkflow5_7_3.scriptid
                 isinactive = false
                 schedulemode = "DELAY"
                 valuechecked = false
@@ -540,7 +540,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
             workflowtransition246 = {
               scriptid = "workflowtransition246"
               contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-              tostate = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate110.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate110.scriptid
               initcondition = {
                 formula = "isChecked(\"State:Second Approval Required? (2)\") = 'T'"
                 type = "VISUAL_BUILDER"
@@ -548,7 +548,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
                   parameter = {
                     State_Second_Approval_Required___2_@fssasjk = {
                       name = "State:Second Approval Required? (2)"
-                      value = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate109.workflowstatecustomfields.workflowstatecustomfield.custwfstate2_7_3.scriptid
+                      value = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate109.workflowstatecustomfields.workflowstatecustomfield.custwfstate2_7_3.scriptid
                     }
                   }
                 }
@@ -558,7 +558,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
             workflowtransition247 = {
               scriptid = "workflowtransition247"
               contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-              tostate = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate111.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate111.scriptid
               initcondition = {
                 formula = "isChecked(\"State:Second Approval Required? (2)\") = 'F'"
                 type = "VISUAL_BUILDER"
@@ -566,7 +566,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
                   parameter = {
                     State_Second_Approval_Required___2_@fssasjk = {
                       name = "State:Second Approval Required? (2)"
-                      value = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate109.workflowstatecustomfields.workflowstatecustomfield.custwfstate2_7_3.scriptid
+                      value = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate109.workflowstatecustomfields.workflowstatecustomfield.custwfstate2_7_3.scriptid
                     }
                   }
                 }
@@ -604,7 +604,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
               workflowaction429 = {
                 scriptid = "workflowaction429"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                field = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowcustomfields.workflowcustomfield.custworkflow11_2.scriptid
+                field = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowcustomfields.workflowcustomfield.custworkflow11_2.scriptid
                 isinactive = false
                 schedulemode = "DELAY"
                 valuechecked = true
@@ -617,7 +617,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
               workflowaction440 = {
                 scriptid = "workflowaction440"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                field = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowcustomfields.workflowcustomfield.custworkflow13_2.scriptid
+                field = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowcustomfields.workflowcustomfield.custworkflow13_2.scriptid
                 isinactive = false
                 schedulemode = "DELAY"
                 valuechecked = true
@@ -648,7 +648,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
               workflowaction340 = {
                 scriptid = "workflowaction340"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                field = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowcustomfields.workflowcustomfield.custworkflow6_7_3.scriptid
+                field = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowcustomfields.workflowcustomfield.custworkflow6_7_3.scriptid
                 isinactive = false
                 schedulemode = "DELAY"
                 valuechecked = false
@@ -724,7 +724,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
                       }
                       Workflow_First_Approver__SO___2_@fssjksjk = {
                         name = "Workflow:First Approver (SO) (2)"
-                        value = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowcustomfields.workflowcustomfield.custworkflow5_7_3.scriptid
+                        value = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowcustomfields.workflowcustomfield.custworkflow5_7_3.scriptid
                       }
                       Current_User@s = {
                         name = "Current User"
@@ -792,9 +792,9 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
           workflowtransition = {
             workflowtransition248 = {
               scriptid = "workflowtransition248"
-              buttonaction = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate110.workflowactions.BEFORELOAD.addbuttonaction.workflowaction343.scriptid
+              buttonaction = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate110.workflowactions.BEFORELOAD.addbuttonaction.workflowaction343.scriptid
               contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-              tostate = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate111.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate111.scriptid
               initcondition = {
                 type = "VISUAL_BUILDER"
               }
@@ -802,9 +802,9 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
             }
             workflowtransition261 = {
               scriptid = "workflowtransition261"
-              buttonaction = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate110.workflowactions.BEFORELOAD.addbuttonaction.workflowaction382.scriptid
+              buttonaction = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate110.workflowactions.BEFORELOAD.addbuttonaction.workflowaction382.scriptid
               contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-              tostate = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate111.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate111.scriptid
               initcondition = {
                 type = "VISUAL_BUILDER"
               }
@@ -812,9 +812,9 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
             }
             workflowtransition274 = {
               scriptid = "workflowtransition274"
-              buttonaction = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate110.workflowactions.BEFORELOAD.addbuttonaction.workflowaction428.scriptid
+              buttonaction = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate110.workflowactions.BEFORELOAD.addbuttonaction.workflowaction428.scriptid
               contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-              tostate = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate124.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate124.scriptid
               initcondition = {
                 type = "VISUAL_BUILDER"
               }
@@ -851,7 +851,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
               workflowaction441 = {
                 scriptid = "workflowaction441"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                field = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowcustomfields.workflowcustomfield.custworkflow13_2.scriptid
+                field = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowcustomfields.workflowcustomfield.custworkflow13_2.scriptid
                 isinactive = false
                 schedulemode = "DELAY"
                 valuechecked = false
@@ -864,7 +864,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
               workflowaction447 = {
                 scriptid = "workflowaction447"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                field = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowcustomfields.workflowcustomfield.custworkflow14_2.scriptid
+                field = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowcustomfields.workflowcustomfield.custworkflow14_2.scriptid
                 isinactive = false
                 schedulemode = "DELAY"
                 valuechecked = true
@@ -1036,9 +1036,9 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
           workflowtransition = {
             workflowtransition276 = {
               scriptid = "workflowtransition276"
-              buttonaction = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate111.workflowactions.BEFORELOAD.addbuttonaction.workflowaction434.scriptid
+              buttonaction = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate111.workflowactions.BEFORELOAD.addbuttonaction.workflowaction434.scriptid
               contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-              tostate = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate124.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate124.scriptid
               initcondition = {
                 type = "VISUAL_BUILDER"
               }
@@ -1100,7 +1100,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 ineditmode = true
                 isinactive = false
-                recordidfield = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowcustomfields.workflowcustomfield.custworkflow12_2.scriptid
+                recordidfield = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowcustomfields.workflowcustomfield.custworkflow12_2.scriptid
                 recordtype = "SALESORDER"
                 initcondition = {
                   type = "VISUAL_BUILDER"
@@ -1153,7 +1153,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
                     parameter = {
                       Workflow_From_Pending_2nd_Level@fsss = {
                         name = "Workflow:From Pending 2nd Level"
-                        value = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowcustomfields.workflowcustomfield.custworkflow13_2.scriptid
+                        value = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowcustomfields.workflowcustomfield.custworkflow13_2.scriptid
                       }
                     }
                   }
@@ -1186,7 +1186,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
                     parameter = {
                       Workflow_Approved@f = {
                         name = "Workflow:Approved"
-                        value = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowcustomfields.workflowcustomfield.custworkflow14_2.scriptid
+                        value = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowcustomfields.workflowcustomfield.custworkflow14_2.scriptid
                       }
                     }
                   }
@@ -1207,7 +1207,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
                     parameter = {
                       Workflow_Approved@f = {
                         name = "Workflow:Approved"
-                        value = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowcustomfields.workflowcustomfield.custworkflow14_2.scriptid
+                        value = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowcustomfields.workflowcustomfield.custworkflow14_2.scriptid
                       }
                     }
                   }
@@ -1253,9 +1253,9 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
           workflowtransition = {
             workflowtransition257 = {
               scriptid = "workflowtransition257"
-              buttonaction = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate124.workflowactions.BEFORELOAD.addbuttonaction.workflowaction369.scriptid
+              buttonaction = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate124.workflowactions.BEFORELOAD.addbuttonaction.workflowaction369.scriptid
               contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-              tostate = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate130.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate130.scriptid
               initcondition = {
                 formula = "isChecked(\"Workflow:Back 2nd Approver\") = 'F'"
                 type = "VISUAL_BUILDER"
@@ -1263,7 +1263,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
                   parameter = {
                     Workflow_Back_2nd_Approver@fss = {
                       name = "Workflow:Back 2nd Approver"
-                      value = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowcustomfields.workflowcustomfield.custworkflow11_2.scriptid
+                      value = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowcustomfields.workflowcustomfield.custworkflow11_2.scriptid
                     }
                   }
                 }
@@ -1272,9 +1272,9 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
             }
             workflowtransition275 = {
               scriptid = "workflowtransition275"
-              buttonaction = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate124.workflowactions.BEFORELOAD.addbuttonaction.workflowaction369.scriptid
+              buttonaction = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate124.workflowactions.BEFORELOAD.addbuttonaction.workflowaction369.scriptid
               contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-              tostate = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate110.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate110.scriptid
               initcondition = {
                 formula = "isChecked(\"Workflow:Back 2nd Approver\") = 'T'"
                 type = "VISUAL_BUILDER"
@@ -1282,7 +1282,7 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
                   parameter = {
                     Workflow_Back_2nd_Approver@fss = {
                       name = "Workflow:Back 2nd Approver"
-                      value = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowcustomfields.workflowcustomfield.custworkflow11_2.scriptid
+                      value = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowcustomfields.workflowcustomfield.custworkflow11_2.scriptid
                     }
                   }
                 }
@@ -1453,9 +1453,9 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
           workflowtransition = {
             workflowtransition277 = {
               scriptid = "workflowtransition277"
-              buttonaction = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate130.workflowactions.BEFORELOAD.addbuttonaction.workflowaction438.scriptid
+              buttonaction = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate130.workflowactions.BEFORELOAD.addbuttonaction.workflowaction438.scriptid
               contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-              tostate = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate111.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate111.scriptid
               initcondition = {
                 type = "VISUAL_BUILDER"
               }
@@ -1463,9 +1463,9 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
             }
             workflowtransition278 = {
               scriptid = "workflowtransition278"
-              buttonaction = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate130.workflowactions.BEFORELOAD.addbuttonaction.workflowaction439.scriptid
+              buttonaction = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate130.workflowactions.BEFORELOAD.addbuttonaction.workflowaction439.scriptid
               contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-              tostate = netsuite.workflow.instance.customworkflowworkflow5_v2_2_3.workflowstates.workflowstate.workflowstate124.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_gwr_approval_workflow.workflowstates.workflowstate.workflowstate124.scriptid
               initcondition = {
                 type = "VISUAL_BUILDER"
               }
@@ -1477,5 +1477,5 @@ netsuite.workflow customworkflowworkflow5_v2_2_3 {
       }
     }
   }
-  _alias = "GWR Amp |SO Approval V2 - for prod 2 23"
+  _alias = "GWR approval workflow"
 }

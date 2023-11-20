@@ -981,6 +981,33 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
         id = "TRANSACTIONSYSTEMINFORMATION"
         label = "System Information"
         visible = true
+        
+        subItems = {
+          subList = {
+            SYSTEMNOTES = {
+              id = "SYSTEMNOTES"
+              label = "System Notes"
+              visible = true
+              neverEmpty = false
+              index = 0
+            }
+            ACTIVEWORKFLOWS = {
+              id = "ACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = true
+              neverEmpty = false
+              index = 1
+            }
+            WORKFLOWHISTORY = {
+              id = "WORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = true
+              neverEmpty = false
+              index = 2
+            }
+          }
+        }
+        index = 5
         fieldGroups = {
           defaultFieldGroup = {
             fields = {
@@ -1026,32 +1053,6 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
             }
           }
         }
-        subItems = {
-          subList = {
-            SYSTEMNOTES = {
-              id = "SYSTEMNOTES"
-              label = "System Notes"
-              visible = true
-              neverEmpty = false
-              index = 0
-            }
-            ACTIVEWORKFLOWS = {
-              id = "ACTIVEWORKFLOWS"
-              label = "Active Workflows"
-              visible = true
-              neverEmpty = false
-              index = 1
-            }
-            WORKFLOWHISTORY = {
-              id = "WORKFLOWHISTORY"
-              label = "Workflow History"
-              visible = true
-              neverEmpty = false
-              index = 2
-            }
-          }
-        }
-        index = 5
       }
       CUSTOM = {
         id = "CUSTOM"
@@ -1163,6 +1164,8 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
                     sameRowAsPrevious = false
                     index = 9
                   }
+                  
+                  
                   custbody_itr_doc_number = {
                     id = netsuite.transactionbodycustomfield.instance.custbody_itr_doc_number.scriptid
                     label = "GWR Amp doc number"
@@ -1373,8 +1376,8 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
   emailMessageTemplate = "USE_DEFAULT"
   printingType = {
     advanced = {
-      printTemplate = netsuite.advancedpdftemplate.instance.custtmpl_gwr_defunct1.scriptid
-      emailTemplate = netsuite.advancedpdftemplate.instance.custtmpl_gwr_defunct1.scriptid
+      printTemplate = "[scriptid=custtmpl_gwr_defunct1]"
+      emailTemplate = "[scriptid=custtmpl_gwr_defunct1]"
     }
   }
   linkedForms = {
