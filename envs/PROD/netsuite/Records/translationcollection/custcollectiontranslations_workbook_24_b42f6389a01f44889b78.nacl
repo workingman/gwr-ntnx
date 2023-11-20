@@ -1,6 +1,6 @@
 netsuite.translationcollection custcollectiontranslations_workbook_24_b42f6389a01f44889b78 {
   scriptid = "custcollectiontranslations_workbook_24_b42f6389a01f44889b78"
-  defaultlanguage = "en-US"
+  defaultlanguage = "en_US"
   name = netsuite.translationcollection.instance.custcollectiontranslations_workbook_24_b42f6389a01f44889b78.strings.string.workbook_name_85_1.scriptid
   strings = {
     string = {
