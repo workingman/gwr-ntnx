@@ -4,7 +4,7 @@
  */
 define(['N/record', 'N/search'],
 
-       
+ // gwr 20231120-115645      
        
 /*     
  * @param{record} record
