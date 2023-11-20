@@ -4,7 +4,7 @@
  */
 define(['N/record', 'N/search'],
 
- // gwr 20231120-115645      
+ // gwr 20231120-115645    gr  
        
 /*     
  * @param{record} record
@@ -23,6 +23,7 @@ define(['N/record', 'N/search'],
         const onRequest = (scriptContext) => { // more code from geoff
         }
 // 20231120-114231 km update
+     // gr update 20231120-123316
         return {onRequest}
 
     });
