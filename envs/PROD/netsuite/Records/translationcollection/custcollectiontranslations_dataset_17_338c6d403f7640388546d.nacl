@@ -1,0 +1,17 @@
+netsuite.translationcollection custcollectiontranslations_dataset_17_338c6d403f7640388546d {
+  scriptid = "custcollectiontranslations_dataset_17_338c6d403f7640388546d"
+  defaultlanguage = "en-US"
+  name = netsuite.translationcollection.instance.custcollectiontranslations_dataset_17_338c6d403f7640388546d.strings.string.dataset_name_48_1.scriptid
+  strings = {
+    string = {
+      dataset_name_48_1 = {
+        scriptid = "dataset_name_48_1"
+        defaulttranslation = "Seggev Field Dataset"
+        description = "Name in dataset"
+        index = 0
+      }
+    }
+  }
+  nameTranslate = true
+  _alias = "Seggev Field Dataset"
+}
