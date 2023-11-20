@@ -1,0 +1,12 @@
+netsuite.advancedpdftemplate custtmpl_srd_transaction_pdf {
+  scriptid = "custtmpl_srd_transaction_pdf"
+  displaysourcecode = false
+  isinactive = false
+  preferred = false
+  printtype = "SEARCH"
+  savedsearch = netsuite.savedsearch.instance.customsearchsrd_transaction_search.scriptid
+  title = "srd - transaction pdf"
+  trantype = "CUSTINVC"
+  content = file("netsuite/advancedpdftemplate/custtmpl_srd_transaction_pdf.xml")
+  _alias = "srd - transaction pdf"
+}
