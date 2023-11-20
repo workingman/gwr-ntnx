@@ -4,14 +4,14 @@
  */
 define(['N/record', 'N/search'],
 
- // gwr 20231120-115645    gr  
+ // gwr 20231120-115645     km 
        
 /*     
  * @param{record} record
  * @param{search} search
  */
     (record, search) => {
-
+// 20231120-123438 km
 
         /**
          * Defines the Suitelet script trigger point.
