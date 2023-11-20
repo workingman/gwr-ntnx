@@ -22,7 +22,7 @@ define(['N/record', 'N/search'],
          */
         const onRequest = (scriptContext) => { // more code from geoff
         }
-
+// 20231120-114231 km update
         return {onRequest}
 
     });
