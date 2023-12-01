@@ -27,12 +27,16 @@ function(record, search) {
     }
     // non conflicting code 20231201-094502
 
+    // KGR test 12/01/2023 Update for BIZAPP-0002 update for 0003 too
+    // KGR test 12/01/2023 Update for BIZAPP-0003 non conflict
+
+
+
     return {
         pageInit: pageInit,
     };
     // 20231130-175636
     // 20231130-181935
     // 20231130-182155
-    // KGR test 12/01/2023 GR  
-    
+    // KGR test 12/01/2023 Update for BIZAPP-0002 conflict additional updates for BIZAPP-0003
 });
