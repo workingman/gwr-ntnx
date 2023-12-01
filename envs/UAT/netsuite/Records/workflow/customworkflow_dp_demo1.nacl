@@ -20,7 +20,7 @@ netsuite.workflow customworkflow_dp_demo1 {
       workflowstate434 = {
         scriptid = "workflowstate434"
         donotexitworkflow = false
-        name = "Old Name Here"
+        name = "Old Name"
         positionx = 243
         positiony = 133
         workflowactions = {
