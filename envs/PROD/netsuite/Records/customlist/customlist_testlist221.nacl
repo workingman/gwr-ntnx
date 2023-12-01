@@ -1,0 +1,10 @@
+netsuite.customlist customlist_testlist221 {
+  scriptid = "customlist_testlist221"
+  description = "7"
+  isinactive = false
+  ismatrixoption = false
+  isordered = true
+  name = netsuite.translationcollection.instance.custcollection1.strings.string.abc.scriptid
+  nameTranslate = true
+  _alias = "abc"
+}
