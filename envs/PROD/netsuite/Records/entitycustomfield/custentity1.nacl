@@ -32,4 +32,5 @@ netsuite.entitycustomfield custentity1 {
   showinlist = false
   storevalue = true
   _alias = "Gil's Field"
+  help = "This is help \r"
 }
