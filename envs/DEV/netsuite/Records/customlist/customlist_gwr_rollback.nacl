@@ -16,4 +16,5 @@ netsuite.customlist customlist_gwr_rollback {
     }
   }
   _alias = "GWR Rollback"
+  description = "20231121-085513"
 }

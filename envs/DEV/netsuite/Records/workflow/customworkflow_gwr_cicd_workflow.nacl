@@ -66,13 +66,34 @@ netsuite.workflow customworkflow_gwr_cicd_workflow {
           }
         }
         index = 1
+        workflowactions = {
+          ONENTRY = {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = {
+              workflowaction1329 = {
+                scriptid = "workflowaction1329"
+                contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
+                field = netsuite.transactionbodycustomfield.instance.custbody_gwr_workflow_selector.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = netsuite.customlist.instance.customlist_gwr_workflow_selector_list.customvalues.customvalue.val_54960_t2257815_430.scriptid
+                valuetype = "STATIC"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+                index = 0
+              }
+            }
+          }
+        }
       }
       workflowstate463 = {
         scriptid = "workflowstate463"
         donotexitworkflow = false
         name = "State 3"
-        positionx = 623
-        positiony = 303
+        positionx = 583
+        positiony = 233
         workflowtransitions = {
           workflowtransition = {
             workflowtransition560 = {
@@ -92,8 +113,8 @@ netsuite.workflow customworkflow_gwr_cicd_workflow {
         scriptid = "workflowstate464"
         donotexitworkflow = false
         name = "State 4"
-        positionx = 673
-        positiony = 463
+        positionx = 583
+        positiony = 313
         workflowtransitions = {
           workflowtransition = {
             workflowtransition561 = {

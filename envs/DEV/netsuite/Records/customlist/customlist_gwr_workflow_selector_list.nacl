@@ -11,7 +11,7 @@ netsuite.customlist customlist_gwr_workflow_selector_list {
         scriptid = "val_54958_t2257815_585"
         abbreviation = "G"
         isinactive = false
-        value = "Green__"
+        value = "Green"
         index = 0
       }
       val_54959_t2257815_717 = {

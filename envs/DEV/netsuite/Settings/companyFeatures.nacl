@@ -173,7 +173,7 @@ netsuite.companyFeatures {
   SUITECUBE_ENTERPRISE = false
   SUPPLYCHAINPREDICTEDRISKS = false
   WEBSITE = true
-  SITEBUILDER = false
+  SITEBUILDER = true
   SITEBUILDER_STORE = false
   ADVANCEDSITECUST = true
   ADVWEBREPORTS = true
