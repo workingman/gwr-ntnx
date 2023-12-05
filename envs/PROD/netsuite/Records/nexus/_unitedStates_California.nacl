@@ -1,0 +1,10 @@
+netsuite.nexus _unitedStates_California {
+  state = {
+    name = "California"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  country = "_unitedStates"
+  description = "United States CA"
+  identifier = "_unitedStates_California"
+  _alias = "_unitedStates_California"
+}
