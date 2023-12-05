@@ -1498,6 +1498,36 @@ netsuite.transactionForm custform_srd_new_form_3 {
                     sameRowAsPrevious = false
                     index = 10
                   }
+                  custbody_gwr_new2 = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_new2.scriptid
+                    label = "GWR New Body Field"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 11
+                  }
+                  custbody_mkd_transaction_body_field_1 = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_mkd_transaction_body_field_1.scriptid
+                    label = "MKD Transaction Body Field 1"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 12
+                  }
+                  custbody_gwr_workflow_selector = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_workflow_selector.scriptid
+                    label = "GWR Workflow selector"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 13
+                  }
                 }
                 index = 0
               }
