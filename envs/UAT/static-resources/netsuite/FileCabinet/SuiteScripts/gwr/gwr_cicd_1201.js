@@ -10,7 +10,7 @@ define(['N/record', 'N/search'],
  * @param{search} search
  */
 function(record, search) {
-    // 20231201-092345 gr conflicting change 20231206-110915 ; new change gr 20231206-110925
+    // 20231201-092345 gr conflicting change 20231204-1012 ; new change KR BIZAPP-0006
     
     /**
      * Function to be executed after page is initialized.
@@ -37,6 +37,8 @@ function(record, search) {
     // kgr nonconflicting 20231205-1023 update to same feature branch
     // kgr non conflicting change 20231205-1056 BIZAPP-0005
     // kgr non conflicting change 20231205-1056 BIZAPP-0005 rework
+    // kgr non conflicting change 20231205-1056 BIZAPP-0006
+
 
 
 });
