@@ -11,7 +11,7 @@ netsuite.role customrole_slt_e2e_test {
   issinglesignononly = false
   issupportrole = false
   iswebserviceonlyrole = false
-  name = "created by oss e2e - 1019355"
+  name = "created by oss e2e - 5601155"
   restrictbydevice = false
   restricttimeandexpenses = false
   subsidiaryoption = "OWN"
@@ -28,7 +28,8 @@ netsuite.role customrole_slt_e2e_test {
         permkey = "LIST_FILECABINET"
         permlevel = "FULL"
       }
+      
     }
   }
-  _alias = "created by oss e2e - 1019355"
+  _alias = "created by oss e2e - 5601155"
 }
