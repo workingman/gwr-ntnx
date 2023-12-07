@@ -7,8 +7,8 @@ netsuite {
         },
       ]
       fileCabinet = [
-        "^/SuiteScripts.*",
-        "^/Templates.*",
+        "^/SuiteScripts/.*",
+        "^/Templates/.*"
       ]
     }
     fieldsToOmit = [
