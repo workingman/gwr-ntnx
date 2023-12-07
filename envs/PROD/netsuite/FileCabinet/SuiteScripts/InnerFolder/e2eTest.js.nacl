@@ -1,5 +1,5 @@
 netsuite.file SuiteScripts_InnerFolder_e2eTest_js@ddv {
-  description = "created by oss e2e - 5600777"
+  description = "created by oss e2e - 5621187"
   bundleable = true
   isinactive = false
   availablewithoutlogin = false
