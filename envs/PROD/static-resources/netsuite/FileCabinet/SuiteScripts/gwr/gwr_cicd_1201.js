@@ -10,7 +10,7 @@ define(['N/record', 'N/search'],
  * @param{search} search
  */
 function(record, search) {
-    // 20231201-092345 gr conflicting change 20231204-1012 ; new change gr 20231205-105557
+    // 20231201-092345 gr conflicting change 20231204-1012 ; new change KR BIZAPP-0006
     
     /**
      * Function to be executed after page is initialized.
@@ -25,10 +25,10 @@ function(record, search) {
         alert("Bonjour tout la monde")
 
     }
-// gwr non conflicting 20231204-083705
-// gwr non confcliting 20231204-101225
-// gwr non conflicting 20231205-101937
-// gwr non conflicting change 20231205-105641
+// gwr non conflicting Changes:
+//    gwr 20231205-105641
+//    gwr 20231206-110945
+//    gwr 20231206-113345
     return {
         pageInit: pageInit,
     };
@@ -37,6 +37,8 @@ function(record, search) {
     // kgr nonconflicting 20231205-1023 update to same feature branch
     // kgr non conflicting change 20231205-1056 BIZAPP-0005
     // kgr non conflicting change 20231205-1056 BIZAPP-0005 rework
+    // kgr non conflicting change 20231205-1056 BIZAPP-0006
+
 
 
 });
