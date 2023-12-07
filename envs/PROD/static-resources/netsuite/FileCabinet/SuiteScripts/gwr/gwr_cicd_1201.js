@@ -10,7 +10,7 @@ define(['N/record', 'N/search'],
  * @param{search} search
  */
 function(record, search) {
-    // 20231201-092345 gr conflicting change 20231206-110915 ; new change gr 20231206-110925
+    // 20231201-092345 gr conflicting change 20231204-1012 ; new change KR BIZAPP-0006
     
     /**
      * Function to be executed after page is initialized.
