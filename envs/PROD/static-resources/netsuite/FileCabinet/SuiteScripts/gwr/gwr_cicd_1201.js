@@ -10,8 +10,8 @@ define(['N/record', 'N/search'],
  * @param{search} search
  */
 function(record, search) {
-    // 20231201-092345 gr conflicting change 20231204-1012 ; new change KR BIZAPP-0006
-    
+    // 20231201-092345 gr conflicting change 20231204-1012 ; new change KR BIZAPP-0007
+
     /**
      * Function to be executed after page is initialized.
      *
@@ -29,6 +29,9 @@ function(record, search) {
 //    gwr 20231205-105641
 //    gwr 20231206-110945
 //    gwr 20231206-113345
+//    gwr BIZAPP-0008  20231208-151033 added a bit more in a second commit
+//    gwr BIZAPP-0008  20231208-151337 rework changes (after deployment has been created).
+//    gwr BIZAPP-0008 in response to comments on the PR, I have added this line
     return {
         pageInit: pageInit,
     };
@@ -38,7 +41,7 @@ function(record, search) {
     // kgr non conflicting change 20231205-1056 BIZAPP-0005
     // kgr non conflicting change 20231205-1056 BIZAPP-0005 rework
     // kgr non conflicting change 20231205-1056 BIZAPP-0006
-
-
-
+    // kgr non conflicting change 20231205-1056 BIZAPP-0007 change 1
+    // kgr non conflicting change 20231205-1056 BIZAPP-0007 change 2
+    // kgr non conflicting change 20231205-1056 BIZAPP-0007 change 3 additional edits as requested
 });
