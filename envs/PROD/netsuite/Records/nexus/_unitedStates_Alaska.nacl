@@ -1,0 +1,14 @@
+netsuite.nexus _unitedStates_Alaska {
+  country = "_unitedStates"
+  state = {
+    name = "Alaska"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxAgency = {
+    name = "Tax Agency AK"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  description = "AK"
+  identifier = "_unitedStates_Alaska"
+  _alias = "_unitedStates_Alaska"
+}
