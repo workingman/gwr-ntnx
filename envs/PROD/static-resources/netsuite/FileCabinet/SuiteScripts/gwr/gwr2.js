@@ -11,7 +11,6 @@ define(['N/record', 'N/search'],
 
  */
        // gwr 20231211-113344 update after deployment created.
-       // gwr 20231211-115417 BIZAPP-10507-fixes-1 added line1
        // gwr 20231211-115417 BIZAPP-10507-fixes-1 added line2
 function(record, search) {
     /**
