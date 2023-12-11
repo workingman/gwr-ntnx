@@ -4,20 +4,14 @@
  * @NModuleScope SameAccount
  */
 
-
-define(['N/record', 'N/search'],
+define(['N/record', 'N/search'], 
 /**
  * @param{record} record
- * @param{search} search
+ * @param{search} search  
+
  */
-// non-conflicting line GR 20231201-100259
-       // 20231210-120823
-       // 20231210-121100
-       // 20231210-122829
-       // BIZAPP-105707
-       // BIZAPP-105707 post-PR-creation change
+       // gwr 20231211-113344 update after deployment created.
 function(record, search) {
-    
     /**
      * Function to be executed after page is initialized.
      *
@@ -31,10 +25,7 @@ function(record, search) {
         alert("Bonjour tout la monde")
 
     }
-
     return {
         pageInit: pageInit,
     };
-    // 20231130-175636
-    
 });
