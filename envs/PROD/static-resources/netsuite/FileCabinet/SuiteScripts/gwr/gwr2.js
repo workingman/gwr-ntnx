@@ -13,6 +13,7 @@ define(['N/record', 'N/search'],
        // gwr 20231211-113344 update after deployment created.
        // gwr 20231211-115417 BIZAPP-10507-fixes-1 added line2
        // gwr 20231213-091454 BIZAPP-091410
+       // gwr 20231220-072743 BIZAPP-00020
 function(record, search) {
     /**
      * Function to be executed after page is initialized.

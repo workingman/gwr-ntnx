@@ -32,6 +32,12 @@ function(record, search) {
 //    gwr BIZAPP-0008  20231208-151033 added a bit more in a second commit
 //    gwr BIZAPP-0008  20231208-151337 rework changes (after deployment has been created).
 //    gwr BIZAPP-0008 in response to comments on the PR, I have added this line
+
+//    gwr BIZAPP-0010 first edit
+//    gwr BIZAPP-00020 first edit
+
+//    gwr BIZAPP-00020 rework edit 1
+
     return {
         pageInit: pageInit,
     };
