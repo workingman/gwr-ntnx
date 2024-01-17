@@ -18,6 +18,9 @@ define(['N/record', 'N/search'],
        // BIZAPP-105707 post-PR-creation change
        // BIZAPP-154404 gr
 
+       // BIZAPP-154404 rework 20240116-155442
+       // more rework 20240116-160105
+
 function(record, search) {
     // 20231212-112318
     
