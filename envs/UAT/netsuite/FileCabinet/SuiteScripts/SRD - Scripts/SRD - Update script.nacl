@@ -1,0 +1,21 @@
+netsuite.file SuiteScripts_SRD___Scripts_SRD___Update_script@dsbsdsbss {
+  bundleable = false
+  isinactive = false
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/SRD - Scripts/SRD - Update script"
+  content = file("netsuite/FileCabinet/SuiteScripts/SRD - Scripts/SRD - Update script")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts_SRD___Scripts@dsbs,
+  ]
+  _generated_dependencies = [
+    {
+      reference = netsuite.transactionbodycustomfield.instance.custbody_srd_opp_source.scriptid
+    },
+    {
+      reference = netsuite.transactionbodycustomfield.instance.custbody_srd_translated_field.scriptid
+    },
+  ]
+  _alias = "SRD - Update script"
+}
