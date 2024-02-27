@@ -1,5 +1,0 @@
-netsuite.customFieldRef subsidiary_customField_466 {
-  value = false
-  scriptId = "custrecordsame_as_shipping_address"
-  isSubInstance = true
-}

@@ -1,6 +1,0 @@
-netsuite.nexus _israel {
-  country = "_israel"
-  description = "Israel"
-  identifier = "_israel"
-  _alias = "_israel"
-}
