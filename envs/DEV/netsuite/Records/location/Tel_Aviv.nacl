@@ -1,0 +1,37 @@
+netsuite.location Tel_Aviv@s {
+  name = "Tel Aviv"
+  subsidiaryList = [
+    netsuite.subsidiary.instance.Parent_Company_eshed___co_global@susess,
+  ]
+  isInactive = false
+  mainAddress = {
+    country = "_israel"
+    addressee = "Tel Aviv"
+    addrText = "Tel Aviv<br>Israel"
+    override = false
+    customFieldList = {
+      customField = [
+        netsuite.customFieldRef.instance.location_customField_466,
+      ]
+    }
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  locationType = "_warehouse"
+  timeZone = "_americaLosAngeles"
+  latitude = 45
+  longitude = 78
+  useBins = true
+  makeInventoryAvailable = true
+  classTranslationList = {
+    classTranslation = {
+      German = {
+        language = "German"
+      }
+      French__France_@sjk = {
+        language = "French (France)"
+      }
+    }
+  }
+  identifier = "Tel Aviv"
+  _alias = "Tel Aviv"
+}
