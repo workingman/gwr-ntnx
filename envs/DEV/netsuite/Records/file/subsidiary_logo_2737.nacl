@@ -1,0 +1,5 @@
+netsuite.recordRef subsidiary_logo_2737 {
+  name = "eshed salto logo"
+  isSubInstance = true
+  _alias = "eshed salto logo"
+}
