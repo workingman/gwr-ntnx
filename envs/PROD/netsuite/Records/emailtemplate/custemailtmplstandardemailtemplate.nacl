@@ -1,0 +1,12 @@
+netsuite.emailtemplate custemailtmplstandardemailtemplate {
+  scriptid = "custemailtmplstandardemailtemplate"
+  addcompanyaddress = true
+  addunsubscribelink = true
+  isinactive = false
+  isprivate = false
+  name = "aaa"
+  recordtype = "TRANSACTION"
+  usesmedia = false
+  content = file("netsuite/emailtemplate/custemailtmplstandardemailtemplate.html")
+  _alias = "aaa"
+}
