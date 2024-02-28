@@ -1,0 +1,30 @@
+netsuite.location location_1@s {
+  name = "location 1"
+  subsidiaryList = [
+    netsuite.subsidiary.instance.Parent_Company@s,
+  ]
+  isInactive = false
+  mainAddress = {
+    country = "_unitedStates"
+    addressee = "location 1 and deployment"
+    addr1 = "TLV"
+    addr2 = "Bristol"
+    city = "test"
+    state = "test"
+    zip = "test"
+    addrText = "location 1 and deployment<br>TLV<br>Bristol<br>test test test<br>United States"
+    override = false
+    
+  }
+  makeInventoryAvailable = false
+  makeInventoryAvailableStore = false
+  classTranslationList = {
+    classTranslation = {
+      French__France_@sjk = {
+        language = "French (France)"
+      }
+    }
+  }
+  identifier = "location 1"
+  _alias = "location 1"
+}
