@@ -1,0 +1,18 @@
+netsuite.classification test1_test {
+  name = "test"
+  includeChildren = false
+  parent = netsuite.classification.instance.test1
+  isInactive = false
+  classTranslationList = {
+    classTranslation = {
+      French__France_@sjk = {
+        language = "French (France)"
+      }
+    }
+  }
+  subsidiaryList = [
+    netsuite.subsidiary.instance.Parent_Company@s,
+  ]
+  identifier = "test1_test"
+  _alias = "test"
+}
