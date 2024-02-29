@@ -11,9 +11,6 @@ define(['N/record', 'N/search'],
  * @param{search} search  
 
  */
-// 20240228-132157
-// 20240228-133400
-// 20240228-212424 more code for BA-110
 
 function(record, search) {
     /**
