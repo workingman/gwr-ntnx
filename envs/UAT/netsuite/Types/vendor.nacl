@@ -55,7 +55,7 @@ type netsuite.vendor {
   }
   unknown globalSubscriptionStatus {
   }
-  netsuite.file image {
+  netsuite.fileReference image {
     isReference = true
   }
   unknown emailPreference {

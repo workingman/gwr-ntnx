@@ -15,7 +15,12 @@ define (['N/currentRecord', 'N/runtime', 'N/ui/serverWidget'], function (current
 
                 log.debug({
                     title: 'month date',
-                    details: month + ' ' + date
+                    details: month + ' : ' + date
+                });
+
+              log.debug({
+                    title: '2nd debug!',
+                    details: month + ' : ' + date
                 });
 
                 // February

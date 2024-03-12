@@ -1,7 +1,7 @@
 netsuite.advancedpdftemplate custtmpl_srd_opp_review {
   scriptid = "custtmpl_srd_opp_review"
   displaysourcecode = false
-  isinactive = false
+  
   preferred = false
   printtype = "SEARCH"
   savedsearch = netsuite.savedsearch.instance.customsearch_srd_opp_search.scriptid
@@ -9,4 +9,5 @@ netsuite.advancedpdftemplate custtmpl_srd_opp_review {
   trantype = "CUSTINVC"
   content = file("netsuite/advancedpdftemplate/custtmpl_srd_opp_review.xml")
   _alias = "SRD - opp review template"
+  isInactive = false
 }

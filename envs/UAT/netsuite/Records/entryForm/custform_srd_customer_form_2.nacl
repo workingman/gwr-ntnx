@@ -3,7 +3,7 @@ netsuite.entryForm custform_srd_customer_form_2 {
   standard = "STANDARDCUSTOMERFORM"
   name = "SRD Customer Form 2"
   recordType = "CUSTOMER"
-  inactive = false
+  
   preferred = false
   storedWithRecord = false
   mainFields = {
@@ -2038,4 +2038,5 @@ netsuite.entryForm custform_srd_customer_form_2 {
     },
   ]
   _alias = "SRD Customer Form 2"
+  isInactive = false
 }

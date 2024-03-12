@@ -1,6 +1,6 @@
 netsuite.customlist customlistcust_list_pay_trigger {
   scriptid = "customlistcust_list_pay_trigger"
-  isinactive = false
+  
   ismatrixoption = false
   isordered = true
   name = "Payment Trigger (2)"
@@ -9,25 +9,29 @@ netsuite.customlist customlistcust_list_pay_trigger {
       val_4268793_6979138_sb2_445 = {
         scriptid = "val_4268793_6979138_sb2_445"
         abbreviation = "C"
-        isinactive = false
+        
         value = "CAN"
         index = 0
+        isInactive = false
       }
       val_4268794_6979138_sb2_613 = {
         scriptid = "val_4268794_6979138_sb2_613"
         abbreviation = "C"
-        isinactive = false
+        
         value = "CI"
         index = 1
+        isInactive = false
       }
       val_4268795_6979138_sb2_239 = {
         scriptid = "val_4268795_6979138_sb2_239"
         abbreviation = "C"
-        isinactive = false
+        
         value = "BL"
         index = 2
+        isInactive = false
       }
     }
   }
   _alias = "Payment Trigger (2)"
+  isInactive = false
 }

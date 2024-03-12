@@ -40,5 +40,4 @@ netsuite.transactionbodycustomfield custbody_aw_edit {
   storevalue = true
   subtab = "TRANSACTIONSYSTEMINFORMATION"
   _alias = "GWR Amp Edit - WA"
-  bodyperiodendjournal = false
 }

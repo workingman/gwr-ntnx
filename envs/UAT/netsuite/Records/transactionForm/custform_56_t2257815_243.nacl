@@ -3,7 +3,7 @@ netsuite.transactionForm custform_56_t2257815_243 {
   standard = "STANDARDPRODUCTINVOICE"
   name = "MKD Custom Product Invoice2"
   recordType = "INVOICE"
-  inactive = false
+  
   preferred = false
   mainFields = {
     fieldGroup = {
@@ -409,7 +409,7 @@ netsuite.transactionForm custform_56_t2257815_243 {
                 displayType = "NORMAL"
                 columnBreak = false
                 sameRowAsPrevious = false
-                index = 6
+                index = 7
               }
               cseg_nbc = {
                 id = "[type=transactionbodycustomfield, scriptid=cseg_nbc]"
@@ -419,7 +419,7 @@ netsuite.transactionForm custform_56_t2257815_243 {
                 displayType = "NORMAL"
                 columnBreak = false
                 sameRowAsPrevious = false
-                index = 7
+                index = 6
               }
             }
             index = 0
@@ -1505,6 +1505,9 @@ netsuite.transactionForm custform_56_t2257815_243 {
           }
         }
         index = 8
+        
+        
+        
         fieldGroups = {
           defaultFieldGroup = {
             fields = {
@@ -1609,7 +1612,7 @@ netsuite.transactionForm custform_56_t2257815_243 {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 4
+                    index = 5
                   }
                   custbody_mkd_transaction_body_field_2 = {
                     id = netsuite.transactionbodycustomfield.instance.custbody_mkd_transaction_body_field_2.scriptid
@@ -1619,7 +1622,7 @@ netsuite.transactionForm custform_56_t2257815_243 {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 5
+                    index = 7
                   }
                   custbody_srd_opp_source = {
                     id = netsuite.transactionbodycustomfield.instance.custbody_srd_opp_source.scriptid
@@ -1629,7 +1632,7 @@ netsuite.transactionForm custform_56_t2257815_243 {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 6
+                    index = 4
                   }
                   custbody_srd_translated_field = {
                     id = netsuite.transactionbodycustomfield.instance.custbody_srd_translated_field.scriptid
@@ -1639,10 +1642,25 @@ netsuite.transactionForm custform_56_t2257815_243 {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 7
+                    index = 6
                   }
                   
                   
+                  
+                  
+                  
+                  
+                  
+                  custbody_mkd_transaction_body_field_1 = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_mkd_transaction_body_field_1.scriptid
+                    label = "MKD Transaction Body Field 1"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 8
+                  }
                   custbody_itr_doc_number = {
                     id = netsuite.transactionbodycustomfield.instance.custbody_itr_doc_number.scriptid
                     label = "GWR Amp doc number"
@@ -1651,29 +1669,10 @@ netsuite.transactionForm custform_56_t2257815_243 {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 8
-                  }
-                  custbody_gwr_new2 = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_new2.scriptid
-                    label = "GWR New Body Field"
-                    visible = true
-                    mandatory = false
-                    displayType = "NORMAL"
-                    columnBreak = false
-                    sameRowAsPrevious = false
                     index = 9
                   }
                   
-                  custbody_gwr_workflow_selector = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_workflow_selector.scriptid
-                    label = "GWR Workflow selector"
-                    visible = true
-                    mandatory = false
-                    displayType = "NORMAL"
-                    columnBreak = false
-                    sameRowAsPrevious = false
-                    index = 10
-                  }
+                  
                 }
                 index = 0
               }
@@ -2132,4 +2131,5 @@ netsuite.transactionForm custform_56_t2257815_243 {
     },
   ]
   _alias = "MKD Custom Product Invoice2"
+  isInactive = false
 }

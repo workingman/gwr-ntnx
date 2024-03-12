@@ -2,7 +2,7 @@ netsuite.advancedpdftemplate custtmpl_108_t2480139_614 {
   scriptid = "custtmpl_108_t2480139_614"
   standard = "STDTMPLCR_GWR_UDEMY_CR"
   displaysourcecode = false
-  isinactive = false
+  
   preferred = true
   printtype = "CUSTOMRECORD"
   recordtype = netsuite.customrecord_gwr_udemy_cr.attr.scriptid
@@ -10,4 +10,5 @@ netsuite.advancedpdftemplate custtmpl_108_t2480139_614 {
   trantype = "CUSTOM"
   content = file("netsuite/advancedpdftemplate/custtmpl_108_t2480139_614.xml")
   _alias = "Custom GWR Custom Record Udemy PDF/HTML Template"
+  isInactive = false
 }

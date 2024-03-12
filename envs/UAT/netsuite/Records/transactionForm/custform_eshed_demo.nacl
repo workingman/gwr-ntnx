@@ -3,7 +3,7 @@ netsuite.transactionForm custform_eshed_demo {
   standard = "STANDARDCREDITCARDCHARGE"
   name = "ESHED Custom Credit Card Charge"
   recordType = "CREDITCARDCHARGE"
-  inactive = false
+  
   preferred = true
   storedWithRecord = true
   mainFields = {
@@ -880,6 +880,9 @@ netsuite.transactionForm custform_eshed_demo {
             }
           }
           
+          
+          
+          
           defaultFieldGroup = {
             fields = {
               MIDDLE = {
@@ -1053,6 +1056,21 @@ netsuite.transactionForm custform_eshed_demo {
                   }
                   
                   
+                  
+                  
+                  
+                  
+                  
+                  custbody_mkd_transaction_body_field_1 = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_mkd_transaction_body_field_1.scriptid
+                    label = "MKD Transaction Body Field 1"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 8
+                  }
                   custbody_itr_doc_number = {
                     id = netsuite.transactionbodycustomfield.instance.custbody_itr_doc_number.scriptid
                     label = "GWR Amp doc number"
@@ -1061,29 +1079,10 @@ netsuite.transactionForm custform_eshed_demo {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 8
-                  }
-                  custbody_gwr_new2 = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_new2.scriptid
-                    label = "GWR New Body Field"
-                    visible = false
-                    mandatory = false
-                    displayType = "NORMAL"
-                    columnBreak = false
-                    sameRowAsPrevious = false
                     index = 9
                   }
                   
-                  custbody_gwr_workflow_selector = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_workflow_selector.scriptid
-                    label = "GWR Workflow selector"
-                    visible = false
-                    mandatory = false
-                    displayType = "NORMAL"
-                    columnBreak = false
-                    sameRowAsPrevious = false
-                    index = 10
-                  }
+                  
                 }
                 index = 0
               }
@@ -1319,4 +1318,5 @@ netsuite.transactionForm custform_eshed_demo {
     },
   ]
   _alias = "ESHED Custom Credit Card Charge"
+  isInactive = false
 }

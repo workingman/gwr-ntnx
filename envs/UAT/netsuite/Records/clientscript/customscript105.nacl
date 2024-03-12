@@ -1,6 +1,6 @@
 netsuite.clientscript customscript105 {
   scriptid = "customscript105"
-  isinactive = false
+  
   name = "testscriptJS"
   notifyadmins = true
   notifyowner = false
@@ -23,4 +23,5 @@ netsuite.clientscript customscript105 {
     }
   }
   _alias = "testscriptJS"
+  isInactive = false
 }

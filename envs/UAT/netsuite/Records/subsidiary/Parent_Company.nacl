@@ -11,10 +11,13 @@ netsuite.subsidiary Parent_Company@s {
     override = false
     customFieldList = {
       customField = [
-        netsuite.customFieldRef.instance.subsidiary_customField_55,
+        {
+          value = false
+          scriptId = "custrecordsame_as_shipping_address"
+        },
       ]
     }
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
   }
   legalName = "Demo: Blank US OneWorld Account"
   isElimination = false
@@ -30,8 +33,8 @@ netsuite.subsidiary Parent_Company@s {
     ]
   }
   checkLayout = {
-    name = "GWR Custom Check Layout"
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
+    id = "[ACCOUNT_SPECIFIC_VALUE] (object) (GWR Custom Check Layout)"
   }
   classTranslationList = {
     classTranslation = {

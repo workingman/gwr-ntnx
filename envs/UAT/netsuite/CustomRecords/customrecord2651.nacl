@@ -62,8 +62,7 @@ type netsuite.customrecord2651 {
     }
     boolean includename {
     }
-    boolean isinactive {
-    }
+    
     boolean isordered {
     }
     boolean showcreationdate {
@@ -99,6 +98,10 @@ type netsuite.customrecord2651 {
     hidden_string source {
     }
     hidden_string internalId {
+    }
+    netsuite.bundle bundle {
+    }
+    boolean isInactive {
     }
   }
   serviceid scriptid {
@@ -217,7 +220,7 @@ type netsuite.customrecord2651 {
   iconbuiltin = true
   includeinsearchmenu = true
   includename = true
-  isinactive = false
+  
   isordered = false
   recordname = "Update Profile_Sample"
   showcreationdate = false
@@ -231,4 +234,49 @@ type netsuite.customrecord2651 {
   showowneronlist = false
   metadataType = "customrecordtype"
   _alias = "Update Profile_Sample"
+  _self_important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  isInactive = false
 }

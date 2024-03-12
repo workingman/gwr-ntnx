@@ -1,6 +1,6 @@
 netsuite.file Templates_gwr_xls@dv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file Templates_gwr_xls@dv {
     netsuite.folder.instance.Templates,
   ]
   _alias = "gwr.xls"
+  isInactive = false
 }

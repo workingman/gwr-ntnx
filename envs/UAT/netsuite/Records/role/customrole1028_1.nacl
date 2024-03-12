@@ -5,7 +5,7 @@ netsuite.role customrole1028_1 {
   coreadminpermission = false
   employeerestriction = "NONE"
   employeeselectionunrestricted = false
-  isinactive = false
+  
   ispartnerrole = false
   issalesrole = false
   issinglesignononly = false
@@ -551,4 +551,5 @@ netsuite.role customrole1028_1 {
     }
   }
   _alias = "GWR Amp role 1028_1"
+  isInactive = false
 }

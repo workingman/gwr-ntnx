@@ -6,7 +6,7 @@ netsuite.role customrole_srd_test_cust_role {
   employeerestriction = "OWNONLY"
   employeeselectionunrestricted = false
   employeeviewingallowed = false
-  isinactive = false
+  
   ispartnerrole = false
   issalesrole = false
   issinglesignononly = false
@@ -162,4 +162,5 @@ netsuite.role customrole_srd_test_cust_role {
     }
   }
   _alias = "(srd) Custom Customer Center"
+  isInactive = false
 }

@@ -62,8 +62,6 @@ type netsuite.customrecord_cseg2 {
     }
     boolean includename {
     }
-    boolean isinactive {
-    }
     boolean isordered {
     }
     boolean showcreationdate {
@@ -96,7 +94,11 @@ type netsuite.customrecord_cseg2 {
     }
     string application_id {
     }
+    netsuite.bundle bundle {
+    }
     hidden_string source {
+    }
+    boolean isInactive {
     }
     hidden_string internalId {
     }
@@ -136,15 +138,15 @@ type netsuite.customrecord_cseg2 {
     instance = {
       val_5934_2239021_682 = {
         scriptid = "val_5934_2239021_682"
-        isinactive = false
         name = "EMEA"
         index = 0
+        isInactive = false
       }
       val_5935_2239021_730 = {
         scriptid = "val_5935_2239021_730"
-        isinactive = false
         name = "APAC"
         index = 1
+        isInactive = false
       }
     }
   }
@@ -158,4 +160,48 @@ type netsuite.customrecord_cseg2 {
   }
   metadataType = "customrecordtype"
   _alias = "Region"
+  _self_important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

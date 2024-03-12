@@ -3,7 +3,7 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
   standard = "STANDARDVENDORBILL"
   name = "Custom Vendor Bill"
   recordType = "VENDORBILL"
-  inactive = false
+  
   preferred = true
   storedWithRecord = true
   mainFields = {
@@ -1008,6 +1008,9 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
           }
         }
         index = 5
+        
+        
+        
         fieldGroups = {
           defaultFieldGroup = {
             fields = {
@@ -1166,6 +1169,21 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
                   }
                   
                   
+                  
+                  
+                  
+                  
+                  
+                  custbody_mkd_transaction_body_field_1 = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_mkd_transaction_body_field_1.scriptid
+                    label = "MKD Transaction Body Field 1"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 10
+                  }
                   custbody_itr_doc_number = {
                     id = netsuite.transactionbodycustomfield.instance.custbody_itr_doc_number.scriptid
                     label = "GWR Amp doc number"
@@ -1174,29 +1192,10 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 10
-                  }
-                  custbody_gwr_new2 = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_new2.scriptid
-                    label = "GWR New Body Field"
-                    visible = false
-                    mandatory = false
-                    displayType = "NORMAL"
-                    columnBreak = false
-                    sameRowAsPrevious = false
                     index = 11
                   }
                   
-                  custbody_gwr_workflow_selector = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_workflow_selector.scriptid
-                    label = "GWR Workflow selector"
-                    visible = false
-                    mandatory = false
-                    displayType = "NORMAL"
-                    columnBreak = false
-                    sameRowAsPrevious = false
-                    index = 12
-                  }
+                  
                 }
                 index = 0
               }
@@ -1536,4 +1535,5 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
     },
   ]
   _alias = "Custom Vendor Bill"
+  isInactive = false
 }

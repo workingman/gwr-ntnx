@@ -3,7 +3,7 @@ netsuite.transactionForm custform_gwr_udemy_test {
   standard = "STANDARDONLINEORDERINVOICE"
   name = "GWR Custom Online Order - Invoice"
   recordType = "SALESORDER"
-  inactive = false
+  
   preferred = false
   mainFields = {
     defaultFieldGroup = {
@@ -359,6 +359,9 @@ netsuite.transactionForm custform_gwr_udemy_test {
         visible = true
         
         index = 0
+        
+        
+        
         fieldGroups = {
           defaultFieldGroup = {
             fields = {
@@ -1210,6 +1213,21 @@ netsuite.transactionForm custform_gwr_udemy_test {
                   }
                   
                   
+                  
+                  
+                  
+                  
+                  
+                  custbody_mkd_transaction_body_field_1 = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_mkd_transaction_body_field_1.scriptid
+                    label = "MKD Transaction Body Field 1"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 9
+                  }
                   custbody_itr_doc_number = {
                     id = netsuite.transactionbodycustomfield.instance.custbody_itr_doc_number.scriptid
                     label = "GWR Amp doc number"
@@ -1218,29 +1236,10 @@ netsuite.transactionForm custform_gwr_udemy_test {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 9
-                  }
-                  custbody_gwr_new2 = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_new2.scriptid
-                    label = "GWR New Body Field"
-                    visible = true
-                    mandatory = false
-                    displayType = "NORMAL"
-                    columnBreak = false
-                    sameRowAsPrevious = false
                     index = 10
                   }
                   
-                  custbody_gwr_workflow_selector = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_workflow_selector.scriptid
-                    label = "GWR Workflow selector"
-                    visible = true
-                    mandatory = false
-                    displayType = "NORMAL"
-                    columnBreak = false
-                    sameRowAsPrevious = false
-                    index = 11
-                  }
+                  
                 }
                 index = 0
               }
@@ -1543,4 +1542,5 @@ netsuite.transactionForm custform_gwr_udemy_test {
     },
   ]
   _alias = "GWR Custom Online Order - Invoice"
+  isInactive = false
 }

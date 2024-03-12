@@ -5,7 +5,7 @@ netsuite.role customrole_salto_all_permissions {
   coreadminpermission = true
   employeerestriction = "NONE"
   employeeselectionunrestricted = true
-  isinactive = false
+  
   ispartnerrole = false
   issalesrole = false
   issinglesignononly = false
@@ -1639,4 +1639,5 @@ netsuite.role customrole_salto_all_permissions {
     }
   }
   _alias = "salto-all-permissions"
+  isInactive = false
 }

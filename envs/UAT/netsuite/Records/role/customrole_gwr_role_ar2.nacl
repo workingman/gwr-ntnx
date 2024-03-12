@@ -5,7 +5,7 @@ netsuite.role customrole_gwr_role_ar2 {
   coreadminpermission = false
   employeerestriction = "NONE"
   employeeselectionunrestricted = false
-  isinactive = false
+  
   ispartnerrole = false
   issalesrole = false
   issinglesignononly = false
@@ -267,4 +267,5 @@ netsuite.role customrole_gwr_role_ar2 {
     }
   }
   _alias = "AAAAH!  Please don't give this role to Geoff"
+  isInactive = false
 }

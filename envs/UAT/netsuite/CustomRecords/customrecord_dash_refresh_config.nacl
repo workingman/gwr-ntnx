@@ -62,8 +62,7 @@ type netsuite.customrecord_dash_refresh_config {
     }
     boolean includename {
     }
-    boolean isinactive {
-    }
+    
     boolean isordered {
     }
     boolean showcreationdate {
@@ -99,6 +98,10 @@ type netsuite.customrecord_dash_refresh_config {
     hidden_string source {
     }
     hidden_string internalId {
+    }
+    netsuite.bundle bundle {
+    }
+    boolean isInactive {
     }
   }
   serviceid scriptid {
@@ -182,7 +185,7 @@ type netsuite.customrecord_dash_refresh_config {
   iconbuiltin = true
   includeinsearchmenu = false
   includename = false
-  isinactive = false
+  
   isordered = false
   recordname = "Dashboard Refresh Configuration"
   showcreationdate = false
@@ -196,4 +199,49 @@ type netsuite.customrecord_dash_refresh_config {
   showowneronlist = false
   metadataType = "customrecordtype"
   _alias = "Dashboard Refresh Configuration"
+  _self_important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  isInactive = false
 }

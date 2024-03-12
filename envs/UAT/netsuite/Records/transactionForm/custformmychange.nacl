@@ -3,7 +3,7 @@ netsuite.transactionForm custformmychange {
   standard = "STANDARDSERVICEINVOICE"
   name = "Custom Service Invoice (2)"
   recordType = "INVOICE"
-  inactive = false
+  
   preferred = true
   mainFields = {
     fieldGroup = {
@@ -1485,6 +1485,9 @@ netsuite.transactionForm custformmychange {
           }
         }
         index = 8
+        
+        
+        
         fieldGroups = {
           defaultFieldGroup = {
             fields = {
@@ -1649,6 +1652,21 @@ netsuite.transactionForm custformmychange {
                   }
                   
                   
+                  
+                  
+                  
+                  
+                  
+                  custbody_mkd_transaction_body_field_1 = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_mkd_transaction_body_field_1.scriptid
+                    label = "MKD Transaction Body Field 1"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 10
+                  }
                   custbody_itr_doc_number = {
                     id = netsuite.transactionbodycustomfield.instance.custbody_itr_doc_number.scriptid
                     label = "GWR Amp doc number"
@@ -1657,29 +1675,10 @@ netsuite.transactionForm custformmychange {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 10
-                  }
-                  custbody_gwr_new2 = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_new2.scriptid
-                    label = "GWR New Body Field"
-                    visible = true
-                    mandatory = false
-                    displayType = "NORMAL"
-                    columnBreak = false
-                    sameRowAsPrevious = false
                     index = 11
                   }
                   
-                  custbody_gwr_workflow_selector = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_workflow_selector.scriptid
-                    label = "GWR Workflow selector"
-                    visible = true
-                    mandatory = false
-                    displayType = "NORMAL"
-                    columnBreak = false
-                    sameRowAsPrevious = false
-                    index = 12
-                  }
+                  
                 }
                 index = 0
               }
@@ -2127,4 +2126,5 @@ netsuite.transactionForm custformmychange {
     },
   ]
   _alias = "Custom Service Invoice (2)"
+  isInactive = false
 }

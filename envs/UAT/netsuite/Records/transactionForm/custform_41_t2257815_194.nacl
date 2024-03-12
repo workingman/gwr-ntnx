@@ -3,7 +3,7 @@ netsuite.transactionForm custform_41_t2257815_194 {
   standard = "STANDARDESTIMATE"
   name = "Custom Estimate"
   recordType = "ESTIMATE"
-  inactive = false
+  
   preferred = true
   mainFields = {
     fieldGroup = {
@@ -1415,6 +1415,9 @@ netsuite.transactionForm custform_41_t2257815_194 {
           }
         }
         index = 8
+        
+        
+        
         fieldGroups = {
           defaultFieldGroup = {
             fields = {
@@ -1575,6 +1578,21 @@ netsuite.transactionForm custform_41_t2257815_194 {
                   }
                   
                   
+                  
+                  
+                  
+                  
+                  
+                  custbody_mkd_transaction_body_field_1 = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_mkd_transaction_body_field_1.scriptid
+                    label = "MKD Transaction Body Field 1"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 9
+                  }
                   custbody_itr_doc_number = {
                     id = netsuite.transactionbodycustomfield.instance.custbody_itr_doc_number.scriptid
                     label = "GWR Amp doc number"
@@ -1583,29 +1601,10 @@ netsuite.transactionForm custform_41_t2257815_194 {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 9
-                  }
-                  custbody_gwr_new2 = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_new2.scriptid
-                    label = "GWR New Body Field"
-                    visible = true
-                    mandatory = false
-                    displayType = "NORMAL"
-                    columnBreak = false
-                    sameRowAsPrevious = false
                     index = 10
                   }
                   
-                  custbody_gwr_workflow_selector = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_workflow_selector.scriptid
-                    label = "GWR Workflow selector"
-                    visible = true
-                    mandatory = false
-                    displayType = "NORMAL"
-                    columnBreak = false
-                    sameRowAsPrevious = false
-                    index = 11
-                  }
+                  
                 }
                 index = 0
               }
@@ -1940,4 +1939,5 @@ netsuite.transactionForm custform_41_t2257815_194 {
     },
   ]
   _alias = "Custom Estimate"
+  isInactive = false
 }

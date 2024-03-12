@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_dp_userevent_script_js@duuv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_dp_userevent_script_js@duuv {
     netsuite.folder.instance.SuiteScripts,
   ]
   _alias = "dp_userevent_script.js"
+  isInactive = false
 }

@@ -1,4 +1,5 @@
 netsuite {
+  addBundles=true
   fetch = {
     include = {
       types = [
@@ -9,6 +10,8 @@ netsuite {
       fileCabinet = [
         "^/SuiteScripts.*",
         "^/Templates.*",
+      ]
+      customRecords = [
       ]
     }
     fieldsToOmit = [
@@ -76,6 +79,12 @@ netsuite {
           name = "advancedpdftemplate"
           ids = [
             "custtmpl_gwr_defunct1",
+          ]
+        },
+        {
+          name = "workflow"
+          ids = [
+            "customworkflow_srd_purchase_order",
           ]
         },
       ]

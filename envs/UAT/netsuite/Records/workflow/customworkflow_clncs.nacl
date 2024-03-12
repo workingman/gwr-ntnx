@@ -5,7 +5,7 @@ netsuite.workflow customworkflow_clncs {
   initoncreate = true
   initonvieworupdate = false
   inittriggertype = "AFTERSUBMIT"
-  isinactive = false
+  
   islogenabled = false
   keephistory = "ONLYWHENTESTING"
   name = "NC"
@@ -31,7 +31,7 @@ netsuite.workflow customworkflow_clncs {
                 scriptid = "workflowaction1"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 eventtypes = "CREATE"
-                isinactive = false
+                
                 recordtype = "TASK"
                 schedulemode = "DELAY"
                 initcondition = {
@@ -67,6 +67,7 @@ netsuite.workflow customworkflow_clncs {
                   }
                 }
                 index = 0
+                isInactive = false
               }
             }
           }
@@ -76,4 +77,5 @@ netsuite.workflow customworkflow_clncs {
     }
   }
   _alias = "NC"
+  isInactive = false
 }

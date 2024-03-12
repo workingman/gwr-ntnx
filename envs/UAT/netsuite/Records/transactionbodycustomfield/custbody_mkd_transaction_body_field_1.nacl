@@ -1,5 +1,5 @@
-netsuite.transactionbodycustomfield custbody_gwr_new2 {
-  scriptid = "custbody_gwr_new2"
+netsuite.transactionbodycustomfield custbody_mkd_transaction_body_field_1 {
+  scriptid = "custbody_mkd_transaction_body_field_1"
   accesslevel = "2"
   applyformatting = false
   bodyassemblybuild = false
@@ -21,7 +21,7 @@ netsuite.transactionbodycustomfield custbody_gwr_new2 {
   bodyprintpackingslip = false
   bodyprintstatement = false
   bodypurchase = false
-  bodysale = true
+  bodysale = false
   bodytransferorder = false
   bodyvendorpayment = false
   checkspelling = false
@@ -33,10 +33,10 @@ netsuite.transactionbodycustomfield custbody_gwr_new2 {
   isformula = false
   ismandatory = false
   isparent = false
-  label = "GWR New Body Field"
+  label = "MKD Transaction Body Field 1"
   searchlevel = "2"
   showhierarchy = false
   showinlist = false
   storevalue = true
-  _alias = "GWR New Body Field"
+  _alias = "MKD Transaction Body Field 1"
 }

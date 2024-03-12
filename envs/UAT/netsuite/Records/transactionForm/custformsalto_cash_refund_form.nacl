@@ -3,7 +3,7 @@ netsuite.transactionForm custformsalto_cash_refund_form {
   standard = "STANDARDCASHREFUND"
   name = "Cash Refund Form"
   recordType = "CASHREFUND"
-  inactive = false
+  
   preferred = true
   mainFields = {
     fieldGroup = {
@@ -1396,6 +1396,9 @@ netsuite.transactionForm custformsalto_cash_refund_form {
           }
         }
         index = 8
+        
+        
+        
         fieldGroups = {
           defaultFieldGroup = {
             fields = {
@@ -1560,6 +1563,21 @@ netsuite.transactionForm custformsalto_cash_refund_form {
                   }
                   
                   
+                  
+                  
+                  
+                  
+                  
+                  custbody_mkd_transaction_body_field_1 = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_mkd_transaction_body_field_1.scriptid
+                    label = "MKD Transaction Body Field 1"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 10
+                  }
                   custbody_itr_doc_number = {
                     id = netsuite.transactionbodycustomfield.instance.custbody_itr_doc_number.scriptid
                     label = "GWR Amp doc number"
@@ -1568,29 +1586,10 @@ netsuite.transactionForm custformsalto_cash_refund_form {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 10
-                  }
-                  custbody_gwr_new2 = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_new2.scriptid
-                    label = "GWR New Body Field"
-                    visible = true
-                    mandatory = false
-                    displayType = "NORMAL"
-                    columnBreak = false
-                    sameRowAsPrevious = false
                     index = 11
                   }
                   
-                  custbody_gwr_workflow_selector = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_workflow_selector.scriptid
-                    label = "GWR Workflow selector"
-                    visible = true
-                    mandatory = false
-                    displayType = "NORMAL"
-                    columnBreak = false
-                    sameRowAsPrevious = false
-                    index = 12
-                  }
+                  
                 }
                 index = 0
               }
@@ -1848,4 +1847,5 @@ netsuite.transactionForm custformsalto_cash_refund_form {
     },
   ]
   _alias = "Cash Refund Form"
+  isInactive = false
 }

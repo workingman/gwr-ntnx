@@ -1,9 +1,9 @@
-netsuite.transactionForm custform_srd_new_form_1 {
-  scriptid = "custform_srd_new_form_1"
+netsuite.transactionForm custform_srd_prchse_order {
+  scriptid = "custform_srd_prchse_order"
   standard = "STANDARDPURCHASEORDER"
-  name = "SRD - Custom Purchase Order - 1"
+  name = "SRD - Custom Purchase Order"
   recordType = "PURCHASEORDER"
-  inactive = false
+  
   preferred = false
   mainFields = {
     fieldGroup = {
@@ -1291,7 +1291,6 @@ netsuite.transactionForm custform_srd_new_form_1 {
         id = "TRANSACTIONSYSTEMINFORMATION"
         label = "System Information"
         visible = true
-        
         subItems = {
           subList = {
             SYSTEMNOTES = {
@@ -1318,6 +1317,7 @@ netsuite.transactionForm custform_srd_new_form_1 {
           }
         }
         index = 7
+        
         fieldGroups = {
           defaultFieldGroup = {
             fields = {
@@ -1369,12 +1369,6 @@ netsuite.transactionForm custform_srd_new_form_1 {
         label = "Address"
         visible = true
         index = 8
-      }
-      custtab_62_t2257815_401 = {
-        id = netsuite.subtab.instance.custtab_62_t2257815_401.scriptid
-        label = "Eshed's 2nd Subtab"
-        visible = true
-        index = 9
       }
       CUSTOM = {
         id = "CUSTOM"
@@ -1487,7 +1481,16 @@ netsuite.transactionForm custform_srd_new_form_1 {
                     index = 9
                   }
                   
-                  
+                  custbody_mkd_transaction_body_field_1 = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_mkd_transaction_body_field_1.scriptid
+                    label = "MKD Transaction Body Field 1"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 10
+                  }
                   custbody_itr_doc_number = {
                     id = netsuite.transactionbodycustomfield.instance.custbody_itr_doc_number.scriptid
                     label = "GWR Amp doc number"
@@ -1496,53 +1499,46 @@ netsuite.transactionForm custform_srd_new_form_1 {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 10
-                  }
-                  custbody_gwr_new2 = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_new2.scriptid
-                    label = "GWR New Body Field"
-                    visible = false
-                    mandatory = false
-                    displayType = "NORMAL"
-                    columnBreak = false
-                    sameRowAsPrevious = false
                     index = 11
                   }
                   
-                  custbody_gwr_workflow_selector = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_workflow_selector.scriptid
-                    label = "GWR Workflow selector"
-                    visible = false
-                    mandatory = false
-                    displayType = "NORMAL"
-                    columnBreak = false
-                    sameRowAsPrevious = false
-                    index = 12
-                  }
+                  
                 }
                 index = 0
               }
             }
           }
         }
-        index = 10
+        index = 9
       }
       MULTIBOOK = {
         id = "MULTIBOOK"
         label = "Accounting Books"
+        visible = true
+        index = 10
+      }
+      custtab_16_t1221897_664 = {
+        id = netsuite.subtab.instance.custtab_16_t1221897_664.scriptid
+        label = "Bill Distribution Details"
         visible = true
         index = 11
       }
       custtab_8_t2480139_401 = {
         id = netsuite.subtab.instance.custtab_8_t2480139_401.scriptid
         label = "GWR Subtab"
-        visible = true
+        visible = false
         index = 12
+      }
+      custtab_62_t2257815_401 = {
+        id = netsuite.subtab.instance.custtab_62_t2257815_401.scriptid
+        label = "Eshed's 2nd Subtab"
+        visible = false
+        index = 13
       }
       custtab_2_2239021_106 = {
         id = netsuite.subtab.instance.custtab_2_2239021_106.scriptid
         label = "Salto Logs"
-        visible = true
+        visible = false
         subItems = {
           subTab = {
             custtab_4_2239021_431 = {
@@ -1559,12 +1555,12 @@ netsuite.transactionForm custform_srd_new_form_1 {
             }
           }
         }
-        index = 13
+        index = 14
       }
       custtab_43_t2257815_377 = {
         id = netsuite.subtab.instance.custtab_43_t2257815_377.scriptid
         label = "Test Trans Tab"
-        visible = true
+        visible = false
         fieldGroups = {
           defaultFieldGroup = {
             fields = {
@@ -1587,12 +1583,6 @@ netsuite.transactionForm custform_srd_new_form_1 {
             }
           }
         }
-        index = 14
-      }
-      custtab_16_t1221897_664 = {
-        id = netsuite.subtab.instance.custtab_16_t1221897_664.scriptid
-        label = "Bill Distribution Details"
-        visible = true
         index = 15
       }
     }
@@ -1930,5 +1920,6 @@ netsuite.transactionForm custform_srd_new_form_1 {
       reference = netsuite.customsegment.instance.csegcseg_rg_seg_cc.scriptid
     },
   ]
-  _alias = "SRD - Custom Purchase Order - 1"
+  _alias = "SRD - Custom Purchase Order"
+  isInactive = false
 }

@@ -1,7 +1,7 @@
 netsuite.portlet customscript_dashboard_refresh {
   scriptid = "customscript_dashboard_refresh"
   description = "Dashboard Refresh Portlet"
-  isinactive = false
+  
   name = "Dashboard Refresh"
   notifyadmins = false
   notifyowner = false
@@ -25,4 +25,5 @@ netsuite.portlet customscript_dashboard_refresh {
     }
   }
   _alias = "Dashboard Refresh"
+  isInactive = false
 }

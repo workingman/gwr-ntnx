@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_mkd_mkd_showmessage_js@dduv {
   bundleable = true
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_mkd_mkd_showmessage_js@dduv {
     netsuite.folder.instance.SuiteScripts_mkd@d,
   ]
   _alias = "mkd_showmessage.js"
+  isInactive = false
 }

@@ -65,7 +65,7 @@ type netsuite.partner {
   }
   string bcn {
   }
-  netsuite.file image {
+  netsuite.fileReference image {
     isReference = true
   }
   unknown taxFractionUnit {
@@ -142,4 +142,11 @@ type netsuite.partner {
     field_instance = netsuite.entitycustomfield.instance.custentitytier.scriptid
   }
   _alias = "Partner"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

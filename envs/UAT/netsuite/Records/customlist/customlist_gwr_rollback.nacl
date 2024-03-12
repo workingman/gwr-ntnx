@@ -13,12 +13,14 @@ netsuite.customlist customlist_gwr_rollback {
         value = "rollback"
         index = 0
         
-        isinactive = false
+        
+        isInactive = false
       }
     }
   }
   _alias = "GWR Rollback"
   description = "20231121-085513"
   
-  isinactive = false
+  
+  isInactive = false
 }

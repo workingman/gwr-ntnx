@@ -1,7 +1,7 @@
 netsuite.customlist customlist_slt_sales_order_type {
   scriptid = "customlist_slt_sales_order_type"
   description = "my description 4"
-  isinactive = false
+  
   ismatrixoption = false
   isordered = true
   name = "Sales order type"
@@ -10,53 +10,61 @@ netsuite.customlist customlist_slt_sales_order_type {
       val_5673_2239021_447 = {
         scriptid = "val_5673_2239021_447"
         abbreviation = "N"
-        isinactive = false
+        
         value = "New business"
         index = 0
+        isInactive = false
       }
       val_5674_2239021_858 = {
         scriptid = "val_5674_2239021_858"
         abbreviation = "U"
-        isinactive = false
+        
         value = "Upsell"
         index = 1
+        isInactive = false
       }
       val_5675_2239021_788 = {
         scriptid = "val_5675_2239021_788"
         abbreviation = "D"
-        isinactive = false
+        
         value = "Downgrade"
         index = 2
+        isInactive = false
       }
       val_5676_2239021_904 = {
         scriptid = "val_5676_2239021_904"
         abbreviation = "R"
-        isinactive = false
+        
         value = "Renewal"
         index = 3
+        isInactive = false
       }
       val_53043_t2257815_813 = {
         scriptid = "val_53043_t2257815_813"
         abbreviation = "V"
-        isinactive = false
+        
         value = "VAR"
         index = 4
+        isInactive = false
       }
       val_53044_t2257815_259 = {
         scriptid = "val_53044_t2257815_259"
         abbreviation = "S"
-        isinactive = false
+        
         value = "System Integrator"
         index = 5
+        isInactive = false
       }
       val_53045_t2257815_159 = {
         scriptid = "val_53045_t2257815_159"
         abbreviation = "P"
-        isinactive = false
+        
         value = "Partner"
         index = 6
+        isInactive = false
       }
     }
   }
   _alias = "Sales order type"
+  isInactive = false
 }

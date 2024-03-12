@@ -5,6 +5,8 @@
 define(['N/record', 'N/search'],
 
  // gwr 20231120-115645     km 
+       // gwr 20231210-222323
+       // gwr 20231210-223152
        
 /*     
  * @param{record} record

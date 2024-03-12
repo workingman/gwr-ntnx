@@ -3,7 +3,7 @@ netsuite.entryForm custform_employee {
   standard = "STANDARDEMPLOYEEFORM"
   name = "EMPLOYEE FORM"
   recordType = "EMPLOYEE"
-  inactive = false
+  
   preferred = true
   storedWithRecord = false
   mainFields = {
@@ -1524,4 +1524,5 @@ netsuite.entryForm custform_employee {
     },
   ]
   _alias = "EMPLOYEE FORM"
+  isInactive = false
 }

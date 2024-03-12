@@ -10,7 +10,7 @@ Complexity: Low
   initoncreate = true
   initonvieworupdate = false
   inittriggertype = "BEFORESUBMIT"
-  isinactive = false
+  
   islogenabled = false
   keephistory = "ONLYWHENTESTING"
   name = "Journal Entry Basic Approval"
@@ -21,4 +21,65 @@ Complexity: Low
     type = "VISUAL_BUILDER"
   }
   _alias = "Journal Entry Basic Approval"
+  _generated_dependencies = [
+    {
+      reference = netsuite.customsegment.instance.cseg1.scriptid
+    },
+  ]
+  workflowstates = {
+    workflowstate = {
+      workflowstate467 = {
+        scriptid = "workflowstate467"
+        donotexitworkflow = false
+        name = "State 1"
+        positionx = 50
+        positiony = 110
+        index = 0
+      }
+      workflowstate468 = {
+        scriptid = "workflowstate468"
+        donotexitworkflow = false
+        name = "State 2"
+        positionx = 50
+        positiony = 184
+        workflowactions = {
+          BEFOREUSEREDIT = {
+            triggertype = "BEFOREUSEREDIT"
+            showmessageaction = {
+              workflowaction1361 = {
+                scriptid = "workflowaction1361"
+                contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
+                
+                messagetext = "just a message"
+                initcondition = {
+                  formula = "\"Stam:Name\" = 'blabla'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = {
+                      Stam_Name@f = {
+                        name = "Stam:Name"
+                        value = "[type=transactionbodycustomfield, scriptid=cseg1]:STDRECORDNAME"
+                      }
+                    }
+                  }
+                }
+                index = 0
+                isInactive = false
+              }
+            }
+          }
+        }
+        index = 1
+      }
+      workflowstate469 = {
+        scriptid = "workflowstate469"
+        donotexitworkflow = false
+        name = "State 3"
+        positionx = 50
+        positiony = 258
+        index = 2
+      }
+    }
+  }
+  isInactive = false
 }

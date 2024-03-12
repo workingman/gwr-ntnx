@@ -6,7 +6,7 @@ netsuite.role customrole_test_emp {
   employeerestriction = "OWNONLY"
   employeeselectionunrestricted = false
   employeeviewingallowed = false
-  isinactive = false
+  
   ispartnerrole = false
   issalesrole = false
   issinglesignononly = false
@@ -196,4 +196,5 @@ netsuite.role customrole_test_emp {
     }
   }
   _alias = "Test Emp Centre"
+  isInactive = false
 }

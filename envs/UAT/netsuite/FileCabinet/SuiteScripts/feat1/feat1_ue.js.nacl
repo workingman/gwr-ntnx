@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_feat1_feat1_ue_js@dduv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_feat1_feat1_ue_js@dduv {
     netsuite.folder.instance.SuiteScripts_feat1@d,
   ]
   _alias = "feat1_ue.js"
+  isInactive = false
 }
