@@ -1,6 +1,6 @@
 netsuite.file Templates_Fax_Templates_stam_txt@dsdv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file Templates_Fax_Templates_stam_txt@dsdv {
     netsuite.folder.instance.Templates_Fax_Templates@ds,
   ]
   _alias = "stam.txt"
+  isInactive = false
 }

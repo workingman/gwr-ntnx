@@ -1,7 +1,7 @@
 netsuite.suitelet customscript235 {
   scriptid = "customscript235"
   defaultfunction = "edfv"
-  isinactive = false
+  
   name = "seggev2"
   notifyadmins = false
   notifyowner = true
@@ -42,4 +42,5 @@ netsuite.suitelet customscript235 {
     }
   }
   _alias = "seggev2"
+  isInactive = false
 }

@@ -3,7 +3,7 @@ netsuite.entryForm custform_slt_task_form {
   standard = "STANDARDTASKFORM"
   name = "Custom Task Form"
   recordType = "TASK"
-  inactive = false
+  
   preferred = false
   storedWithRecord = false
   mainFields = {
@@ -546,4 +546,5 @@ netsuite.entryForm custform_slt_task_form {
   }
   editingInList = true
   _alias = "Custom Task Form"
+  isInactive = false
 }

@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_hq_clone_sample01_js@dbbv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_hq_clone_sample01_js@dbbv {
     netsuite.folder.instance.SuiteScripts,
   ]
   _alias = "hq-clone-sample01.js"
+  isInactive = false
 }

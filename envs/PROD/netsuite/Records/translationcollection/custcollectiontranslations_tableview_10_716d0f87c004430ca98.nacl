@@ -8,13 +8,13 @@ netsuite.translationcollection custcollectiontranslations_tableview_10_716d0f87c
         scriptid = "tableview_name_20_5"
         defaulttranslation = "Table 2"
         description = "Name in tableView"
-        index = 0
+        index = 1
       }
       tableview_field_24_5 = {
         scriptid = "tableview_field_24_5"
         defaulttranslation = "Ownerr"
         description = "Field in tableView"
-        index = 1
+        index = 0
       }
     }
   }

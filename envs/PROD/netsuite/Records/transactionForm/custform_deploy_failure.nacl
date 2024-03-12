@@ -3,7 +3,7 @@ netsuite.transactionForm custform_deploy_failure {
   standard = "STANDARDDROPSHIPPURCHASEORDER"
   name = "Custom Drop Ship Purchase Order Created In UI EDITED2"
   recordType = "PURCHASEORDER"
-  inactive = false
+  
   preferred = false
   mainFields = {
     fieldGroup = {
@@ -1773,4 +1773,5 @@ netsuite.transactionForm custform_deploy_failure {
     },
   ]
   _alias = "Custom Drop Ship Purchase Order Created In UI EDITED2"
+  isInactive = false
 }

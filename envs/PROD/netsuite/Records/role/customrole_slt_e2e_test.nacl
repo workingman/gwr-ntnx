@@ -5,13 +5,13 @@ netsuite.role customrole_slt_e2e_test {
   coreadminpermission = true
   employeerestriction = "NONE"
   employeeselectionunrestricted = false
-  isinactive = false
+  
   ispartnerrole = false
   issalesrole = false
   issinglesignononly = false
   issupportrole = false
   iswebserviceonlyrole = false
-  name = "created by oss e2e - 5601155"
+  name = "created by oss e2e - 9371935"
   restrictbydevice = false
   restricttimeandexpenses = false
   subsidiaryoption = "OWN"
@@ -29,7 +29,9 @@ netsuite.role customrole_slt_e2e_test {
         permlevel = "FULL"
       }
       
+      
     }
   }
-  _alias = "created by oss e2e - 5601155"
+  _alias = "created by oss e2e - 9371935"
+  isInactive = false
 }

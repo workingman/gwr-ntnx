@@ -1,6 +1,6 @@
 netsuite.file Templates_E_mail_Templates_512_new_png@dbsduv {
   bundleable = true
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file Templates_E_mail_Templates_512_new_png@dbsduv {
     netsuite.folder.instance.Templates_E_mail_Templates@dbs,
   ]
   _alias = "512_new.png"
+  isInactive = false
 }

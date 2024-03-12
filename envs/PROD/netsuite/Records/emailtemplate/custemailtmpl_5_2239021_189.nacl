@@ -3,7 +3,7 @@ netsuite.emailtemplate custemailtmpl_5_2239021_189 {
   addcompanyaddress = true
   addunsubscribelink = true
   description = "Template With attached file"
-  isinactive = false
+  
   isprivate = false
   mediaitem = netsuite.file.instance.Templates_Marketing_Templates_content_html@dsdv.path
   name = "Custom Transaction Email Template With Attached File"
@@ -11,4 +11,5 @@ netsuite.emailtemplate custemailtmpl_5_2239021_189 {
   subject = "\${companyInformation.companyName}: \${transaction@title} #\${transaction.tranId}"
   usesmedia = true
   _alias = "Custom Transaction Email Template With Attached File"
+  isInactive = false
 }

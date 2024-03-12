@@ -1,6 +1,6 @@
 netsuite.suitelet customscript_sl_btr_handler {
   scriptid = "customscript_sl_btr_handler"
-  isinactive = false
+  
   name = "FVR SL Budget Transfer Request Handler"
   notifyadmins = false
   notifyowner = true
@@ -44,4 +44,5 @@ netsuite.suitelet customscript_sl_btr_handler {
     }
   }
   _alias = "FVR SL Budget Transfer Request Handler"
+  isInactive = false
 }

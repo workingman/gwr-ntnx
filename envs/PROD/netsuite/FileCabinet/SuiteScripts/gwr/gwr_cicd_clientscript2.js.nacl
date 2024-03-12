@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_gwr_gwr_cicd_clientscript2_js@dduuv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_gwr_gwr_cicd_clientscript2_js@dduuv {
     netsuite.folder.instance.SuiteScripts_gwr@d,
   ]
   _alias = "gwr_cicd_clientscript2.js"
+  isInactive = false
 }

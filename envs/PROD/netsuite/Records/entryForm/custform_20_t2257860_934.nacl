@@ -3,7 +3,7 @@ netsuite.entryForm custform_20_t2257860_934 {
   standard = "STANDARDDISCOUNTFORM"
   name = "Custom Discount Form2"
   recordType = "DISCOUNTITEM"
-  inactive = false
+  
   preferred = true
   storedWithRecord = false
   mainFields = {
@@ -430,4 +430,5 @@ netsuite.entryForm custform_20_t2257860_934 {
   }
   editingInList = true
   _alias = "Custom Discount Form2"
+  isInactive = false
 }

@@ -129,4 +129,11 @@ type netsuite.otherChargePurchaseItem {
     field_instance = netsuite.itemcustomfield.instance.custitemhqcuitemfieldid01.scriptid
   }
   _alias = "Other Charge Purchase Item"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

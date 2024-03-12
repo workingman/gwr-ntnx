@@ -75,10 +75,7 @@ settings netsuite.userPreferences {
     label = "Require Exact Match on Item Type-Ahead"
     type = "checkbox"
   }
-  netsuite.selectOption DEPARTMENT {
-    label = "Department"
-    type = "select"
-  }
+  
   netsuite.selectOption CALENDARSYSTEM {
     label = "Calendar System"
     type = "select"
@@ -143,10 +140,7 @@ settings netsuite.userPreferences {
     label = "Respect Quick Date Portlet Settings"
     type = "checkbox"
   }
-  boolean DEPARTMENTUNASSIGNED {
-    label = "Include Unassigned"
-    type = "checkbox"
-  }
+  
   netsuite.selectOption TIMEFORMAT {
     label = "Time Format"
     type = "select"
@@ -435,10 +429,7 @@ settings netsuite.userPreferences {
     label = "Default New Phone Calls Public"
     type = "checkbox"
   }
-  boolean DEPARTMENTSUBS {
-    label = "Include Sub-Departments"
-    type = "checkbox"
-  }
+  
   netsuite.selectOption REPORTBYPERIOD {
     label = "Report by Period"
     type = "select"
@@ -464,4 +455,16 @@ settings netsuite.userPreferences {
     _hidden_value = true
   }
   _alias = "User Preferences"
+  netsuite.selectOption DEPARTMENT {
+    label = "Department"
+    type = "select"
+  }
+  boolean DEPARTMENTUNASSIGNED {
+    label = "Include Unassigned"
+    type = "checkbox"
+  }
+  boolean DEPARTMENTSUBS {
+    label = "Include Sub-Departments"
+    type = "checkbox"
+  }
 }

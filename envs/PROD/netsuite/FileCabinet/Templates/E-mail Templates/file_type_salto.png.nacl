@@ -1,6 +1,6 @@
 netsuite.file Templates_E_mail_Templates_file_type_salto_png@dbsduuv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file Templates_E_mail_Templates_file_type_salto_png@dbsduuv {
     netsuite.folder.instance.Templates_E_mail_Templates@dbs,
   ]
   _alias = "file_type_salto.png"
+  isInactive = false
 }

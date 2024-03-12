@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts___new_file_lalala@dnsss {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts___new_file_lalala@dnsss {
     netsuite.folder.instance.SuiteScripts,
   ]
   _alias = "# new file lalala"
+  isInactive = false
 }

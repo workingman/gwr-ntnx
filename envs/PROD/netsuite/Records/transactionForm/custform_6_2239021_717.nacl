@@ -3,7 +3,7 @@ netsuite.transactionForm custform_6_2239021_717 {
   standard = "STANDARDDROPSHIPPURCHASEORDER"
   name = "Custom Drop Ship Purchase Order"
   recordType = "PURCHASEORDER"
-  inactive = false
+  
   preferred = false
   mainFields = {
     fieldGroup = {
@@ -1844,4 +1844,5 @@ netsuite.transactionForm custform_6_2239021_717 {
     },
   ]
   _alias = "Custom Drop Ship Purchase Order"
+  isInactive = false
 }

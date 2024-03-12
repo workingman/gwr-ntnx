@@ -3,7 +3,7 @@ netsuite.transactionForm custform_24_t2257860_241 {
   standard = "STANDARDSALESORDER"
   name = "Custom Sales Order 3"
   recordType = "SALESORDER"
-  inactive = false
+  
   preferred = false
   mainFields = {
     fieldGroup = {
@@ -2388,4 +2388,5 @@ netsuite.transactionForm custform_24_t2257860_241 {
     },
   ]
   _alias = "Custom Sales Order 3"
+  isInactive = false
 }

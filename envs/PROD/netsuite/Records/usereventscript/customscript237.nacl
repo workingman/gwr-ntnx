@@ -1,6 +1,6 @@
 netsuite.usereventscript customscript237 {
   scriptid = "customscript237"
-  isinactive = false
+  
   name = "seggev3"
   notifyadmins = false
   notifyowner = true
@@ -41,4 +41,5 @@ netsuite.usereventscript customscript237 {
     }
   }
   _alias = "seggev3"
+  isInactive = false
 }

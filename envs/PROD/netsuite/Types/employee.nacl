@@ -67,7 +67,7 @@ type netsuite.employee {
   }
   unknown globalSubscriptionStatus {
   }
-  netsuite.file image {
+  netsuite.fileReference image {
     isReference = true
   }
   unknown payFrequency {
@@ -271,4 +271,11 @@ type netsuite.employee {
     field_instance = netsuite.entitycustomfield.instance.custentityhqentityfield01.scriptid
   }
   _alias = "Employee"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

@@ -4,7 +4,7 @@ netsuite.workflow customworkflow5 {
   initcontexts = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
   initoncreate = false
   initonvieworupdate = false
-  isinactive = false
+  
   islogenabled = false
   keephistory = "ONLYWHENTESTING"
   name = netsuite.translationcollection.instance.custcollection1.strings.string.wf5.scriptid
@@ -47,7 +47,7 @@ netsuite.workflow customworkflow5 {
                 attachmenttype = "SPECIFIC"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 includerecordlink = false
-                isinactive = false
+                
                 recipientfield = "STDUSERUSER"
                 recipienttype = "FIELD"
                 schedulemode = "DELAY"
@@ -59,6 +59,7 @@ netsuite.workflow customworkflow5 {
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
             }
           }
@@ -70,4 +71,5 @@ netsuite.workflow customworkflow5 {
   }
   nameTranslate = true
   _alias = "daniel2"
+  isInactive = false
 }

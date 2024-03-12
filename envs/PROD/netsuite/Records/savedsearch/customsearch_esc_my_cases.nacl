@@ -122,4 +122,5 @@ netsuite.savedsearch customsearch_esc_my_cases {
   FLAG_SHOW_AUDIT_TRAIL = false
   KEY_AUDIENCE = 0
   _alias = "My Cases"
+  bundle = netsuite.bundle.instance.bundle_58416
 }

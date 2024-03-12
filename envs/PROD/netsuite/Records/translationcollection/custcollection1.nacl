@@ -7,17 +7,17 @@ netsuite.translationcollection custcollection1 {
       audit_test = {
         scriptid = "audit_test"
         defaulttranslation = "audit-test"
-        index = 0
+        index = 1
       }
       wf5 = {
         scriptid = "wf5"
         defaulttranslation = "daniel2"
-        index = 1
+        index = 4
       }
       wf5_ws67 = {
         scriptid = "wf5_ws67"
         defaulttranslation = "State 1"
-        index = 2
+        index = 5
       }
       testlist2 = {
         scriptid = "testlist2"
@@ -27,12 +27,12 @@ netsuite.translationcollection custcollection1 {
       abc = {
         scriptid = "abc"
         defaulttranslation = "abc"
-        index = 4
+        index = 0
       }
       customer_tiers = {
         scriptid = "customer_tiers"
         defaulttranslation = "Customer Tiers"
-        index = 5
+        index = 2
       }
     }
   }

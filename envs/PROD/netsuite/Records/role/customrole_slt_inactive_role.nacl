@@ -5,7 +5,7 @@ netsuite.role customrole_slt_inactive_role {
   coreadminpermission = false
   employeerestriction = "NONE"
   employeeselectionunrestricted = false
-  isinactive = true
+  
   ispartnerrole = false
   issalesrole = false
   issinglesignononly = false
@@ -27,4 +27,5 @@ netsuite.role customrole_slt_inactive_role {
     }
   }
   _alias = "inactive"
+  isInactive = true
 }

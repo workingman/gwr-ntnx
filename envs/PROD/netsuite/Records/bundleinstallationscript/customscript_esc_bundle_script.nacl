@@ -2,7 +2,7 @@ netsuite.bundleinstallationscript customscript_esc_bundle_script {
   scriptid = "customscript_esc_bundle_script"
   beforeinstallfunction = "beforeInstallUpdate"
   beforeupdatefunction = "beforeInstallUpdate"
-  isinactive = false
+  
   name = "Enhanced Sales Center Bundle Script"
   notifyadmins = false
   notifyowner = true
@@ -19,4 +19,6 @@ netsuite.bundleinstallationscript customscript_esc_bundle_script {
     }
   }
   _alias = "Enhanced Sales Center Bundle Script"
+  bundle = netsuite.bundle.instance.bundle_58416
+  isInactive = false
 }

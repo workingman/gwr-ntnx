@@ -3,7 +3,7 @@ netsuite.transactionForm custform_slt_progress_invoice {
   standard = "STANDARDPROGRESSINVOICE"
   name = "Custom Progress Invoice"
   recordType = "INVOICE"
-  inactive = false
+  
   preferred = true
   mainFields = {
     fieldGroup = {
@@ -1950,4 +1950,5 @@ netsuite.transactionForm custform_slt_progress_invoice {
     },
   ]
   _alias = "Custom Progress Invoice"
+  isInactive = false
 }

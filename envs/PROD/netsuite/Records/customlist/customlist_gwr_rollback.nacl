@@ -6,7 +6,8 @@ netsuite.customlist customlist_gwr_rollback {
         abbreviation = "r"
         value = "rollback"
         index = 0
-        isinactive = false
+        
+        isInactive = false
       }
     }
   }
@@ -15,6 +16,7 @@ netsuite.customlist customlist_gwr_rollback {
   isordered = true
   name = "GWR Rollback"
   description = "20231121-085513"
-  isinactive = false
+  
   _alias = "GWR Rollback"
+  isInactive = false
 }

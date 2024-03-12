@@ -62,8 +62,7 @@ type netsuite.customrecord_cseg_sales_region {
     }
     boolean includename {
     }
-    boolean isinactive {
-    }
+    
     boolean isordered {
     }
     boolean showcreationdate {
@@ -99,6 +98,10 @@ type netsuite.customrecord_cseg_sales_region {
     hidden_string source {
     }
     hidden_string internalId {
+    }
+    netsuite.bundle bundle {
+    }
+    boolean isInactive {
     }
   }
   serviceid scriptid {
@@ -136,21 +139,24 @@ type netsuite.customrecord_cseg_sales_region {
     instance = {
       val_51935_t2639457_630 = {
         scriptid = "val_51935_t2639457_630"
-        isinactive = false
+        
         name = "Southwest"
         index = 0
+        isInactive = false
       }
       val_51935_t2639457_632 = {
         scriptid = "val_51935_t2639457_632"
-        isinactive = false
+        
         name = "Northwest"
         index = 1
+        isInactive = false
       }
       val_shalom123_test = {
         scriptid = "val_shalom123_test"
-        isinactive = false
+        
         name = "testName"
         index = 2
+        isInactive = false
       }
     }
   }
@@ -164,4 +170,48 @@ type netsuite.customrecord_cseg_sales_region {
   }
   metadataType = "customrecordtype"
   _alias = "Sales Region"
+  _self_important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

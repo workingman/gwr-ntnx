@@ -5,7 +5,7 @@ this is
 description
 '''
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -15,4 +15,5 @@ description
     netsuite.folder.instance.SuiteScripts_inner_folder_spaces@dss,
   ]
   _alias = "json-data3.txt"
+  isInactive = false
 }

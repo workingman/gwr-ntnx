@@ -14,7 +14,7 @@ netsuite.location location_1@s {
     zip = "test"
     addrText = "location 1 and deployment<br>TLV<br>Bristol<br>test test test<br>United States"
     override = false
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
   }
   makeInventoryAvailable = false
   makeInventoryAvailableStore = false

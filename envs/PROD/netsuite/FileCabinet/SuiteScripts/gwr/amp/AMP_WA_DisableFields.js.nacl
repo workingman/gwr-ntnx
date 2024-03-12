@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_gwr_amp_AMP_WA_DisableFields_js@ddduuv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_gwr_amp_AMP_WA_DisableFields_js@ddduuv {
     netsuite.folder.instance.SuiteScripts_gwr_amp@d,
   ]
   _alias = "AMP_WA_DisableFields.js"
+  isInactive = false
 }

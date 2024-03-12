@@ -1,7 +1,7 @@
 netsuite.file SuiteScripts_scipt_2_0_js@duuv {
   description = "aaaaa"
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -16,4 +16,5 @@ netsuite.file SuiteScripts_scipt_2_0_js@duuv {
     },
   ]
   _alias = "scipt_2_0.js"
+  isInactive = false
 }

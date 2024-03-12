@@ -1,7 +1,7 @@
 netsuite.file Templates_E_mail_Templates_content2_html@dbsdv {
   description = "a very long text so we can see that there is overflow to the next line. Otherwise we would see the row cut and a non functional scroller appears instead. seems like the message is still not long enough so I will add here some few more characters to make it soooooo long so that it will split to multiple lines."
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -11,4 +11,5 @@ netsuite.file Templates_E_mail_Templates_content2_html@dbsdv {
     netsuite.folder.instance.Templates_E_mail_Templates@dbs,
   ]
   _alias = "content2.html"
+  isInactive = false
 }

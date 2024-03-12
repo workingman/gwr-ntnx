@@ -3,7 +3,7 @@ netsuite.transactionForm custform_slt_po_with_script {
   standard = "STANDARDPURCHASEORDER"
   name = "Custom Purchase Order With Script"
   recordType = "PURCHASEORDER"
-  inactive = false
+  
   preferred = false
   mainFields = {
     fieldGroup = {
@@ -1802,4 +1802,5 @@ netsuite.transactionForm custform_slt_po_with_script {
     },
   ]
   _alias = "Custom Purchase Order With Script"
+  isInactive = false
 }

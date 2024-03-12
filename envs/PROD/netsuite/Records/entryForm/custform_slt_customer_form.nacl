@@ -3,7 +3,7 @@ netsuite.entryForm custform_slt_customer_form {
   standard = "STANDARDCUSTOMERFORM"
   name = "Custom Customer Form2"
   recordType = "CUSTOMER"
-  inactive = false
+  
   preferred = true
   storedWithRecord = false
   mainFields = {
@@ -2037,4 +2037,5 @@ netsuite.entryForm custform_slt_customer_form {
   }
   editingInList = true
   _alias = "Custom Customer Form2"
+  isInactive = false
 }

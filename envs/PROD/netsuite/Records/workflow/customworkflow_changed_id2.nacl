@@ -15,7 +15,7 @@ Complexity: Low
   initoncreate = true
   initonvieworupdate = false
   inittriggertype = "BEFORESUBMIT"
-  isinactive = false
+  
   islogenabled = false
   keephistory = "ONLYWHENTESTING"
   name = "Sales Order Basic Approval2.1"
@@ -79,7 +79,7 @@ Complexity: Low
                 scriptid = "workflowaction1"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 field = netsuite.workflow.instance.customworkflow_changed_id2.workflowcustomfields.workflowcustomfield.custworkflow22.scriptid
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valuefield = "STDUSERUSER"
@@ -88,12 +88,13 @@ Complexity: Low
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
               workflowaction2 = {
                 scriptid = "workflowaction2"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 field = "STDBODYORDERSTATUS"
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valueselect = "11"
@@ -102,6 +103,7 @@ Complexity: Low
                   type = "VISUAL_BUILDER"
                 }
                 index = 1
+                isInactive = false
               }
             }
           }
@@ -163,7 +165,7 @@ Complexity: Low
                 scriptid = "workflowaction3"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 field = netsuite.workflow.instance.customworkflow_changed_id2.workflowcustomfields.workflowcustomfield.custworkflow11.scriptid
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valueformula = "isEmpty(\"Workflow:Approver\") = 'T'"
@@ -181,12 +183,13 @@ Complexity: Low
                   }
                 }
                 index = 0
+                isInactive = false
               }
               workflowaction4 = {
                 scriptid = "workflowaction4"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 field = "STDBODYMEMO"
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valueformula = "SYSDATE||' Pending Approval ... '||{memo}"
@@ -195,6 +198,7 @@ Complexity: Low
                   type = "VISUAL_BUILDER"
                 }
                 index = 1
+                isInactive = false
               }
             }
             sendemailaction = {
@@ -205,7 +209,7 @@ Complexity: Low
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 includerecordlink = false
                 includetransaction = false
-                isinactive = false
+                
                 recipientfield = netsuite.workflow.instance.customworkflow_changed_id2.workflowcustomfields.workflowcustomfield.custworkflow11.scriptid
                 recipienttype = "FIELD"
                 schedulemode = "DELAY"
@@ -217,6 +221,7 @@ Complexity: Low
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
             }
           }
@@ -226,7 +231,7 @@ Complexity: Low
               workflowaction6 = {
                 scriptid = "workflowaction6"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                isinactive = false
+                
                 initcondition = {
                   formula = "\"Workflow:Approver\" NOT IN (\"User\")"
                   type = "VISUAL_BUILDER"
@@ -244,6 +249,7 @@ Complexity: Low
                   }
                 }
                 index = 0
+                isInactive = false
               }
             }
             addbuttonaction = {
@@ -251,7 +257,7 @@ Complexity: Low
                 scriptid = "workflowaction7"
                 checkconditionbeforeexecution = true
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                isinactive = false
+                
                 label = "Approve"
                 saverecordfirst = true
                 initcondition = {
@@ -271,12 +277,13 @@ Complexity: Low
                   }
                 }
                 index = 0
+                isInactive = false
               }
               workflowaction8 = {
                 scriptid = "workflowaction8"
                 checkconditionbeforeexecution = true
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                isinactive = false
+                
                 label = "Reject"
                 saverecordfirst = true
                 initcondition = {
@@ -296,6 +303,7 @@ Complexity: Low
                   }
                 }
                 index = 1
+                isInactive = false
               }
             }
             removebuttonaction = {
@@ -303,31 +311,34 @@ Complexity: Low
                 scriptid = "workflowaction9"
                 buttonid = "CREATEDEPOSIT"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                isinactive = false
+                
                 initcondition = {
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
               workflowaction10 = {
                 scriptid = "workflowaction10"
                 buttonid = "UPDATEREVREC"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                isinactive = false
+                
                 initcondition = {
                   type = "VISUAL_BUILDER"
                 }
                 index = 1
+                isInactive = false
               }
               workflowaction11 = {
                 scriptid = "workflowaction11"
                 buttonid = "APPROVE"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                isinactive = false
+                
                 initcondition = {
                   type = "VISUAL_BUILDER"
                 }
                 index = 2
+                isInactive = false
               }
             }
           }
@@ -397,7 +408,7 @@ Complexity: Low
                 scriptid = "workflowaction12"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 field = "STDBODYORDERSTATUS"
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valueselect = "12"
@@ -406,12 +417,13 @@ Complexity: Low
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
               workflowaction13 = {
                 scriptid = "workflowaction13"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 field = "STDBODYMEMO"
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valueformula = "SYSDATE||' Approved ... '||{memo}"
@@ -420,6 +432,7 @@ Complexity: Low
                   type = "VISUAL_BUILDER"
                 }
                 index = 1
+                isInactive = false
               }
             }
           }
@@ -430,11 +443,12 @@ Complexity: Low
                 scriptid = "workflowaction14"
                 conditionsavedsearch = netsuite.savedsearch.instance.customsearch482.scriptid
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                isinactive = false
+                
                 initcondition = {
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
             }
           }
@@ -455,7 +469,7 @@ Complexity: Low
                 scriptid = "workflowaction15"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 field = "STDBODYMEMO"
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valueformula = "SYSDATE||' REJECTED ... '||{memo}"
@@ -464,6 +478,7 @@ Complexity: Low
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
             }
             sendemailaction = {
@@ -474,7 +489,7 @@ Complexity: Low
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 includerecordlink = false
                 includetransaction = false
-                isinactive = false
+                
                 recipientfield = netsuite.workflow.instance.customworkflow_changed_id2.workflowcustomfields.workflowcustomfield.custworkflow22.scriptid
                 recipienttype = "FIELD"
                 schedulemode = "DELAY"
@@ -486,6 +501,7 @@ Complexity: Low
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
             }
           }
@@ -495,7 +511,7 @@ Complexity: Low
               workflowaction17 = {
                 scriptid = "workflowaction17"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                isinactive = false
+                
                 initcondition = {
                   formula = "\"Workflow:Created By\" NOT IN (\"User\") AND \"User Role\" NOT IN (\"Role1\")"
                   type = "VISUAL_BUILDER"
@@ -522,6 +538,7 @@ Complexity: Low
                   }
                 }
                 index = 0
+                isInactive = false
               }
             }
             addbuttonaction = {
@@ -529,7 +546,7 @@ Complexity: Low
                 scriptid = "workflowaction18"
                 checkconditionbeforeexecution = true
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                isinactive = false
+                
                 label = "Resubmit for Approval2"
                 saverecordfirst = true
                 initcondition = {
@@ -558,6 +575,7 @@ Complexity: Low
                   }
                 }
                 index = 0
+                isInactive = false
               }
             }
             removebuttonaction = {
@@ -565,31 +583,34 @@ Complexity: Low
                 scriptid = "workflowaction19"
                 buttonid = "CREATEDEPOSIT"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                isinactive = false
+                
                 initcondition = {
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
               workflowaction20 = {
                 scriptid = "workflowaction20"
                 buttonid = "UPDATEREVREC"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                isinactive = false
+                
                 initcondition = {
                   type = "VISUAL_BUILDER"
                 }
                 index = 1
+                isInactive = false
               }
               workflowaction21 = {
                 scriptid = "workflowaction21"
                 buttonid = "APPROVE"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
-                isinactive = false
+                
                 initcondition = {
                   type = "VISUAL_BUILDER"
                 }
                 index = 2
+                isInactive = false
               }
             }
           }
@@ -654,4 +675,5 @@ Complexity: Low
     }
   }
   _alias = "Sales Order Basic Approval2.1"
+  isInactive = false
 }

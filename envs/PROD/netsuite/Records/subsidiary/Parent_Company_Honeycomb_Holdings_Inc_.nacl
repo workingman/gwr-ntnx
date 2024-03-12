@@ -9,28 +9,28 @@ netsuite.subsidiary Parent_Company_Honeycomb_Holdings_Inc_@sussv {
   country = "_unitedStates"
   mainAddress = {
     country = "_unitedStates"
-    attention = "Jeff Honeycomb"
+    attention = "Jeff Honeycomb - test"
     addressee = "Honeycomb Mfg"
     addrPhone = "(800) 123-4567"
     addr1 = "100 Rodeo Drive"
     city = "Beverly Hills"
     state = "CA"
     zip = "90210"
-    addrText = "Jeff Honeycomb<br>Honeycomb Mfg<br>100 Rodeo Drive<br>Beverly Hills CA 90210<br>United States"
+    addrText = "Jeff Honeycomb - test<br>Honeycomb Mfg<br>100 Rodeo Drive<br>Beverly Hills CA 90210<br>United States"
     override = false
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
   }
   shippingAddress = {
     country = "_unitedStates"
     addrText = "United States"
     override = false
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
   }
   returnAddress = {
-    country = "_unitedStates"
-    addrText = "United States"
+    country = "_unitedKingdom"
+    addrText = "United Kingdom"
     override = false
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
   }
   legalName = "Honeycomb Mfg"
   isElimination = false
@@ -46,8 +46,8 @@ netsuite.subsidiary Parent_Company_Honeycomb_Holdings_Inc_@sussv {
     ]
   }
   checkLayout = {
-    name = "Standard Check Layout"
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
+    id = "[ACCOUNT_SPECIFIC_VALUE] (object) (Standard Check Layout)"
   }
   classTranslationList = {
     classTranslation = {

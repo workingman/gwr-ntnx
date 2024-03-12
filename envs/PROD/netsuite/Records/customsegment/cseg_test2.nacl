@@ -6,7 +6,7 @@ netsuite.customsegment cseg_test2 {
   fieldtype = "SELECT"
   hasglimpact = false
   ismandatory = false
-  label = "test2sss"
+  label = "test2sss1"
   recordtype = netsuite.customrecord_cseg_test2.attr.scriptid
   valuesdisplayorder = "SUBLIST"
   segmentapplication = {
@@ -22,5 +22,5 @@ netsuite.customsegment cseg_test2 {
       }
     }
   }
-  _alias = "test2sss"
+  _alias = "test2sss1"
 }

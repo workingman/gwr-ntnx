@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_somePath2_js@dv {
   bundleable = false
-  isinactive = true
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_somePath2_js@dv {
     netsuite.folder.instance.SuiteScripts,
   ]
   _alias = "somePath2.js"
+  isInactive = true
 }

@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_fvr_sl_btr_handler_js@duuuv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -18,4 +18,5 @@ netsuite.file SuiteScripts_fvr_sl_btr_handler_js@duuuv {
     },
   ]
   _alias = "fvr_sl_btr_handler.js"
+  isInactive = false
 }

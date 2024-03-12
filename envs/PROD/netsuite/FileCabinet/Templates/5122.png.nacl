@@ -1,7 +1,7 @@
 netsuite.file Templates_5122_png@dv {
   description = "bbbbbbb1"
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -11,4 +11,5 @@ netsuite.file Templates_5122_png@dv {
     netsuite.folder.instance.Templates,
   ]
   _alias = "5122.png"
+  isInactive = false
 }

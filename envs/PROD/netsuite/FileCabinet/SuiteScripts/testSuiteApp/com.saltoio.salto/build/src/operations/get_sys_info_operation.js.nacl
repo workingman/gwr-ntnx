@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_testSuiteApp_com_saltoio_salto_build_src_operations_get_sys_info_operation_js@ddvvdddduuuv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -15,4 +15,5 @@ netsuite.file SuiteScripts_testSuiteApp_com_saltoio_salto_build_src_operations_g
     },
   ]
   _alias = "get_sys_info_operation.js"
+  isInactive = false
 }

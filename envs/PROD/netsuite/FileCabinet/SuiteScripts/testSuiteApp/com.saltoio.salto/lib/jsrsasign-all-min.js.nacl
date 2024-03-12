@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_testSuiteApp_com_saltoio_salto_lib_jsrsasign_all_min_js@ddvvddbbv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_testSuiteApp_com_saltoio_salto_lib_jsrsasign_all_min_
     netsuite.folder.instance.SuiteScripts_testSuiteApp_com_saltoio_salto_lib@ddvvd,
   ]
   _alias = "jsrsasign-all-min.js"
+  isInactive = false
 }

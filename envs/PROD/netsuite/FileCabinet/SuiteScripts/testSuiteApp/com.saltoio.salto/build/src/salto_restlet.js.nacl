@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_testSuiteApp_com_saltoio_salto_build_src_salto_restlet_js@ddvvddduv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -33,4 +33,5 @@ netsuite.file SuiteScripts_testSuiteApp_com_saltoio_salto_build_src_salto_restle
     },
   ]
   _alias = "salto_restlet.js"
+  isInactive = false
 }

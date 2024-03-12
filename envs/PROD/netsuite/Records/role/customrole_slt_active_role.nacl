@@ -6,7 +6,7 @@ netsuite.role customrole_slt_active_role {
   custrecord_slt_role_note = "sasda"
   employeerestriction = "NONE"
   employeeselectionunrestricted = false
-  isinactive = false
+  
   ispartnerrole = false
   issalesrole = false
   issinglesignononly = false
@@ -36,4 +36,5 @@ netsuite.role customrole_slt_active_role {
     }
   }
   _alias = "active2"
+  isInactive = false
 }

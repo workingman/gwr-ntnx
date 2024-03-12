@@ -54,7 +54,7 @@ netsuite.userPreferences {
     value = "0"
     text = "-100"
   }
-  DEPARTMENTUNASSIGNED = false
+  
   TIMEFORMAT = {
     value = "h:mm a"
     text = "hh:mm AM/PM"
@@ -185,7 +185,7 @@ netsuite.userPreferences {
   }
   ALPHABETIZE_ITEMS = false
   CALL_DEFAULTPUBLIC = true
-  DEPARTMENTSUBS = false
+  
   REPORTBYPERIOD = {
     value = "FINANCIALS"
     text = "Financials Only"
@@ -197,4 +197,6 @@ netsuite.userPreferences {
     text = "Primary Accounting Book"
   }
   _alias = "User Preferences"
+  DEPARTMENTUNASSIGNED = false
+  DEPARTMENTSUBS = false
 }

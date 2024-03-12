@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_testSuiteApp_com_saltoio_salto_build_src_operations_operation_js@ddvvddddv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_testSuiteApp_com_saltoio_salto_build_src_operations_o
     netsuite.folder.instance.SuiteScripts_testSuiteApp_com_saltoio_salto_build_src_operations@ddvvddd,
   ]
   _alias = "operation.js"
+  isInactive = false
 }

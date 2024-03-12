@@ -9,7 +9,7 @@ netsuite.subsidiary Parent_Company@s {
     state = "CA"
     addrText = "CA <br>United States"
     override = true
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
   }
   legalName = "Demo: Blank US OneWorld Account"
   isElimination = false
@@ -25,8 +25,8 @@ netsuite.subsidiary Parent_Company@s {
     ]
   }
   checkLayout = {
-    name = "Standard Check Layout"
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
+    id = "[ACCOUNT_SPECIFIC_VALUE] (object) (Standard Check Layout)"
   }
   classTranslationList = {
     classTranslation = {

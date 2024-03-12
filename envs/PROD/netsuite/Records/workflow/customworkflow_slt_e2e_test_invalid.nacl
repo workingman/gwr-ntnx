@@ -6,7 +6,7 @@ netsuite.workflow customworkflow_slt_e2e_test_invalid {
   initoncreate = true
   initonvieworupdate = false
   inittriggertype = "BEFORESUBMIT"
-  isinactive = false
+  
   islogenabled = false
   keephistory = "ONLYWHENTESTING"
   name = "created by oss e2e - 0810189 - invalid"
@@ -32,7 +32,7 @@ netsuite.workflow customworkflow_slt_e2e_test_invalid {
                 scriptid = "workflowaction_action1"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKFLOW"
                 field = "STDBODYAPPROVED"
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valuetype = "STATIC"
@@ -40,6 +40,7 @@ netsuite.workflow customworkflow_slt_e2e_test_invalid {
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
             }
           }
@@ -57,4 +58,5 @@ netsuite.workflow customworkflow_slt_e2e_test_invalid {
     }
   }
   _alias = "created by oss e2e - 0810189 - invalid"
+  isInactive = false
 }

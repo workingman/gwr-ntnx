@@ -1,6 +1,6 @@
 netsuite.suitelet customscript125 {
   scriptid = "customscript125"
-  isinactive = false
+  
   name = "daniel6"
   notifyadmins = false
   notifyowner = true
@@ -26,4 +26,5 @@ netsuite.suitelet customscript125 {
     }
   }
   _alias = "daniel6"
+  isInactive = false
 }

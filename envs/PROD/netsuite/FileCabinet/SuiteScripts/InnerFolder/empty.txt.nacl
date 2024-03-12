@@ -5,7 +5,7 @@ this is
 description
 '''
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -15,4 +15,5 @@ description
     netsuite.folder.instance.SuiteScripts_InnerFolder@d,
   ]
   _alias = "empty.txt"
+  isInactive = false
 }

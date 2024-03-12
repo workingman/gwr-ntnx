@@ -1,7 +1,7 @@
 netsuite.customlist customlist10 {
   scriptid = "customlist10"
   description = "eeeds"
-  isinactive = false
+  
   ismatrixoption = false
   isordered = false
   name = "Cable Lenght Option"
@@ -10,25 +10,29 @@ netsuite.customlist customlist10 {
       value_2_t1441298_886 = {
         scriptid = "value_2_t1441298_886"
         abbreviation = "1"
-        isinactive = false
+        
         value = "10 ft"
         index = 0
+        isInactive = false
       }
       value_3_t1441298_886 = {
         scriptid = "value_3_t1441298_886"
         abbreviation = "1"
-        isinactive = false
+        
         value = "15 ft"
         index = 1
+        isInactive = false
       }
       value_1_t1441298_886 = {
         scriptid = "value_1_t1441298_886"
         abbreviation = "5"
-        isinactive = false
+        
         value = "5 ft"
         index = 2
+        isInactive = false
       }
     }
   }
   _alias = "Cable Lenght Option"
+  isInactive = false
 }

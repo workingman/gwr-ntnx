@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_testSuiteApp_com_saltoio_salto_config_amdconfig_json@ddvvddv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_testSuiteApp_com_saltoio_salto_config_amdconfig_json@
     netsuite.folder.instance.SuiteScripts_testSuiteApp_com_saltoio_salto_config@ddvvd,
   ]
   _alias = "amdconfig.json"
+  isInactive = false
 }

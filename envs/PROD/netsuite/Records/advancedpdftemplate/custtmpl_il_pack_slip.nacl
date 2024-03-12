@@ -2,11 +2,12 @@ netsuite.advancedpdftemplate custtmpl_il_pack_slip {
   scriptid = "custtmpl_il_pack_slip"
   standard = "STDTMPLEMPTY"
   displaysourcecode = true
-  isinactive = false
+  
   preferred = false
   printtype = "PACKINGSLIP"
   title = "IL Packing Slip PDF/HTML Template"
   trantype = "CUSTINVC"
   content = file("netsuite/advancedpdftemplate/custtmpl_il_pack_slip.xml")
   _alias = "IL Packing Slip PDF/HTML Template"
+  isInactive = false
 }

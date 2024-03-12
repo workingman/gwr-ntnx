@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_testSuiteApp_com_saltoio_salto_build_src_validation_js@ddvvdddv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_testSuiteApp_com_saltoio_salto_build_src_validation_j
     netsuite.folder.instance.SuiteScripts_testSuiteApp_com_saltoio_salto_build_src@ddvvdd,
   ]
   _alias = "validation.js"
+  isInactive = false
 }

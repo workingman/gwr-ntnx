@@ -1,6 +1,6 @@
 netsuite.restlet customscript131 {
   scriptid = "customscript131"
-  isinactive = false
+  
   name = "shalom"
   notifyadmins = false
   notifyowner = true
@@ -21,4 +21,5 @@ netsuite.restlet customscript131 {
     }
   }
   _alias = "shalom"
+  isInactive = false
 }

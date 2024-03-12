@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_testSuiteApp_com_saltoio_salto_config_version_txt@ddvvddv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_testSuiteApp_com_saltoio_salto_config_version_txt@ddv
     netsuite.folder.instance.SuiteScripts_testSuiteApp_com_saltoio_salto_config@ddvvd,
   ]
   _alias = "version.txt"
+  isInactive = false
 }

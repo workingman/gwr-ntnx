@@ -14,10 +14,10 @@ Complexity: Low
   initoncreate = true
   initonvieworupdate = false
   inittriggertype = "BEFORESUBMIT"
-  isinactive = false
+  
   islogenabled = false
   keephistory = "ONLYWHENTESTING"
-  name = "Sales Order Basic Approval2.1"
+  name = "Sales Order Basic Approval2.5"
   recordtypes = "SALESORDER"
   releasestatus = "NOTINITIATING"
   runasadmin = true
@@ -125,7 +125,7 @@ Complexity: Low
               workflowaction1 = {
                 scriptid = "workflowaction1"
                 field = netsuite.workflow.instance.customworkflow_changed_id.workflowcustomfields.workflowcustomfield.custworkflow2.scriptid
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valuefield = "STDUSERUSER"
@@ -134,11 +134,12 @@ Complexity: Low
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
               workflowaction2 = {
                 scriptid = "workflowaction2"
                 field = "STDBODYORDERSTATUS"
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valueselect = "11"
@@ -147,6 +148,7 @@ Complexity: Low
                   type = "VISUAL_BUILDER"
                 }
                 index = 1
+                isInactive = false
               }
             }
           }
@@ -205,7 +207,7 @@ Complexity: Low
               workflowaction3 = {
                 scriptid = "workflowaction3"
                 field = netsuite.workflow.instance.customworkflow_changed_id.workflowcustomfields.workflowcustomfield.custworkflow1.scriptid
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valueformula = "isEmpty(\"Workflow:Approver\") = 'T'"
@@ -223,11 +225,12 @@ Complexity: Low
                   }
                 }
                 index = 0
+                isInactive = false
               }
               workflowaction4 = {
                 scriptid = "workflowaction4"
                 field = "STDBODYMEMO"
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valueformula = "SYSDATE||' Pending Approval ... '||{memo}"
@@ -236,6 +239,7 @@ Complexity: Low
                   type = "VISUAL_BUILDER"
                 }
                 index = 1
+                isInactive = false
               }
             }
             sendemailaction = {
@@ -245,7 +249,7 @@ Complexity: Low
                 body = "Sales Order {TRANID} is waiting for your approval."
                 includerecordlink = false
                 includetransaction = false
-                isinactive = false
+                
                 recipientfield = netsuite.workflow.instance.customworkflow_changed_id.workflowcustomfields.workflowcustomfield.custworkflow1.scriptid
                 recipienttype = "FIELD"
                 schedulemode = "DELAY"
@@ -257,6 +261,7 @@ Complexity: Low
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
             }
           }
@@ -265,7 +270,7 @@ Complexity: Low
             lockrecordaction = {
               workflowaction6 = {
                 scriptid = "workflowaction6"
-                isinactive = false
+                
                 initcondition = {
                   formula = "\"Workflow:Approver\" NOT IN (\"User\")"
                   type = "VISUAL_BUILDER"
@@ -283,13 +288,14 @@ Complexity: Low
                   }
                 }
                 index = 0
+                isInactive = false
               }
             }
             addbuttonaction = {
               workflowaction7 = {
                 scriptid = "workflowaction7"
                 checkconditionbeforeexecution = true
-                isinactive = false
+                
                 label = "Approve"
                 saverecordfirst = true
                 initcondition = {
@@ -309,11 +315,12 @@ Complexity: Low
                   }
                 }
                 index = 0
+                isInactive = false
               }
               workflowaction8 = {
                 scriptid = "workflowaction8"
                 checkconditionbeforeexecution = true
-                isinactive = false
+                
                 label = "Reject"
                 saverecordfirst = true
                 initcondition = {
@@ -333,35 +340,39 @@ Complexity: Low
                   }
                 }
                 index = 1
+                isInactive = false
               }
             }
             removebuttonaction = {
               workflowaction9 = {
                 scriptid = "workflowaction9"
                 buttonid = "CREATEDEPOSIT"
-                isinactive = false
+                
                 initcondition = {
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
               workflowaction10 = {
                 scriptid = "workflowaction10"
                 buttonid = "UPDATEREVREC"
-                isinactive = false
+                
                 initcondition = {
                   type = "VISUAL_BUILDER"
                 }
                 index = 1
+                isInactive = false
               }
               workflowaction11 = {
                 scriptid = "workflowaction11"
                 buttonid = "APPROVE"
-                isinactive = false
+                
                 initcondition = {
                   type = "VISUAL_BUILDER"
                 }
                 index = 2
+                isInactive = false
               }
             }
           }
@@ -427,7 +438,7 @@ Complexity: Low
               workflowaction12 = {
                 scriptid = "workflowaction12"
                 field = "STDBODYORDERSTATUS"
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valueselect = "12"
@@ -436,11 +447,12 @@ Complexity: Low
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
               workflowaction13 = {
                 scriptid = "workflowaction13"
                 field = "STDBODYMEMO"
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valueformula = "SYSDATE||' Approved ... '||{memo}"
@@ -449,6 +461,7 @@ Complexity: Low
                   type = "VISUAL_BUILDER"
                 }
                 index = 1
+                isInactive = false
               }
             }
           }
@@ -458,7 +471,7 @@ Complexity: Low
               workflowaction14 = {
                 scriptid = "workflowaction14"
                 conditionsavedsearch = netsuite.savedsearch.instance.customsearch482.scriptid
-                isinactive = false
+                
                 initcondition = {
                   formula = "\"User Role\" NOT IN (\"Role1\") AND \"Stam2\" IN (\"Stam21\",\"Stam22\")"
                   type = "VISUAL_BUILDER"
@@ -491,6 +504,7 @@ Complexity: Low
                   }
                 }
                 index = 0
+                isInactive = false
               }
             }
           }
@@ -510,7 +524,7 @@ Complexity: Low
               workflowaction15 = {
                 scriptid = "workflowaction15"
                 field = "STDBODYMEMO"
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valueformula = "SYSDATE||' REJECTED ... '||{memo}"
@@ -519,6 +533,7 @@ Complexity: Low
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
             }
             sendemailaction = {
@@ -528,7 +543,7 @@ Complexity: Low
                 body = "Your Sales Order {TRANID} has been rejected."
                 includerecordlink = false
                 includetransaction = false
-                isinactive = false
+                
                 recipientfield = netsuite.workflow.instance.customworkflow_changed_id.workflowcustomfields.workflowcustomfield.custworkflow2.scriptid
                 recipienttype = "FIELD"
                 schedulemode = "DELAY"
@@ -540,6 +555,7 @@ Complexity: Low
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
             }
           }
@@ -548,7 +564,7 @@ Complexity: Low
             lockrecordaction = {
               workflowaction17 = {
                 scriptid = "workflowaction17"
-                isinactive = false
+                
                 initcondition = {
                   formula = "\"Workflow:Created By\" NOT IN (\"User\") AND \"User Role\" NOT IN (\"Role1\")"
                   type = "VISUAL_BUILDER"
@@ -575,13 +591,14 @@ Complexity: Low
                   }
                 }
                 index = 0
+                isInactive = false
               }
             }
             addbuttonaction = {
               workflowaction18 = {
                 scriptid = "workflowaction18"
                 checkconditionbeforeexecution = true
-                isinactive = false
+                
                 label = "Resubmit for Approval2"
                 saverecordfirst = true
                 initcondition = {
@@ -610,35 +627,39 @@ Complexity: Low
                   }
                 }
                 index = 0
+                isInactive = false
               }
             }
             removebuttonaction = {
               workflowaction19 = {
                 scriptid = "workflowaction19"
                 buttonid = "CREATEDEPOSIT"
-                isinactive = false
+                
                 initcondition = {
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
               workflowaction20 = {
                 scriptid = "workflowaction20"
                 buttonid = "UPDATEREVREC"
-                isinactive = false
+                
                 initcondition = {
                   type = "VISUAL_BUILDER"
                 }
                 index = 1
+                isInactive = false
               }
               workflowaction21 = {
                 scriptid = "workflowaction21"
                 buttonid = "APPROVE"
-                isinactive = false
+                
                 initcondition = {
                   type = "VISUAL_BUILDER"
                 }
                 index = 2
+                isInactive = false
               }
             }
           }
@@ -705,5 +726,6 @@ Complexity: Low
       reference = netsuite.customsegment.instance.cseg1.scriptid
     },
   ]
-  _alias = "Sales Order Basic Approval2.1"
+  _alias = "Sales Order Basic Approval2.5"
+  isInactive = false
 }

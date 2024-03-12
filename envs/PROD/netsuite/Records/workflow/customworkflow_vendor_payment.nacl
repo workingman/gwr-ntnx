@@ -3,7 +3,7 @@ netsuite.workflow customworkflow_vendor_payment {
   initcontexts = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
   initoncreate = true
   initonvieworupdate = true
-  isinactive = false
+  
   islogenabled = false
   keephistory = "ALWAYS"
   name = "Vendor Payment2"
@@ -29,7 +29,7 @@ netsuite.workflow customworkflow_vendor_payment {
                 scriptid = "workflowaction281"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 errortext = "You cannot create a payment for vendor in status \"Block Payment\" or \"Pending Approval\""
-                isinactive = false
+                
                 initcondition = {
                   formula = "\"Vendor:Vendor Status\" IN (\"Vendor Status1\",\"Vendor Status2\")"
                   type = "VISUAL_BUILDER"
@@ -53,6 +53,7 @@ netsuite.workflow customworkflow_vendor_payment {
                   }
                 }
                 index = 0
+                isInactive = false
               }
             }
           }
@@ -65,7 +66,7 @@ netsuite.workflow customworkflow_vendor_payment {
                 clienttriggerfieldsissublistfield = false
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 errortext = "You cannot create a payment for vendor in status \"Block Payment\" or \"Pending Approval\""
-                isinactive = false
+                
                 initcondition = {
                   formula = "\"Vendor:Vendor Status\" IN (\"Vendor Status1\",\"Vendor Status2\")"
                   type = "VISUAL_BUILDER"
@@ -89,6 +90,7 @@ netsuite.workflow customworkflow_vendor_payment {
                   }
                 }
                 index = 0
+                isInactive = false
               }
             }
           }
@@ -99,7 +101,7 @@ netsuite.workflow customworkflow_vendor_payment {
                 scriptid = "workflowaction254"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 errortext = "You cannot create a payment for vendor in status \"Block Payment\" or \"Pending Approval\""
-                isinactive = false
+                
                 initcondition = {
                   formula = "\"Vendor:Vendor Status\" IN (\"Vendor Status1\",\"Vendor Status2\")"
                   type = "VISUAL_BUILDER"
@@ -123,17 +125,19 @@ netsuite.workflow customworkflow_vendor_payment {
                   }
                 }
                 index = 0
+                isInactive = false
               }
               workflowaction296 = {
                 scriptid = "workflowaction296"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 errortext = "You cannot create a payment for vendor with WHT rate of 30%"
-                isinactive = false
+                
                 initcondition = {
                   formula = "{custbody_il_wht_totalamount}/({custbody_il_wht_totalamount}+{total}) > 0.25"
                   type = "FORMULA"
                 }
                 index = 1
+                isInactive = false
               }
             }
           }
@@ -148,4 +152,5 @@ netsuite.workflow customworkflow_vendor_payment {
     },
   ]
   _alias = "Vendor Payment2"
+  isInactive = false
 }

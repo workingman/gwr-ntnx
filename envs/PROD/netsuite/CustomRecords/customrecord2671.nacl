@@ -62,8 +62,7 @@ type netsuite.customrecord2671 {
     }
     boolean includename {
     }
-    boolean isinactive {
-    }
+    
     boolean isordered {
     }
     boolean showcreationdate {
@@ -100,6 +99,10 @@ type netsuite.customrecord2671 {
     }
     hidden_string internalId {
     }
+    netsuite.bundle bundle {
+    }
+    boolean isInactive {
+    }
   }
   serviceid scriptid {
     _required = true
@@ -131,7 +134,7 @@ type netsuite.customrecord2671 {
   iconbuiltin = true
   includeinsearchmenu = true
   includename = true
-  isinactive = false
+  
   isordered = false
   recordname = "CMMS Equipment Type (2)"
   showcreationdate = false
@@ -189,4 +192,49 @@ type netsuite.customrecord2671 {
   }
   metadataType = "customrecordtype"
   _alias = "CMMS Equipment Type (2)"
+  _self_important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  isInactive = false
 }

@@ -3,7 +3,7 @@ netsuite.transactionForm custform_64_t2257860_310 {
   standard = "STANDARDINVENTORYTRANSFER"
   name = "Custom Inventory Transfer"
   recordType = "INVENTORYTRANSFER"
-  inactive = false
+  
   preferred = true
   mainFields = {
     fieldGroup = {
@@ -701,4 +701,5 @@ netsuite.transactionForm custform_64_t2257860_310 {
     },
   ]
   _alias = "Custom Inventory Transfer"
+  isInactive = false
 }

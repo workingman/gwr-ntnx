@@ -1,0 +1,17 @@
+netsuite.department test {
+  name = "test"
+  includeChildren = false
+  isInactive = false
+  classTranslationList = {
+    classTranslation = {
+      French__France_@sjk = {
+        language = "French (France)"
+      }
+    }
+  }
+  subsidiaryList = [
+    netsuite.subsidiary.instance.Parent_Company@s,
+  ]
+  identifier = "test"
+  _alias = "test"
+}

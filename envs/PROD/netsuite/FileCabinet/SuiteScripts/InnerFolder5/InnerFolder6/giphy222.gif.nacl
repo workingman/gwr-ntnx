@@ -1,7 +1,7 @@
 netsuite.file SuiteScripts_InnerFolder5_InnerFolder6_giphy222_gif@dddv {
   description = "test"
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -11,4 +11,5 @@ netsuite.file SuiteScripts_InnerFolder5_InnerFolder6_giphy222_gif@dddv {
     netsuite.folder.instance.SuiteScripts_InnerFolder5_InnerFolder6@d,
   ]
   _alias = "giphy222.gif"
+  isInactive = false
 }

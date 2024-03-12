@@ -1,6 +1,6 @@
 netsuite.centercategory custcentercategory40 {
   scriptid = "custcentercategory40"
-  center = netsuite.center.instance.custcenter1_2.scriptid
+  center = netsuite.center.instance.custcenter1.scriptid
   centertab = netsuite.centertab.instance.custcentertab10.scriptid
   label = "Sales"
   links = {

@@ -1,7 +1,7 @@
 netsuite.file SuiteScripts_hq_share_script02_js@duuv {
   description = "aa"
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -11,4 +11,5 @@ netsuite.file SuiteScripts_hq_share_script02_js@duuv {
     netsuite.folder.instance.SuiteScripts,
   ]
   _alias = "hq_share_script02.js"
+  isInactive = false
 }

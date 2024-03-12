@@ -10,7 +10,7 @@ netsuite.subsidiary Parent_Company_shalomTest@su {
     addressee = "shalomTest"
     addrText = "shalomTest<br>United States"
     override = false
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
   }
   isElimination = false
   currency = netsuite.currency.instance.USA
@@ -24,8 +24,8 @@ netsuite.subsidiary Parent_Company_shalomTest@su {
     ]
   }
   checkLayout = {
-    name = "Standard Check Layout"
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
+    id = "[ACCOUNT_SPECIFIC_VALUE] (object) (Standard Check Layout)"
   }
   classTranslationList = {
     classTranslation = {
