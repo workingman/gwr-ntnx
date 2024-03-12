@@ -1,0 +1,10 @@
+netsuite.restlet customscript_dp_restlet {
+  scriptid = "customscript_dp_restlet"
+  isinactive = false
+  name = "DP Restlet"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteScripts_dp_dp_suitelet_js@dduv.path
+  _alias = "DP Restlet"
+}

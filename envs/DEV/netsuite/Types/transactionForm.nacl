@@ -53,6 +53,23 @@ type netsuite.transactionForm {
   string application_id {
   }
   _alias = "Transaction Form"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "inactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }
 type netsuite.transactionForm_actionbar_buttons_button {
   netsuite.transactionform_buttonid id {

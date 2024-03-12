@@ -1,7 +1,7 @@
 netsuite.addressForm custform_2_t1440050_248 {
   scriptid = "custform_2_t1440050_248"
   standard = "STANDARDADDRESSFORM"
-  name = "My Address Form"
+  name = "Custom Address Form"
   mainFields = {
     defaultFieldGroup = {
       fields = {
@@ -132,5 +132,5 @@ netsuite.addressForm custform_2_t1440050_248 {
 <city> <state> <zip>
 <country>
 '''
-  _alias = "My Address Form"
+  _alias = "Custom Address Form"
 }

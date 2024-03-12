@@ -15,4 +15,16 @@ type netsuite.centerlink {
   string application_id {
   }
   _alias = "Center Link"
+  _important_values = [
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

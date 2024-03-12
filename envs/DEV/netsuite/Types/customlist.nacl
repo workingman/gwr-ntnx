@@ -25,6 +25,28 @@ type netsuite.customlist {
     _hidden_value = true
   }
   _alias = "Custom List"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isinactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }
 type netsuite.customlist_customvalues_customvalue {
   serviceid scriptid {

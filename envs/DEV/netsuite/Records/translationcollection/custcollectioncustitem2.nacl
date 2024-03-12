@@ -7,12 +7,12 @@ netsuite.translationcollection custcollectioncustitem2 {
       trans_little_key = {
         scriptid = "trans_little_key"
         defaulttranslation = "the little key"
-        index = 0
+        index = 1
       }
       custitem2 = {
         scriptid = "custitem2"
         defaulttranslation = "the little key"
-        index = 1
+        index = 0
       }
     }
   }

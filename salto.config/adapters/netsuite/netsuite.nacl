@@ -1,5 +1,6 @@
 netsuite {
   fetch = {
+    addBundles = true
     include = {
       types = [
         {
@@ -9,6 +10,8 @@ netsuite {
       fileCabinet = [
         "^/SuiteScripts.*",
         "^/Templates.*",
+      ]
+      customRecords = [
       ]
     }
     fieldsToOmit = [

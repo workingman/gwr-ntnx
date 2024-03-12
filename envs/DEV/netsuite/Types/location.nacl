@@ -78,4 +78,16 @@ type netsuite.location {
   serviceid identifier {
   }
   _alias = "Location"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

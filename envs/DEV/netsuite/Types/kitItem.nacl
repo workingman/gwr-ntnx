@@ -272,4 +272,16 @@ type netsuite.kitItem {
     field_instance = netsuite.itemcustomfield.instance.custitemhqcuitemfieldid01.scriptid
   }
   _alias = "Kit Item"
+  _important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

@@ -19,4 +19,11 @@ type netsuite.subtab {
   boolean titleTranslate {
   }
   _alias = "Subtab"
+  _important_values = [
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }

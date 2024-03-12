@@ -169,4 +169,11 @@ type netsuite.downloadItem {
   serviceid identifier {
   }
   _alias = "Download Item"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

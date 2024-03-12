@@ -435,6 +435,36 @@ netsuite.transactionForm custformsalto_cash_refund_form {
               checkBoxDefault = "USE_FIELD_DEFAULT"
               index = 9
             }
+            custbody_esc_last_modified_date = {
+              id = "[scriptid=custbody_esc_last_modified_date]"
+              label = "Last Modified Date"
+              visible = false
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 10
+            }
+            custbody_esc_created_date = {
+              id = "[scriptid=custbody_esc_created_date]"
+              label = "Created Date"
+              visible = false
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 11
+            }
+            custbody_esc_campaign_category = {
+              id = "[scriptid=custbody_esc_campaign_category]"
+              label = "Campaign Category"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 12
+            }
           }
           index = 0
         }
@@ -677,6 +707,12 @@ netsuite.transactionForm custformsalto_cash_refund_form {
                     label = "Cost Center"
                     visible = true
                     index = 31
+                  }
+                  cseg_nbc = {
+                    id = "[type=transactioncolumncustomfield, scriptid=cseg_nbc]"
+                    label = "Nearest Big City"
+                    visible = false
+                    index = 32
                   }
                 }
               }
@@ -1591,6 +1627,16 @@ netsuite.transactionForm custformsalto_cash_refund_form {
                     sameRowAsPrevious = false
                     index = 11
                   }
+                  cseg_nbc = {
+                    id = "[type=transactionbodycustomfield, scriptid=cseg_nbc]"
+                    label = "Nearest Big City"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 12
+                  }
                 }
                 index = 0
               }
@@ -1835,6 +1881,9 @@ netsuite.transactionForm custformsalto_cash_refund_form {
     },
     {
       reference = netsuite.customsegment.instance.cseg2.scriptid
+    },
+    {
+      reference = netsuite.customsegment.instance.cseg_nbc.scriptid
     },
     {
       reference = netsuite.customsegment.instance.csegcseg_rg_seg_cc.scriptid

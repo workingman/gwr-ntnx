@@ -9,19 +9,19 @@ netsuite.translationcollection custcollection_account_translations {
         scriptid = "t_custrecord_erp012_fld1"
         defaulttranslation = "Marketplace"
         description = "Marketplace Id field translation"
-        index = 1
+        index = 3
       }
       t_val_3420444_6979138_680 = {
         scriptid = "t_val_3420444_6979138_680"
         defaulttranslation = "Amazon"
         description = "val_3420444_6979138_680 list translation"
-        index = 2
+        index = 5
       }
       t_val_3420446_6979138_364 = {
         scriptid = "t_val_3420446_6979138_364"
         defaulttranslation = "Stord"
         description = "val_3420445_6979138_744 list translation"
-        index = 3
+        index = 7
       }
       t_custrecord_erp012_list_fld = {
         scriptid = "t_custrecord_erp012_list_fld"
@@ -33,7 +33,7 @@ netsuite.translationcollection custcollection_account_translations {
         scriptid = "t_customrecord_erp012_cr"
         defaulttranslation = "Feat 1 Custom Record (2)"
         description = "Feat 1 Custom Record (2) translation"
-        index = 5
+        index = 2
       }
       t_val_3420445_6979138_744 = {
         scriptid = "t_val_3420445_6979138_744"
@@ -45,7 +45,7 @@ netsuite.translationcollection custcollection_account_translations {
         scriptid = "t_customlist_rg_warehouse_type"
         defaulttranslation = "wewef"
         description = "RG - Warehouse Types list translation"
-        index = 7
+        index = 1
       }
       the_little_key = {
         scriptid = "the_little_key"

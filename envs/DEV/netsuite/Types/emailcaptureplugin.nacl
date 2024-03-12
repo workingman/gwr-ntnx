@@ -40,6 +40,28 @@ type netsuite.emailcaptureplugin {
     _hidden_value = true
   }
   _alias = "Email Capture Plugin"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isinactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }
 type netsuite.emailcaptureplugin_libraries_library {
   string scriptfile {

@@ -392,6 +392,16 @@ netsuite.entryForm custform_employee {
               sameRowAsPrevious = false
               index = 4
             }
+            custentity_esc_last_modified_date = {
+              id = "[scriptid=custentity_esc_last_modified_date]"
+              label = "Last Modified Date (2)"
+              visible = false
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 5
+            }
           }
           index = 0
         }
@@ -1377,6 +1387,42 @@ netsuite.entryForm custform_employee {
         label = "Education"
         visible = true
         index = 12
+      }
+      custtab_2_3368792_208 = {
+        id = netsuite.subtab.instance.custtab_2_3368792_208.scriptid
+        label = "Partners"
+        visible = true
+        index = 13
+      }
+      custtab_4_3368792_208 = {
+        id = netsuite.subtab.instance.custtab_4_3368792_208.scriptid
+        label = "Opportunities"
+        visible = true
+        index = 14
+      }
+      custtab_7_3368792_208 = {
+        id = netsuite.subtab.instance.custtab_7_3368792_208.scriptid
+        label = "Transactions"
+        visible = true
+        index = 15
+      }
+      custtab_3_3368792_208 = {
+        id = netsuite.subtab.instance.custtab_3_3368792_208.scriptid
+        label = "Items Purchased"
+        visible = true
+        index = 16
+      }
+      custtab_5_3368792_208 = {
+        id = netsuite.subtab.instance.custtab_5_3368792_208.scriptid
+        label = "Notes & Attachments"
+        visible = true
+        index = 17
+      }
+      custtab_6_3368792_208 = {
+        id = netsuite.subtab.instance.custtab_6_3368792_208.scriptid
+        label = "Messages"
+        visible = true
+        index = 18
       }
     }
   }

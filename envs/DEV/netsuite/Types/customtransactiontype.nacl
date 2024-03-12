@@ -39,6 +39,18 @@ type netsuite.customtransactiontype {
     _hidden_value = true
   }
   _alias = "Custom Transaction Type"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }
 type netsuite.customtransactiontype_accounting {
   boolean specifyaccountontransaction {

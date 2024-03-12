@@ -41,6 +41,28 @@ type netsuite.sspapplication {
     _hidden_value = true
   }
   _alias = "SSP Application"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isinactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }
 type netsuite.sspapplication_entrypoints_entrypoint {
   netsuite.webapp_entrytype entrytype {

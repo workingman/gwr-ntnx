@@ -44,6 +44,23 @@ type netsuite.customsegment {
     _hidden_value = true
   }
   _alias = "Custom Segment"
+  _important_values = [
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }
 type netsuite.customsegment_permissions_permission {
   string role {

@@ -108,4 +108,11 @@ settings netsuite.companyInformation {
     _hidden_value = true
   }
   _alias = "Company Information"
+  _important_values = [
+    {
+      value = "isinactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

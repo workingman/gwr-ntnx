@@ -6,7 +6,7 @@ netsuite.workflow customworkflow_dp_custom_workflow {
   isinactive = false
   islogenabled = false
   keephistory = "ONLYWHENTESTING"
-  name = "DP - Custom Workflow"
+  name = "DP - Additional Workflow"
   recordtypes = "CHECK"
   releasestatus = "TESTING"
   runasadmin = false
@@ -70,5 +70,5 @@ netsuite.workflow customworkflow_dp_custom_workflow {
       }
     }
   }
-  _alias = "DP - Custom Workflow"
+  _alias = "DP - Additional Workflow"
 }

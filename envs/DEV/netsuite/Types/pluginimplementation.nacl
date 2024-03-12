@@ -39,6 +39,28 @@ type netsuite.pluginimplementation {
   string application_id {
   }
   _alias = "Plugin Implementation"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isinactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }
 type netsuite.pluginimplementation_libraries_library {
   string scriptfile {

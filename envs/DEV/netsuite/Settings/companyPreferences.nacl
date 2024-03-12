@@ -132,4 +132,5 @@ netsuite.companyPreferences {
     text = "Images"
   }
   _alias = "Company Preferences"
+  USE_DART_SASS_COMPILER = false
 }

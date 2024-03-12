@@ -142,4 +142,11 @@ type netsuite.giftCertificateItem {
   serviceid identifier {
   }
   _alias = "Gift Certificate Item"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

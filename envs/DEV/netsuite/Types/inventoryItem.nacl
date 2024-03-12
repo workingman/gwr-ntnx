@@ -534,4 +534,11 @@ type netsuite.inventoryItem {
     field_instance = netsuite.itemcustomfield.instance.custitemhqcuitemfieldid01.scriptid
   }
   _alias = "Inventory Item"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

@@ -11,7 +11,7 @@ netsuite.role customrole_gwr_role_ar2 {
   issinglesignononly = false
   issupportrole = false
   iswebserviceonlyrole = false
-  name = "GWR Custom A/R Clerk"
+  name = "GWR Custom A/R  Clerk"
   restrictbydevice = false
   restricttimeandexpenses = false
   subsidiaryoption = "OWN"
@@ -92,10 +92,7 @@ netsuite.role customrole_gwr_role_ar2 {
         permkey = "REPO_AP"
         permlevel = "VIEW"
       }
-      GRAP_AP = {
-        permkey = "GRAP_AP"
-        permlevel = "VIEW"
-      }
+      
       REPO_INVENTORY = {
         permkey = "REPO_INVENTORY"
         permlevel = "VIEW"
@@ -242,7 +239,7 @@ netsuite.role customrole_gwr_role_ar2 {
       }
       ADMI_ACCOUNTINGLIST = {
         permkey = "ADMI_ACCOUNTINGLIST"
-        permlevel = "EDIT"
+        permlevel = "FULL"
       }
       ADMI_DELETEDRECORD = {
         permkey = "ADMI_DELETEDRECORD"
@@ -258,7 +255,7 @@ netsuite.role customrole_gwr_role_ar2 {
       }
       ADMI_EMPLOYEELIST = {
         permkey = "ADMI_EMPLOYEELIST"
-        permlevel = "EDIT"
+        permlevel = "FULL"
       }
       ADMI_RESTWEBSERVICES = {
         permkey = "ADMI_RESTWEBSERVICES"
@@ -268,7 +265,95 @@ netsuite.role customrole_gwr_role_ar2 {
         permkey = "ADMI_WEBSERVICES"
         permlevel = "FULL"
       }
+      ADMI_ACCOUNTING = {
+        permkey = "ADMI_ACCOUNTING"
+        permlevel = "FULL"
+      }
+      ADMI_ACCTSETUP = {
+        permkey = "ADMI_ACCTSETUP"
+        permlevel = "FULL"
+      }
+      ADMI_NUMBERING = {
+        permkey = "ADMI_NUMBERING"
+        permlevel = "VIEW"
+      }
+      ADMI_CUSTFIELD = {
+        permkey = "ADMI_CUSTFIELD"
+        permlevel = "VIEW"
+      }
+      ADMI_CUSTLIST = {
+        permkey = "ADMI_CUSTLIST"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTRECORD = {
+        permkey = "ADMI_CUSTRECORD"
+        permlevel = "VIEW"
+      }
+      ADMI_MANAGECUSTOMSEGMENTS = {
+        permkey = "ADMI_MANAGECUSTOMSEGMENTS"
+        permlevel = "FULL"
+      }
+      ADMI_FINCHARGEPREF = {
+        permkey = "ADMI_FINCHARGEPREF"
+        permlevel = "FULL"
+      }
+      ADMI_FINANCIALINSTITUTION = {
+        permkey = "ADMI_FINANCIALINSTITUTION"
+        permlevel = "FULL"
+      }
+      ADMI_REPOLAYOUTS = {
+        permkey = "ADMI_REPOLAYOUTS"
+        permlevel = "FULL"
+      }
+      ADMI_REPOGROUPS = {
+        permkey = "ADMI_REPOGROUPS"
+        permlevel = "FULL"
+      }
+      ADMI_IMPORTCSVFILE = {
+        permkey = "ADMI_IMPORTCSVFILE"
+        permlevel = "FULL"
+      }
+      ADMI_STATETAXIMPORT = {
+        permkey = "ADMI_STATETAXIMPORT"
+        permlevel = "FULL"
+      }
+      ADMI_ACCTPERIODS = {
+        permkey = "ADMI_ACCTPERIODS"
+        permlevel = "FULL"
+      }
+      ADMI_PERIODOVERRIDE = {
+        permkey = "ADMI_PERIODOVERRIDE"
+        permlevel = "FULL"
+      }
+      ADMI_PERIODCLOSING = {
+        permkey = "ADMI_PERIODCLOSING"
+        permlevel = "FULL"
+      }
+      ADMI_SAVEDASHBOARD = {
+        permkey = "ADMI_SAVEDASHBOARD"
+        permlevel = "FULL"
+      }
+      ADMI_SETUPCOMPANY = {
+        permkey = "ADMI_SETUPCOMPANY"
+        permlevel = "VIEW"
+      }
+      ADMI_CUSTOMSCRIPT = {
+        permkey = "ADMI_CUSTOMSCRIPT"
+        permlevel = "VIEW"
+      }
+      ADMI_SS_SCHEDULING = {
+        permkey = "ADMI_SS_SCHEDULING"
+        permlevel = "FULL"
+      }
+      ADMI_AUDITLOGIN = {
+        permkey = "ADMI_AUDITLOGIN"
+        permlevel = "FULL"
+      }
+      ADMI_WORKFLOW = {
+        permkey = "ADMI_WORKFLOW"
+        permlevel = "FULL"
+      }
     }
   }
-  _alias = "GWR Custom A/R Clerk"
+  _alias = "GWR Custom A/R  Clerk"
 }

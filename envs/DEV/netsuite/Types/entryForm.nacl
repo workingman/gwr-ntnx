@@ -39,6 +39,23 @@ type netsuite.entryForm {
   string application_id {
   }
   _alias = "Entry Form"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "inactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }
 type netsuite.entryForm_actionbar_buttons_button {
   netsuite.entryform_buttonid id {

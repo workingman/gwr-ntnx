@@ -42,6 +42,28 @@ type netsuite.suitelet {
     _hidden_value = true
   }
   _alias = "Suitelet"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isinactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }
 type netsuite.suitelet_customplugintypes_plugintype {
   string plugintype {

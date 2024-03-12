@@ -350,4 +350,11 @@ type netsuite.nonInventoryResaleItem {
     field_instance = netsuite.itemcustomfield.instance.custitemhqcuitemfieldid01.scriptid
   }
   _alias = "Non-inventory Resale Item"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

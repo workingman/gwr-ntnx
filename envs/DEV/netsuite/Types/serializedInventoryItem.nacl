@@ -488,4 +488,11 @@ type netsuite.serializedInventoryItem {
   serviceid identifier {
   }
   _alias = "Serialized Inventory Item"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

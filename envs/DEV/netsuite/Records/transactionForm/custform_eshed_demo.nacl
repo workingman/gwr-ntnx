@@ -197,6 +197,36 @@ netsuite.transactionForm custform_eshed_demo {
               checkBoxDefault = "USE_FIELD_DEFAULT"
               index = 8
             }
+            custbody_esc_last_modified_date = {
+              id = "[scriptid=custbody_esc_last_modified_date]"
+              label = "Last Modified Date"
+              visible = false
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 9
+            }
+            custbody_esc_created_date = {
+              id = "[scriptid=custbody_esc_created_date]"
+              label = "Created Date"
+              visible = false
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 10
+            }
+            custbody_esc_campaign_category = {
+              id = "[scriptid=custbody_esc_campaign_category]"
+              label = "Campaign Category"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 11
+            }
           }
           index = 0
         }
@@ -487,6 +517,12 @@ netsuite.transactionForm custform_eshed_demo {
                     visible = false
                     index = 27
                   }
+                  cseg_nbc = {
+                    id = "[type=transactioncolumncustomfield, scriptid=cseg_nbc]"
+                    label = "Nearest Big City"
+                    visible = false
+                    index = 28
+                  }
                 }
               }
               index = 0
@@ -627,6 +663,12 @@ netsuite.transactionForm custform_eshed_demo {
                     label = "GWR RMA custom field"
                     visible = false
                     index = 21
+                  }
+                  cseg_nbc = {
+                    id = "[type=transactioncolumncustomfield, scriptid=cseg_nbc]"
+                    label = "Nearest Big City"
+                    visible = false
+                    index = 22
                   }
                 }
               }
@@ -1026,6 +1068,16 @@ netsuite.transactionForm custform_eshed_demo {
                     sameRowAsPrevious = false
                     index = 10
                   }
+                  cseg_nbc = {
+                    id = "[type=transactionbodycustomfield, scriptid=cseg_nbc]"
+                    label = "Nearest Big City"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 11
+                  }
                 }
                 index = 0
               }
@@ -1244,6 +1296,9 @@ netsuite.transactionForm custform_eshed_demo {
     },
     {
       reference = netsuite.customsegment.instance.cseg2.scriptid
+    },
+    {
+      reference = netsuite.customsegment.instance.cseg_nbc.scriptid
     },
     {
       reference = netsuite.customsegment.instance.csegcseg_rg_seg_cc.scriptid

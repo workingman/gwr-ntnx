@@ -150,6 +150,23 @@ type netsuite.transactionbodycustomfield {
     _hidden_value = true
   }
   _alias = "Transaction Body Custom Field"
+  _important_values = [
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }
 type netsuite.transactionbodycustomfield_customfieldfilters_customfieldfilter {
   string fldfilter {

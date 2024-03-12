@@ -21,6 +21,23 @@ type netsuite.translationcollection {
   boolean nameTranslate {
   }
   _alias = "Translation Collection"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }
 type netsuite.translationcollection_strings_string {
   serviceid scriptid {

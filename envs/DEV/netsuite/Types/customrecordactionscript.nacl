@@ -40,6 +40,28 @@ type netsuite.customrecordactionscript {
     _hidden_value = true
   }
   _alias = "Custom Record Action Script"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isinactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }
 type netsuite.customrecordactionscript_customplugintypes_plugintype {
   string plugintype {

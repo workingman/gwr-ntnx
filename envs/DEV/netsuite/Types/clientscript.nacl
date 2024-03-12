@@ -60,6 +60,28 @@ type netsuite.clientscript {
     _hidden_value = true
   }
   _alias = "Client Script"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isinactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }
 type netsuite.clientscript_buttons_button {
   string buttonlabel {

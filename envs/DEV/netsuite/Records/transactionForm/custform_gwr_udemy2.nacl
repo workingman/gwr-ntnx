@@ -459,6 +459,36 @@ netsuite.transactionForm custform_gwr_udemy2 {
               checkBoxDefault = "USE_FIELD_DEFAULT"
               index = 9
             }
+            custbody_esc_last_modified_date = {
+              id = "[scriptid=custbody_esc_last_modified_date]"
+              label = "Last Modified Date"
+              visible = false
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 10
+            }
+            custbody_esc_created_date = {
+              id = "[scriptid=custbody_esc_created_date]"
+              label = "Created Date"
+              visible = false
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 11
+            }
+            custbody_esc_campaign_category = {
+              id = "[scriptid=custbody_esc_campaign_category]"
+              label = "Campaign Category"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 12
+            }
           }
           index = 0
         }
@@ -803,6 +833,12 @@ netsuite.transactionForm custform_gwr_udemy2 {
                     label = "% Complete"
                     visible = false
                     index = 48
+                  }
+                  cseg_nbc = {
+                    id = "[type=transactioncolumncustomfield, scriptid=cseg_nbc]"
+                    label = "Nearest Big City"
+                    visible = false
+                    index = 49
                   }
                 }
               }
@@ -1945,6 +1981,16 @@ netsuite.transactionForm custform_gwr_udemy2 {
                     sameRowAsPrevious = false
                     index = 10
                   }
+                  cseg_nbc = {
+                    id = "[type=transactionbodycustomfield, scriptid=cseg_nbc]"
+                    label = "Nearest Big City"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 11
+                  }
                 }
                 index = 0
               }
@@ -2444,6 +2490,22 @@ netsuite.transactionForm custform_gwr_udemy2 {
         id = netsuite.role.instance.customrole1030.scriptid
         preferred = false
       }
+      customrole_esc_sales_publisher = {
+        id = "[scriptid=customrole_esc_sales_publisher]"
+        preferred = false
+      }
+      customrole_esc_sales_admin = {
+        id = "[scriptid=customrole_esc_sales_admin]"
+        preferred = false
+      }
+      customrole_esc_sales_manager = {
+        id = "[scriptid=customrole_esc_sales_manager]"
+        preferred = false
+      }
+      customrole_esc_sales_rep = {
+        id = "[scriptid=customrole_esc_sales_rep]"
+        preferred = false
+      }
     }
   }
   _generated_dependencies = [
@@ -2452,6 +2514,9 @@ netsuite.transactionForm custform_gwr_udemy2 {
     },
     {
       reference = netsuite.customsegment.instance.cseg2.scriptid
+    },
+    {
+      reference = netsuite.customsegment.instance.cseg_nbc.scriptid
     },
     {
       reference = netsuite.customsegment.instance.csegcseg_rg_seg_cc.scriptid

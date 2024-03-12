@@ -267,4 +267,11 @@ type netsuite.employee {
     field_instance = netsuite.entitycustomfield.instance.custentityslt_demo_moti.scriptid
   }
   _alias = "Employee"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

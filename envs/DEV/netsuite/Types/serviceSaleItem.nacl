@@ -218,4 +218,11 @@ type netsuite.serviceSaleItem {
   serviceid identifier {
   }
   _alias = "Service Sale Item"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

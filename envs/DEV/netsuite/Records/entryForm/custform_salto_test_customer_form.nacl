@@ -403,6 +403,50 @@ netsuite.entryForm custform_salto_test_customer_form {
               quickAdd = false
               index = 0
             }
+            custentity_esc_annual_revenue = {
+              id = "[scriptid=custentity_esc_annual_revenue]"
+              label = "Annual Revenue"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+              index = 1
+            }
+            custentity_esc_no_of_employees = {
+              id = "[scriptid=custentity_esc_no_of_employees]"
+              label = "No. of Employees"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+              index = 2
+            }
+            custentity_esc_industry = {
+              id = "[scriptid=custentity_esc_industry]"
+              label = "Industry"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+              index = 3
+            }
+            custentity_esc_last_modified_date = {
+              id = "[scriptid=custentity_esc_last_modified_date]"
+              label = "Last Modified Date (2)"
+              visible = false
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+              index = 4
+            }
           }
           index = 0
         }
@@ -1543,7 +1587,7 @@ netsuite.entryForm custform_salto_test_customer_form {
             }
           }
         }
-        index = 7
+        index = 8
       }
       ENTITYBILLACCNTS = {
         id = "ENTITYBILLACCNTS"
@@ -1560,7 +1604,7 @@ netsuite.entryForm custform_salto_test_customer_form {
             }
           }
         }
-        index = 8
+        index = 7
       }
       ENTITYS_SYSINFO = {
         id = "ENTITYS_SYSINFO"
@@ -1922,6 +1966,42 @@ netsuite.entryForm custform_salto_test_customer_form {
           }
         }
         index = 12
+      }
+      custtab_2_3368792_208 = {
+        id = netsuite.subtab.instance.custtab_2_3368792_208.scriptid
+        label = "Partners"
+        visible = true
+        index = 13
+      }
+      custtab_4_3368792_208 = {
+        id = netsuite.subtab.instance.custtab_4_3368792_208.scriptid
+        label = "Opportunities"
+        visible = true
+        index = 14
+      }
+      custtab_7_3368792_208 = {
+        id = netsuite.subtab.instance.custtab_7_3368792_208.scriptid
+        label = "Transactions"
+        visible = true
+        index = 15
+      }
+      custtab_3_3368792_208 = {
+        id = netsuite.subtab.instance.custtab_3_3368792_208.scriptid
+        label = "Items Purchased"
+        visible = true
+        index = 16
+      }
+      custtab_5_3368792_208 = {
+        id = netsuite.subtab.instance.custtab_5_3368792_208.scriptid
+        label = "Notes & Attachments"
+        visible = true
+        index = 17
+      }
+      custtab_6_3368792_208 = {
+        id = netsuite.subtab.instance.custtab_6_3368792_208.scriptid
+        label = "Messages"
+        visible = true
+        index = 18
       }
     }
   }
