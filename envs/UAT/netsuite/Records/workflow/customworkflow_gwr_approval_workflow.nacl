@@ -293,7 +293,50 @@ netsuite.workflow customworkflow_gwr_approval_workflow {
                 label = "Approve"
                 saverecordfirst = false
                 initcondition = {
+                  formula = "\"User Role\" IN (\"Role1\",\"Role2\",\"Role3\",\"Role4\",\"Role5\") AND \"Employee\" IN (\"Employee1\")"
                   type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = {
+                      User_Role@s = {
+                        name = "User Role"
+                        value = "STDUSERROLE"
+                      }
+                      Role1 = {
+                        name = "Role1"
+                        selectrecordtype = "-118"
+                        value = netsuite.role.instance.customrole1071.scriptid
+                      }
+                      Role2 = {
+                        name = "Role2"
+                        selectrecordtype = "-118"
+                        value = "ADMINISTRATOR"
+                      }
+                      Role3 = {
+                        name = "Role3"
+                        selectrecordtype = "-118"
+                        value = netsuite.role.instance.customrole1079.scriptid
+                      }
+                      Role4 = {
+                        name = "Role4"
+                        selectrecordtype = "-118"
+                        value = netsuite.role.instance.customrole1084.scriptid
+                      }
+                      Role5 = {
+                        name = "Role5"
+                        selectrecordtype = "-118"
+                        value = netsuite.role.instance.customrole_gwr_role_acct.scriptid
+                      }
+                      Employee = {
+                        name = "Employee"
+                        value = "STDBODYEMPLOYEE"
+                      }
+                      Employee1 = {
+                        name = "Employee1"
+                        selectrecordtype = "-4"
+                        value = "[ACCOUNT_SPECIFIC_VALUE]"
+                      }
+                    }
+                  }
                 }
                 index = 0
                 isInactive = false
@@ -385,7 +428,7 @@ netsuite.workflow customworkflow_gwr_approval_workflow {
                 valuechecked = true
                 valuetype = "STATIC"
                 initcondition = {
-                  formula = "\"Total\" > 400000.0"
+                  formula = "\"Total\" > 200000.0"
                   type = "VISUAL_BUILDER"
                   parameters = {
                     parameter = {

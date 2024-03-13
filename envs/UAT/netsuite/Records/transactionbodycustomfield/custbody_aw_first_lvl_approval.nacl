@@ -16,6 +16,7 @@ netsuite.transactionbodycustomfield custbody_aw_first_lvl_approval {
   bodyjournal = false
   bodyopportunity = false
   bodyothertransaction = false
+  bodyperiodendjournal = false
   bodypickingticket = false
   bodyprintflag = false
   bodyprintpackingslip = false
