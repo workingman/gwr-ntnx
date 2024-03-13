@@ -22,7 +22,9 @@ function(record, search) {
      * @since 2015.2
      */
     function pageInit(scriptContext) {
-        const s = "20240313-120837"
+
+        const s = "20240313-130450"
+
         alert("Bonjour tout la monde")
 
     }
