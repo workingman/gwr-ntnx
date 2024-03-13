@@ -3,7 +3,7 @@
  ** Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
  */
 'use strict';
-// EDITED AGAIN!
+// EDITED AGAIN!_
 module.exports = {
 	SDK_COMMANDS_METADATA_FILE: 'metadata/SDKCommandsMetadata.json',
 	NODE_COMMANDS_METADATA_FILE: 'metadata/NodeCommandsMetadata.json',
