@@ -249,7 +249,8 @@ type netsuite.nonInventorySaleItem {
   }
   unknown itemCarrier {
   }
-  netsuite.recordRefList itemShipMethodList {
+  "List<netsuite.recordRef>" itemShipMethodList {
+    isReference = true
   }
   "List<netsuite.subsidiary>" subsidiaryList {
     isReference = true
@@ -280,14 +281,14 @@ type netsuite.nonInventorySaleItem {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
   }
-  serviceid identifier {
+  string identifier {
   }
   _alias = "Non-inventory Sale Item"
   _important_values = [

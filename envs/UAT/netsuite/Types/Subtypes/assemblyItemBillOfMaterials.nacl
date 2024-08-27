@@ -9,7 +9,8 @@ type netsuite.assemblyItemBillOfMaterials {
   }
   boolean masterDefault {
   }
-  netsuite.recordRefList defaultForLocationList {
+  "List<netsuite.recordRef>" defaultForLocationList {
+    isReference = true
   }
   
   string memo {

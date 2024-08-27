@@ -74,7 +74,7 @@ type netsuite.contact {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
@@ -104,5 +104,8 @@ type netsuite.contact {
   }
   string custom_custentity_created {
     field_instance = netsuite.entitycustomfield.instance.custentity_created.scriptid
+  }
+  string custom_custentity_docusign_role {
+    field_instance = netsuite.entitycustomfield.instance.custentity_docusign_role.scriptid
   }
 }

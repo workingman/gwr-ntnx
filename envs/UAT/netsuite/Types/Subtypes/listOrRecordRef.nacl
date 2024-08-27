@@ -5,7 +5,7 @@ type netsuite.listOrRecordRef {
   }
   string name {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

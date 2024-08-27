@@ -104,10 +104,10 @@ type netsuite.customrecord_dp_prospect {
     boolean isInactive {
     }
   }
-  serviceid scriptid {
+  string scriptid {
     _required = true
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.customRecordTranslationsList translationsList {

@@ -44,6 +44,7 @@ netsuite.accountingPreferences {
   SEND_GIFT_CERTIFICATE_EMAILS = true
   OVERFULFILLMENTS = false
   REMOVECLIENTGOVERNANCELIMIT = false
+  NO_NEGATIVE_RCOMMITTED = false
   ALLOWASSEMBLYPURCHASE = false
   UNRECEIVEDRTNAUTHS = false
   ASSETACCOUNT = {
@@ -461,4 +462,12 @@ netsuite.accountingPreferences {
   }
   ENABLEINVDEMANDSUPPLYTRACKING = true
   _alias = "Accounting Preferences"
+  ARC_BETA_REENABLED = false
+  RATE_PROVIDER_LAST_DATE = "09/24/2023"
+  RATE_PROVIDER_TO_BE_REMOVED = {
+    value = "XGNITE"
+    text = ""
+  }
+  REST_BETA_RECORD_REENABLED = false
+  SCM_BULK_PROC_SUBMISSIONS_TO_DELETE = 25
 }

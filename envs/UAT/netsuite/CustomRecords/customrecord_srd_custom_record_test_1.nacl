@@ -104,10 +104,10 @@ type netsuite.customrecord_srd_custom_record_test_1 {
     boolean isInactive {
     }
   }
-  serviceid scriptid {
+  string scriptid {
     _required = true
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.customRecordTranslationsList translationsList {
@@ -154,6 +154,7 @@ type netsuite.customrecord_srd_custom_record_test_1 {
   enablenumbering = false
   enableoptimisticlocking = true
   enablesystemnotes = true
+  externalrolepermissionlevel = "NONE"
   hierarchical = false
   iconbuiltin = true
   iconindex = "4"
@@ -161,6 +162,7 @@ type netsuite.customrecord_srd_custom_record_test_1 {
   includename = true
   
   isordered = false
+  publicpermissionlevel = "NONE"
   recordname = "srd - custom_record_1"
   showcreationdate = false
   showcreationdateonlist = false

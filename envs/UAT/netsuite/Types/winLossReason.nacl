@@ -9,7 +9,7 @@ type netsuite.winLossReason {
   }
   boolean isInactive {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

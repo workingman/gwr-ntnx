@@ -69,8 +69,8 @@ netsuite.customsegment csegcseg_rg_seg_cc {
             id = "SALE"
             isapplied = true
           }
-          customtransaction_bm_budget_transaction = {
-            id = netsuite.customtransactiontype.instance.customtransaction_bm_budget_transaction.scriptid
+          CUSTOMTRANSACTION_BM_BUDGET_TRANSACTION = {
+            id = "CUSTOMTRANSACTION_BM_BUDGET_TRANSACTION"
             isapplied = true
           }
           EXPENSEREPORT = {

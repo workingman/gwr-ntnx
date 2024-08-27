@@ -9,7 +9,7 @@ type netsuite.employee {
   }
   netsuite.recordRef template {
   }
-  serviceid entityId {
+  string entityId {
   }
   string salutation {
   }
@@ -229,7 +229,7 @@ type netsuite.employee {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
@@ -247,6 +247,9 @@ type netsuite.employee {
   }
   string custom_custentity_fav_color {
     field_instance = netsuite.entitycustomfield.instance.custentity_fav_color.scriptid
+  }
+  boolean custom_custentity_gwr_rockstar {
+    field_instance = netsuite.entitycustomfield.instance.custentity_gwr_rockstar.scriptid
   }
   string custom_custentity_slt_demo {
     field_instance = netsuite.entitycustomfield.instance.custentity_slt_demo.scriptid

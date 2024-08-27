@@ -51,7 +51,8 @@ type netsuite.issue {
   }
   netsuite.recordRef issueStatus {
   }
-  netsuite.recordRefList issueTagsList {
+  "List<netsuite.recordRef>" issueTagsList {
+    isReference = true
   }
   string issueAbstract {
   }
@@ -65,7 +66,8 @@ type netsuite.issue {
   }
   netsuite.emailEmployeesList emailEmployeesList {
   }
-  netsuite.recordRefList emailCellsList {
+  "List<netsuite.recordRef>" emailCellsList {
+    isReference = true
   }
   string externalAbstract {
   }
@@ -81,7 +83,7 @@ type netsuite.issue {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

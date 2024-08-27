@@ -664,6 +664,10 @@ netsuite.role customrole_salto_all_permissions {
         permkey = "LIST_CONTACTROLE"
         permlevel = "FULL"
       }
+      LIST_CONTACTSUBSIDIARYRELATION = {
+        permkey = "LIST_CONTACTSUBSIDIARYRELATION"
+        permlevel = "VIEW"
+      }
       LIST_CONTACT = {
         permkey = "LIST_CONTACT"
         permlevel = "FULL"
@@ -1562,10 +1566,6 @@ netsuite.role customrole_salto_all_permissions {
       }
       customrecord2426 = {
         permkey = netsuite.customrecord2426.attr.scriptid
-        permlevel = "FULL"
-      }
-      customrecord_gwr_udemy_cr = {
-        permkey = netsuite.customrecord_gwr_udemy_cr.attr.scriptid
         permlevel = "FULL"
       }
       customrecord_item_snapshots = {

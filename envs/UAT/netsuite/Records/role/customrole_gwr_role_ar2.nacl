@@ -11,7 +11,7 @@ netsuite.role customrole_gwr_role_ar2 {
   issinglesignononly = false
   issupportrole = false
   iswebserviceonlyrole = false
-  name = "AAAAH!  Please don't give this role to Geoff"
+  name = "GWR Custom A/R  Clerk"
   restrictbydevice = false
   restricttimeandexpenses = false
   subsidiaryoption = "OWN"
@@ -144,6 +144,10 @@ netsuite.role customrole_gwr_role_ar2 {
         permkey = "LIST_CLASS"
         permlevel = "EDIT"
       }
+      LIST_CONTACTSUBSIDIARYRELATION = {
+        permkey = "LIST_CONTACTSUBSIDIARYRELATION"
+        permlevel = "VIEW"
+      }
       LIST_CONTACT = {
         permkey = "LIST_CONTACT"
         permlevel = "FULL"
@@ -264,8 +268,52 @@ netsuite.role customrole_gwr_role_ar2 {
         permkey = "ADMI_WEBSERVICES"
         permlevel = "FULL"
       }
+      ADMI_NUMBERING = {
+        permkey = "ADMI_NUMBERING"
+        permlevel = "VIEW"
+      }
+      ADMI_MANAGECUSTOMSEGMENTS = {
+        permkey = "ADMI_MANAGECUSTOMSEGMENTS"
+        permlevel = "FULL"
+      }
+      ADMI_REPOLAYOUTS = {
+        permkey = "ADMI_REPOLAYOUTS"
+        permlevel = "FULL"
+      }
+      ADMI_REPOGROUPS = {
+        permkey = "ADMI_REPOGROUPS"
+        permlevel = "FULL"
+      }
+      ADMI_STATETAXIMPORT = {
+        permkey = "ADMI_STATETAXIMPORT"
+        permlevel = "FULL"
+      }
+      ADMI_PERIODOVERRIDE = {
+        permkey = "ADMI_PERIODOVERRIDE"
+        permlevel = "FULL"
+      }
+      ADMI_PERIODCLOSING = {
+        permkey = "ADMI_PERIODCLOSING"
+        permlevel = "FULL"
+      }
+      ADMI_SAVEDASHBOARD = {
+        permkey = "ADMI_SAVEDASHBOARD"
+        permlevel = "FULL"
+      }
+      ADMI_SETUPCOMPANY = {
+        permkey = "ADMI_SETUPCOMPANY"
+        permlevel = "VIEW"
+      }
+      ADMI_SS_SCHEDULING = {
+        permkey = "ADMI_SS_SCHEDULING"
+        permlevel = "FULL"
+      }
+      ADMI_WORKFLOW = {
+        permkey = "ADMI_WORKFLOW"
+        permlevel = "FULL"
+      }
     }
   }
-  _alias = "AAAAH!  Please don't give this role to Geoff"
+  _alias = "GWR Custom A/R  Clerk"
   isInactive = false
 }

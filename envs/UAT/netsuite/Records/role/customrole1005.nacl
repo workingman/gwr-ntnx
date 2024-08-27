@@ -32,6 +32,10 @@ netsuite.role customrole1005 {
         permkey = "LIST_OTHER_ADDRESS"
         permlevel = "FULL"
       }
+      LIST_CONTACTSUBSIDIARYRELATION = {
+        permkey = "LIST_CONTACTSUBSIDIARYRELATION"
+        permlevel = "VIEW"
+      }
       LIST_CONTACT = {
         permkey = "LIST_CONTACT"
         permlevel = "VIEW"

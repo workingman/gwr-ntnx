@@ -9,7 +9,7 @@ type netsuite.pricingGroup {
   }
   boolean isInactive {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

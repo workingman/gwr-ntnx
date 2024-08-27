@@ -51,7 +51,8 @@ type netsuite.purchaseRequisitionItem {
   }
   boolean isBillable {
   }
-  netsuite.recordRefList linkedOrderList {
+  "List<netsuite.recordRef>" linkedOrderList {
+    isReference = true
   }
   string linkedOrderStatus {
   }

@@ -197,4 +197,5 @@ netsuite.userPreferences {
     text = "Primary Accounting Book"
   }
   _alias = "User Preferences"
+  DROPDOWN_FAVORITES = true
 }

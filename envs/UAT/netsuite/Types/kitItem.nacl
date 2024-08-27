@@ -111,7 +111,8 @@ type netsuite.kitItem {
   }
   unknown itemCarrier {
   }
-  netsuite.recordRefList itemShipMethodList {
+  "List<netsuite.recordRef>" itemShipMethodList {
+    isReference = true
   }
   string manufacturerTaxId {
   }
@@ -256,14 +257,14 @@ type netsuite.kitItem {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
   }
-  serviceid identifier {
+  string identifier {
   }
   _alias = "Kit Item"
   _important_values = [
@@ -278,4 +279,7 @@ type netsuite.kitItem {
       indexed = true
     },
   ]
+  string custom_custitem_mkd_custom_item_field {
+    field_instance = netsuite.itemcustomfield.instance.custitem_mkd_custom_item_field.scriptid
+  }
 }

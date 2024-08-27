@@ -9,7 +9,7 @@ type netsuite.vendorAddressbook {
   }
   string label {
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.address addressbookAddress {

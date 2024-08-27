@@ -119,10 +119,6 @@ netsuite.role customrole_srd_test_cust_role {
         permkey = "LIST_EXPORT"
         permlevel = "CREATE"
       }
-      LIST_GIFT_CERTIFICATE = {
-        permkey = "LIST_GIFT_CERTIFICATE"
-        permlevel = "EDIT"
-      }
       LIST_LOCATION = {
         permkey = "LIST_LOCATION"
         permlevel = "NONE"
@@ -138,10 +134,6 @@ netsuite.role customrole_srd_test_cust_role {
       LIST_CRMMESSAGE = {
         permkey = "LIST_CRMMESSAGE"
         permlevel = "VIEW"
-      }
-      ADMI_DELETEDRECORD = {
-        permkey = "ADMI_DELETEDRECORD"
-        permlevel = "FULL"
       }
       ADMI_LOGIN_OAUTH = {
         permkey = "ADMI_LOGIN_OAUTH"

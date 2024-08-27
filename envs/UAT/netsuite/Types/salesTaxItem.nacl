@@ -71,13 +71,13 @@ type netsuite.salesTaxItem {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
   }
-  serviceid identifier {
+  string identifier {
   }
 }

@@ -11,7 +11,7 @@ type netsuite.descriptionItem {
   }
   netsuite.recordRef customForm {
   }
-  serviceid itemId {
+  string itemId {
   }
   netsuite.recordRef issueProduct {
   }
@@ -35,7 +35,7 @@ type netsuite.descriptionItem {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

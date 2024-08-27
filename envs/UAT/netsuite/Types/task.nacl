@@ -70,14 +70,14 @@ type netsuite.task {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
   }
-  serviceid identifier {
+  string identifier {
   }
   boolean custom_custevent_slt_severity {
     field_instance = netsuite.crmcustomfield.instance.custevent_slt_severity.scriptid

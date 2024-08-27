@@ -205,7 +205,8 @@ type netsuite.serializedInventoryItem {
   }
   number receiptQuantityDiff {
   }
-  netsuite.recordRefList itemShipMethodList {
+  "List<netsuite.recordRef>" itemShipMethodList {
+    isReference = true
   }
   string manufacturerTaxId {
   }
@@ -437,7 +438,8 @@ type netsuite.serializedInventoryItem {
   }
   netsuite.itemAccountingBookDetailList accountingBookDetailList {
   }
-  netsuite.recordRefList itemNumberOptionsList {
+  "List<netsuite.recordRef>" itemNumberOptionsList {
+    isReference = true
   }
   netsuite.serializedInventoryItemNumbersList numbersList {
   }
@@ -478,14 +480,14 @@ type netsuite.serializedInventoryItem {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
   }
-  serviceid identifier {
+  string identifier {
   }
   _alias = "Serialized Inventory Item"
   _important_values = [

@@ -103,10 +103,10 @@ type netsuite.customrecord_cseg_nbc {
     hidden_string internalId {
     }
   }
-  serviceid scriptid {
+  string scriptid {
     _required = true
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.customRecordTranslationsList translationsList {

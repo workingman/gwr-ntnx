@@ -104,10 +104,10 @@ type netsuite.customrecord_dash_refresh_config {
     boolean isInactive {
     }
   }
-  serviceid scriptid {
+  string scriptid {
     _required = true
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.customRecordTranslationsList translationsList {
@@ -181,12 +181,14 @@ type netsuite.customrecord_dash_refresh_config {
   enablenumbering = false
   enableoptimisticlocking = true
   enablesystemnotes = true
+  externalrolepermissionlevel = "NONE"
   hierarchical = false
   iconbuiltin = true
   includeinsearchmenu = false
   includename = false
   
   isordered = false
+  publicpermissionlevel = "NONE"
   recordname = "Dashboard Refresh Configuration"
   showcreationdate = false
   showcreationdateonlist = false

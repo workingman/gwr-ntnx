@@ -392,6 +392,17 @@ netsuite.entryForm custform_11_t2257815_736 {
               quickAdd = false
               index = 0
             }
+            custentity_naw_trans_need_approval = {
+              id = "[scriptid=custentity_naw_trans_need_approval]"
+              label = "Transactions Need Approval"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+              index = 1
+            }
           }
           index = 0
         }
@@ -1773,6 +1784,17 @@ netsuite.entryForm custform_11_t2257815_736 {
                     sameRowAsPrevious = false
                     quickAdd = false
                     index = 14
+                  }
+                  custentity_srd_is_trial = {
+                    id = netsuite.entitycustomfield.instance.custentity_srd_is_trial.scriptid
+                    label = "SRD - IsTrial"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                    index = 15
                   }
                 }
                 index = 0

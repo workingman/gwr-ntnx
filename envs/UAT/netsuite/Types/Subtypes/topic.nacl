@@ -17,7 +17,7 @@ type netsuite.topic {
   }
   netsuite.topicSolutionList solutionList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

@@ -7,7 +7,8 @@ type netsuite.purchaseOrderExpense {
   }
   netsuite.recordRef category {
   }
-  netsuite.recordRefList linkedOrderList {
+  "List<netsuite.recordRef>" linkedOrderList {
+    isReference = true
   }
   netsuite.account account {
     isReference = true

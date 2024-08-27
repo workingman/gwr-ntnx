@@ -1349,6 +1349,16 @@ netsuite.entryForm custform_employee {
                     sameRowAsPrevious = false
                     index = 7
                   }
+                  custentity_gwr_rockstar = {
+                    id = netsuite.entitycustomfield.instance.custentity_gwr_rockstar.scriptid
+                    label = "GWR rockstar"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 8
+                  }
                 }
                 index = 0
               }

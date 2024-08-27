@@ -139,6 +139,10 @@ settings netsuite.accountingPreferences {
     label = "Value"
     type = "timetrack"
   }
+  boolean NO_NEGATIVE_RCOMMITTED {
+    label = "Do not allow negative committed quantities"
+    type = "checkbox"
+  }
   boolean ALLOWASSEMBLYPURCHASE {
     label = "Allow Purchase of Assembly Items"
     type = "checkbox"
@@ -256,7 +260,7 @@ settings netsuite.accountingPreferences {
     type = "checkbox"
   }
   boolean CURCOUNTONTRANSFERS {
-    label = "SCM: Inventory: Display Current Count on Transfers"
+    label = "Display Current Count on Transfers"
     type = "checkbox"
   }
   netsuite.selectOption BILLEXCHRATEVARIANCEACCT {
@@ -1068,7 +1072,7 @@ settings netsuite.accountingPreferences {
     type = "select"
   }
   boolean CURCOUNTONADJUSTMENTS {
-    label = "SCM: Inventory: Display Current Count on Adjustments"
+    label = "Display Current Count on Adjustments"
     type = "checkbox"
   }
   boolean NEWITEMCOMMITMENT {
@@ -1076,7 +1080,7 @@ settings netsuite.accountingPreferences {
     type = "checkbox"
   }
   boolean CURCOUNTONWORKSHEETS {
-    label = "SCM: Inventory: Display Current Count on Worksheets"
+    label = "Display Current Count on Worksheets"
     type = "checkbox"
   }
   netsuite.selectOption TIMELIMITDAYMIN {
@@ -1132,4 +1136,24 @@ settings netsuite.accountingPreferences {
     _hidden_value = true
   }
   _alias = "Accounting Preferences"
+  boolean ARC_BETA_REENABLED {
+    label = "ARC: Forcibly re-enable deprecated feature Record Customization (Beta)"
+    type = "checkbox"
+  }
+  string RATE_PROVIDER_LAST_DATE {
+    label = "Last date to receive rates from the Rate Provider"
+    type = "date"
+  }
+  netsuite.selectOption RATE_PROVIDER_TO_BE_REMOVED {
+    label = "Provider key of the Rate Provider to be removed"
+    type = "select"
+  }
+  boolean REST_BETA_RECORD_REENABLED {
+    label = "REST WS: Forcibly re-enable deprecated feature REST Record Service (Beta)"
+    type = "checkbox"
+  }
+  number SCM_BULK_PROC_SUBMISSIONS_TO_DELETE {
+    label = "SCM: Number of bulk processing submissions to delete per day"
+    type = "integer"
+  }
 }

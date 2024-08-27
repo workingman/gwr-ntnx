@@ -77,7 +77,8 @@ type netsuite.purchaseOrderItem {
   }
   netsuite.recordRef createdFrom {
   }
-  netsuite.recordRefList linkedOrderList {
+  "List<netsuite.recordRef>" linkedOrderList {
+    isReference = true
   }
   netsuite.customFieldList customFieldList {
   }

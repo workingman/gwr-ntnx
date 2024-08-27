@@ -84,7 +84,7 @@ type netsuite.vendorCredit {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

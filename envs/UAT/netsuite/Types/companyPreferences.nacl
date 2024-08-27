@@ -63,6 +63,10 @@ settings netsuite.companyPreferences {
     label = "Execute SuiteScript 2.x Server Scripts as"
     type = "select"
   }
+  netsuite.selectOption ORACLE_GUIDED_LEARNING_ENV {
+    label = "Set NetSuite Guided Learning Environment"
+    type = "select"
+  }
   netsuite.selectOption CALENDARSYSTEM {
     label = "Calendar System"
     type = "select"
@@ -392,8 +396,17 @@ settings netsuite.companyPreferences {
     _hidden_value = true
   }
   _alias = "Company Preferences"
-  boolean USE_DART_SASS_COMPILER {
-    label = "Use Dart Sass compiler"
+  
+  netsuite.selectOption custscript_docusign_environment {
+    label = "Environment"
+    type = "select"
+  }
+  string custscript_docusign_username {
+    label = "User Name"
+    type = "email"
+  }
+  boolean BUNDLE_FILES_PUBLIC {
+    label = "SuiteBundle files always available"
     type = "checkbox"
   }
 }

@@ -11,7 +11,7 @@ type netsuite.employeeAddressbook {
   }
   netsuite.address addressbookAddress {
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
 }

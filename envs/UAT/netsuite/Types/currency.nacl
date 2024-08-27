@@ -5,7 +5,7 @@ type netsuite.currency {
   }
   netsuite.nullField nullFieldList {
   }
-  serviceid name {
+  string name {
   }
   string symbol {
   }
@@ -31,7 +31,7 @@ type netsuite.currency {
   }
   unknown currencyPrecision {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

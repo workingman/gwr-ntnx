@@ -214,7 +214,7 @@ type netsuite.returnAuthorization {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

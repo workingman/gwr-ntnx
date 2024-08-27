@@ -217,4 +217,5 @@ netsuite.companyFeatures {
   TELEPHONY = false
   SUITEAPPCONTROLCENTER = false
   _alias = "Company Features"
+  UPLIFTPRICING = false
 }

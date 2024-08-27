@@ -202,7 +202,8 @@ type netsuite.serializedAssemblyItem {
   }
   boolean isPhantom {
   }
-  netsuite.recordRefList itemShipMethodList {
+  "List<netsuite.recordRef>" itemShipMethodList {
+    isReference = true
   }
   string manufacturerTaxId {
   }
@@ -439,7 +440,8 @@ type netsuite.serializedAssemblyItem {
   }
   netsuite.itemOptionsList itemOptionsList {
   }
-  netsuite.recordRefList itemNumberOptionsList {
+  "List<netsuite.recordRef>" itemNumberOptionsList {
+    isReference = true
   }
   netsuite.itemVendorList itemVendorList {
   }
@@ -471,14 +473,14 @@ type netsuite.serializedAssemblyItem {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
   }
-  serviceid identifier {
+  string identifier {
   }
   _alias = "Serialized Assembly Item"
   _important_values = [

@@ -150,14 +150,14 @@ type netsuite.otherChargeSaleItem {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
   }
-  serviceid identifier {
+  string identifier {
   }
   _alias = "Other Charge Sale Item"
   _important_values = [

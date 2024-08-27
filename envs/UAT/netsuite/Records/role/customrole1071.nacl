@@ -364,6 +364,10 @@ netsuite.role customrole1071 {
         permkey = "LIST_COMPETITOR"
         permlevel = "EDIT"
       }
+      LIST_CONTACTSUBSIDIARYRELATION = {
+        permkey = "LIST_CONTACTSUBSIDIARYRELATION"
+        permlevel = "VIEW"
+      }
       LIST_CONTACT = {
         permkey = "LIST_CONTACT"
         permlevel = "FULL"

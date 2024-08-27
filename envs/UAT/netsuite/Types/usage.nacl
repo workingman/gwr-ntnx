@@ -24,7 +24,7 @@ type netsuite.usage {
   }
   string usageDate {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

@@ -49,6 +49,7 @@ netsuite.workflow customworkflow_dp_demo1 {
         index = 0
       }
       
+      
       workflowstate460 = {
         scriptid = "workflowstate460"
         donotexitworkflow = false
@@ -63,7 +64,6 @@ netsuite.workflow customworkflow_dp_demo1 {
                 scriptid = "workflowaction1327"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 eventtypes = "CREATE"
-                
                 recordtype = netsuite.customrecord_dp_prospect.attr.scriptid
                 schedulemode = "DELAY"
                 initcondition = {

@@ -12,13 +12,13 @@ type netsuite.jobType {
   }
   boolean isInactive {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
   }
-  serviceid identifier {
+  string identifier {
   }
 }

@@ -13,7 +13,7 @@ type netsuite.supportCasePriority {
   }
   boolean isInactive {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

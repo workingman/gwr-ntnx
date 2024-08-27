@@ -48,7 +48,8 @@ type netsuite.itemGroup {
   }
   unknown itemCarrier {
   }
-  netsuite.recordRefList itemShipMethodList {
+  "List<netsuite.recordRef>" itemShipMethodList {
+    isReference = true
   }
   boolean printItems {
   }
@@ -60,14 +61,14 @@ type netsuite.itemGroup {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
   }
-  serviceid identifier {
+  string identifier {
   }
   _alias = "Item Group"
   _important_values = [

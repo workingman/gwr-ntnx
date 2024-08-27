@@ -14,7 +14,7 @@ netsuite.workflow customworkflow_srd_opp_review {
   releasestatus = "NOTINITIATING"
   runasadmin = false
   initcondition = {
-    formula = "\"Amount\" >= 100000.00 AND \"Opportunity:SRD - Opportunity Source\" = ''"
+    formula = "\"Amount\" >= 100000.0 AND \"Opportunity:SRD - Opportunity Source\" = ''"
     type = "VISUAL_BUILDER"
     parameters = {
       parameter = {

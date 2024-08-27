@@ -67,7 +67,7 @@ type netsuite.charge {
   }
   string runId {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
