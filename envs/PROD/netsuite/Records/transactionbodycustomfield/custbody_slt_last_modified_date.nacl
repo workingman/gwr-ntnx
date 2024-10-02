@@ -41,4 +41,8 @@ netsuite.transactionbodycustomfield custbody_slt_last_modified_date {
   storevalue = false
   subtab = "TRANSACTIONMAIN"
   _alias = "Last Modified Date (2)"
+  bodypaycheck = false
+  bodybtegata = false
+  bodyfulfillmentrequest = false
+  bodystorepickup = false
 }

@@ -10,6 +10,18 @@ netsuite.subsidiary Parent_Company@s {
     addrText = "CA <br>United States"
     override = true
     
+    customFieldList = {
+      customField = [
+        {
+          value = false
+          scriptId = "custrecord_address_field"
+        },
+        {
+          value = false
+          scriptId = "custrecord_scs"
+        },
+      ]
+    }
   }
   legalName = "Demo: Blank US OneWorld Account"
   isElimination = false
@@ -70,8 +82,47 @@ netsuite.subsidiary Parent_Company@s {
         language = "Japanese"
         name = "親会社"
       }
+      English__CA_@sjk = {
+        language = "English (CA)"
+      }
     }
   }
   identifier = "Parent Company"
   _alias = "Parent Company"
+  shippingAddress = {
+    country = "_unitedStates"
+    addressee = "CA  United States"
+    addrText = "CA  United States<br>United States"
+    override = false
+    customFieldList = {
+      customField = [
+        {
+          value = false
+          scriptId = "custrecord_address_field"
+        },
+        {
+          value = false
+          scriptId = "custrecord_scs"
+        },
+      ]
+    }
+  }
+  returnAddress = {
+    country = "_unitedStates"
+    addressee = "CA  United States"
+    addrText = "CA  United States<br>United States"
+    override = false
+    customFieldList = {
+      customField = [
+        {
+          value = false
+          scriptId = "custrecord_address_field"
+        },
+        {
+          value = false
+          scriptId = "custrecord_scs"
+        },
+      ]
+    }
+  }
 }

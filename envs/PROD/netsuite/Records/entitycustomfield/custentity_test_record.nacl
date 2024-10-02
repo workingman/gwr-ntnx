@@ -32,4 +32,5 @@ netsuite.entitycustomfield custentity_test_record {
   showinlist = false
   storevalue = true
   _alias = "test record"
+  appliestogenericrsrc = false
 }

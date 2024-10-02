@@ -9,9 +9,9 @@ netsuite.role customrole1000 {
   ispartnerrole = false
   issalesrole = false
   issinglesignononly = false
-  issupportrole = true
+  issupportrole = false
   iswebserviceonlyrole = false
-  name = "Custom Developer"
+  name = "Custom Developer 123"
   restrictbydevice = false
   restricttimeandexpenses = false
   subsidiaryoption = "ALL"
@@ -262,6 +262,6 @@ netsuite.role customrole1000 {
       }
     }
   }
-  _alias = "Custom Developer"
+  _alias = "Custom Developer 123"
   isInactive = false
 }

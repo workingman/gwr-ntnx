@@ -30,4 +30,5 @@ netsuite.entitycustomfield custentity22 {
   showinlist = false
   storevalue = false
   _alias = "TufinDemoField"
+  appliestogenericrsrc = false
 }

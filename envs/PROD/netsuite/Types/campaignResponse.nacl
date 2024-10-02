@@ -23,7 +23,7 @@ type netsuite.campaignResponse {
   }
   netsuite.campaignResponseResponsesList responsesList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

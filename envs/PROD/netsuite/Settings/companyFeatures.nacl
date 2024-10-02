@@ -3,7 +3,7 @@ netsuite.companyFeatures {
   LOCATIONS = true
   CLASSES = true
   JOBS = true
-  ADVANCEDJOBS = false
+  ADVANCEDJOBS = true
   PLANNEDWORK = false
   JOBCOSTING = false
   ADVANCEDPROJECTACCOUNTING = false
@@ -11,7 +11,7 @@ netsuite.companyFeatures {
   WBS = false
   UNITSOFMEASURE = true
   TRANDELETIONREASONCODE = false
-  MULTISUBSIDIARYCUSTOMER = false
+  MULTISUBSIDIARYCUSTOMER = true
   ADVANCEDNUMBERINGSEQUENCES = false
   MULTILANGUAGE = true
   MULTICURRENCY = true
@@ -23,7 +23,7 @@ netsuite.companyFeatures {
   EXTREMELIST = true
   FCEXPENSE = false
   FCEXPENSEMIGRATECONTROLLER = false
-  DUPLICATES = false
+  DUPLICATES = true
   FCADVANCEDSECURITY = false
   IPADDRESSRULES = false
   MOBILEPUSHNTF = true
@@ -44,7 +44,7 @@ netsuite.companyFeatures {
   VENDORPREPAYMENTS = false
   MULTIPLECALENDARS = false
   STATACCOUNTING = true
-  GAINLOSSACCTMAPPING = false
+  GAINLOSSACCTMAPPING = true
   PERIODENDJOURNALENTRIES = false
   BALANCING_SEGMENTS = false
   INSTALLMENTS = false
@@ -58,9 +58,9 @@ netsuite.companyFeatures {
   RETURNAUTHS = true
   PURCHASEORDERS = true
   VENDORRETURNAUTHS = true
-  RFQ = false
+  RFQ = true
   REQUISITIONS = false
-  PURCHASECONTRACTS = false
+  PURCHASECONTRACTS = true
   BLANKETPURCHASEORDERS = false
   MULTPRICE = true
   QUANTITYPRICING = true
@@ -73,8 +73,8 @@ netsuite.companyFeatures {
   AUTOLOCATIONASSIGNMENT = false
   ADVSHIPPING = true
   PICKPACKSHIP = true
-  FULFILLMENTREQUEST = false
-  STOREPICKUP = false
+  FULFILLMENTREQUEST = true
+  STOREPICKUP = true
   SHIPPINGLABELS = false
   ADVRECEIVING = true
   MULTISHIPTO = false
@@ -131,7 +131,7 @@ netsuite.companyFeatures {
   INVENTORYCOUNT = false
   MFGROUTING = false
   SUPPLYCHAINCONTROLTOWER = false
-  PAYCHECKJOURNAL = false
+  PAYCHECKJOURNAL = true
   EXPREPORTS = true
   APPROVALROUTING = true
   BILLINGCLASSES = true
@@ -143,18 +143,18 @@ netsuite.companyFeatures {
   CRMTIME = false
   COMMISSIONS = true
   COMMISSIONONCUSTOMFIELDS = false
-  EMPPERMS = false
+  EMPPERMS = true
   CRM = true
   SFA = true
-  SUPPORT = false
-  MARKETING = false
+  SUPPORT = true
+  MARKETING = true
   OPPORTUNITIES = true
   LEADMANAGEMENT = false
   ADVFORECASTING = true
   TEAMSELLING = false
   HISTORICALMETRICS = false
-  INBOUNDCASEEMAIL = false
-  ESCALATIONRULES = false
+  INBOUNDCASEEMAIL = true
+  ESCALATIONRULES = true
   KNOWLEDGEBASE = false
   HELPDESK = false
   EXTCRM = true
@@ -219,4 +219,5 @@ netsuite.companyFeatures {
   TELEPHONY = false
   SUITEAPPCONTROLCENTER = false
   _alias = "Company Features"
+  UPLIFTPRICING = false
 }

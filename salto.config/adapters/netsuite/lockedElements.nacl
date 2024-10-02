@@ -8,12 +8,16 @@ netsuite {
           name = "clientscript"
           ids = [
             "customscript_lsa_cs_custom_button",
+            "customscript_sw_sah_help_document_c",
           ]
         },
         {
           name = "customrecordtype"
           ids = [
             "customrecord_lsa",
+            "customrecord_sw_sah_help_document",
+            "customrecord_sw_sah_settings",
+            "customrecord_sw_license_key",
           ]
         },
         {
@@ -43,6 +47,8 @@ netsuite {
             "custform_3_3368792_586",
             "custform_5_3368792_586",
             "custform_4_3368792_586",
+            "custform_sw_sah_help_document",
+            "custform_sw_sah_settings",
           ]
         },
         {
@@ -114,6 +120,9 @@ netsuite {
           name = "suitelet"
           ids = [
             "customscript_lsa_sl_update_lsa",
+            "customscript_sw_sah_help_document_sl",
+            "customscript_sw_sah_help_document_ldr_sl",
+            "customscript_sw_sah_settings_sl",
           ]
         },
         {
@@ -141,6 +150,20 @@ netsuite {
           ids = [
             "customscript_lsa_ue_lead",
             "customscript_lsa_ue_communication",
+            "customscript_sw_sah_help_document_ue",
+            "customscript_sw_sah_main_ue",
+          ]
+        },
+        {
+          name = "customlist"
+          ids = [
+            "customlist_sw_sah_document_type",
+          ]
+        },
+        {
+          name = "scheduledscript"
+          ids = [
+            "customscript_sw_sah_analytics_ss",
           ]
         },
       ]

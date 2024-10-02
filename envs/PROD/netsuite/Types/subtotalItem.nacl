@@ -15,7 +15,7 @@ type netsuite.subtotalItem {
   }
   netsuite.recordRef customForm {
   }
-  serviceid itemId {
+  string itemId {
   }
   boolean isInactive {
   }
@@ -37,7 +37,7 @@ type netsuite.subtotalItem {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

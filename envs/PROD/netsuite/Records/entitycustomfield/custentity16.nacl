@@ -33,4 +33,5 @@ netsuite.entitycustomfield custentity16 {
   showinlist = true
   storevalue = true
   _alias = "Favorite TV show"
+  appliestogenericrsrc = false
 }

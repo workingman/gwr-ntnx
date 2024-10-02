@@ -30,4 +30,5 @@ netsuite.entitycustomfield custentity_with_external_id {
   showinlist = false
   storevalue = true
   _alias = "with external id EDITTEEDD"
+  appliestogenericrsrc = false
 }

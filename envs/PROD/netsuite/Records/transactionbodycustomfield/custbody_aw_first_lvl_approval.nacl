@@ -2,8 +2,8 @@ netsuite.transactionbodycustomfield custbody_aw_first_lvl_approval {
   scriptid = "custbody_aw_first_lvl_approval"
   accesslevel = "2"
   applyformatting = false
-  bodyassemblybuild = false
-  bodybom = false
+  
+  
   bodycustomerpayment = false
   bodydeposit = false
   bodydepositapplication = false
@@ -16,7 +16,7 @@ netsuite.transactionbodycustomfield custbody_aw_first_lvl_approval {
   bodyjournal = false
   bodyopportunity = false
   bodyothertransaction = false
-  bodyperiodendjournal = false
+  
   bodypickingticket = false
   bodyprintflag = false
   bodyprintpackingslip = false
@@ -42,4 +42,9 @@ netsuite.transactionbodycustomfield custbody_aw_first_lvl_approval {
   storevalue = true
   subtab = "TRANSACTIONSYSTEMINFORMATION"
   _alias = "GWR Amp 1st Level Approval"
+  bodypaycheck = false
+  bodystore = false
+  bodybtegata = false
+  bodyfulfillmentrequest = false
+  bodystorepickup = false
 }

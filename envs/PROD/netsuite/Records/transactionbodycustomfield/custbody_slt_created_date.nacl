@@ -41,4 +41,8 @@ netsuite.transactionbodycustomfield custbody_slt_created_date {
   storevalue = false
   subtab = "TRANSACTIONMAIN"
   _alias = "Created Date (2)"
+  bodypaycheck = false
+  bodybtegata = false
+  bodyfulfillmentrequest = false
+  bodystorepickup = false
 }

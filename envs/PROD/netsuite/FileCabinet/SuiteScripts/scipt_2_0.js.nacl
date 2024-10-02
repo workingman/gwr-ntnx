@@ -1,5 +1,5 @@
 netsuite.file SuiteScripts_scipt_2_0_js@duuv {
-  description = "aaaaa"
+  description = "aaaaabbbb"
   bundleable = false
   
   availablewithoutlogin = false

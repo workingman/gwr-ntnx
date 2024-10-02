@@ -31,4 +31,5 @@ netsuite.entitycustomfield custentity10 {
   showinlist = false
   storevalue = true
   _alias = "createdByTestWithOwner"
+  appliestogenericrsrc = false
 }

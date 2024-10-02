@@ -1,4 +1,5 @@
 netsuite.folder SuiteScripts_sdf_course_lesson_4@dbdb {
+  description = "test"
   bundleable = false
   
   isprivate = false

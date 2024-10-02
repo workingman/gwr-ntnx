@@ -3,5 +3,5 @@ netsuite.subtab custtab_2_3368792_208 {
   tabtype = "ENTITY"
   title = "Partners"
   _alias = "Partners"
-  bundle = netsuite.bundle.instance.bundle_58416
+  
 }

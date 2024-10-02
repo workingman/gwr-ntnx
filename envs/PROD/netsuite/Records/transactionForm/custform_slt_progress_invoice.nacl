@@ -419,7 +419,7 @@ netsuite.transactionForm custform_slt_progress_invoice {
               displayType = "NORMAL"
               columnBreak = false
               sameRowAsPrevious = false
-              index = 3
+              index = 4
             }
             custbody_approval_status = {
               id = netsuite.transactionbodycustomfield.instance.custbody_approval_status.scriptid
@@ -429,7 +429,7 @@ netsuite.transactionForm custform_slt_progress_invoice {
               displayType = "NORMAL"
               columnBreak = false
               sameRowAsPrevious = false
-              index = 4
+              index = 5
             }
             custbody_esc_last_modified_date = {
               id = "[scriptid=custbody_esc_last_modified_date]"
@@ -439,7 +439,7 @@ netsuite.transactionForm custform_slt_progress_invoice {
               displayType = "INLINETEXT"
               columnBreak = false
               sameRowAsPrevious = false
-              index = 5
+              index = 6
             }
             custbody_esc_created_date = {
               id = "[scriptid=custbody_esc_created_date]"
@@ -449,7 +449,7 @@ netsuite.transactionForm custform_slt_progress_invoice {
               displayType = "INLINETEXT"
               columnBreak = false
               sameRowAsPrevious = false
-              index = 6
+              index = 7
             }
             custbody_esc_campaign_category = {
               id = "[scriptid=custbody_esc_campaign_category]"
@@ -459,7 +459,7 @@ netsuite.transactionForm custform_slt_progress_invoice {
               displayType = "NORMAL"
               columnBreak = false
               sameRowAsPrevious = false
-              index = 7
+              index = 8
             }
             custbody_slt_created_date = {
               id = netsuite.transactionbodycustomfield.instance.custbody_slt_created_date.scriptid
@@ -469,7 +469,7 @@ netsuite.transactionForm custform_slt_progress_invoice {
               displayType = "DISABLED"
               columnBreak = false
               sameRowAsPrevious = false
-              index = 8
+              index = 9
             }
             custbody_slt_customer_balance = {
               id = netsuite.transactionbodycustomfield.instance.custbody_slt_customer_balance.scriptid
@@ -479,7 +479,7 @@ netsuite.transactionForm custform_slt_progress_invoice {
               displayType = "DISABLED"
               columnBreak = false
               sameRowAsPrevious = false
-              index = 9
+              index = 10
             }
             custbody_slt_customer_balance_curr = {
               id = netsuite.transactionbodycustomfield.instance.custbody_slt_customer_balance_curr.scriptid
@@ -489,7 +489,7 @@ netsuite.transactionForm custform_slt_progress_invoice {
               displayType = "DISABLED"
               columnBreak = false
               sameRowAsPrevious = false
-              index = 10
+              index = 11
             }
             custbody_slt_last_modified_date = {
               id = netsuite.transactionbodycustomfield.instance.custbody_slt_last_modified_date.scriptid
@@ -499,7 +499,7 @@ netsuite.transactionForm custform_slt_progress_invoice {
               displayType = "DISABLED"
               columnBreak = false
               sameRowAsPrevious = false
-              index = 11
+              index = 12
             }
             custbody_must_ship_by = {
               id = netsuite.transactionbodycustomfield.instance.custbody_must_ship_by.scriptid
@@ -509,7 +509,74 @@ netsuite.transactionForm custform_slt_progress_invoice {
               displayType = "NORMAL"
               columnBreak = false
               sameRowAsPrevious = false
-              index = 12
+              index = 13
+            }
+            JOB = {
+              id = "JOB"
+              label = "Job"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 3
+            }
+            custbody_dep_percent = {
+              id = netsuite.transactionbodycustomfield.instance.custbody_dep_percent.scriptid
+              label = "Deposit Percent"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 14
+            }
+            custbody_dep_formula = {
+              id = netsuite.transactionbodycustomfield.instance.custbody_dep_formula.scriptid
+              label = "Deposit Due"
+              visible = true
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 15
+            }
+            custbody_contactontrans = {
+              id = netsuite.transactionbodycustomfield.instance.custbody_contactontrans.scriptid
+              label = "Contact Name"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 16
+            }
+            custbody_contactphonenumber = {
+              id = netsuite.transactionbodycustomfield.instance.custbody_contactphonenumber.scriptid
+              label = "Contact Phone Number"
+              visible = true
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 17
+            }
+          }
+          index = 1
+        }
+        TOP = {
+          position = "TOP"
+          field = {
+            custbody_acctg_approval = {
+              id = netsuite.transactionbodycustomfield.instance.custbody_acctg_approval.scriptid
+              label = "Accounting Approval"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              checkBoxDefault = "USE_FIELD_DEFAULT"
+              index = 0
             }
           }
           index = 0
@@ -594,193 +661,193 @@ netsuite.transactionForm custform_slt_progress_invoice {
                     id = "AMOUNTORDERED"
                     label = "Ordered"
                     visible = true
-                    index = 2
+                    index = 3
                   }
                   CURRENTPERCENT = {
                     id = "CURRENTPERCENT"
                     label = "Current %"
                     visible = true
-                    index = 3
+                    index = 4
                   }
                   PERCENTCOMPLETE = {
                     id = "PERCENTCOMPLETE"
                     label = "% Compl."
                     visible = true
-                    index = 4
+                    index = 5
                   }
                   DESCRIPTION = {
                     id = "DESCRIPTION"
                     label = "Description"
                     visible = true
-                    index = 5
+                    index = 6
                   }
                   AMOUNT = {
                     id = "AMOUNT"
                     label = "Amount"
                     visible = true
-                    index = 6
+                    index = 7
                   }
                   TAXCODE = {
                     id = "TAXCODE"
                     label = "Tax Code"
                     visible = true
-                    index = 7
+                    index = 8
                   }
                   COMMITINVENTORY = {
                     id = "COMMITINVENTORY"
                     label = "Commit"
                     visible = true
-                    index = 8
+                    index = 9
                   }
                   TAXRATE1 = {
                     id = "TAXRATE1"
                     label = "Tax Rate"
                     visible = true
-                    index = 9
+                    index = 10
                   }
                   TAXRATE2 = {
                     id = "TAXRATE2"
                     label = "PST"
                     visible = true
-                    index = 10
+                    index = 11
                   }
                   TAX1AMT = {
                     id = "TAX1AMT"
                     label = "Tax Amt"
                     visible = true
-                    index = 11
+                    index = 12
                   }
                   GROSSAMT = {
                     id = "GROSSAMT"
                     label = "Gross Amt"
                     visible = true
-                    index = 12
+                    index = 13
                   }
                   ISTAXABLE = {
                     id = "ISTAXABLE"
                     label = "Tax"
                     visible = true
-                    index = 13
+                    index = 14
                   }
                   OPTIONS = {
                     id = "OPTIONS"
                     label = "Options"
                     visible = true
-                    index = 14
+                    index = 15
                   }
                   DEPARTMENT = {
                     id = "DEPARTMENT"
                     label = "Department"
                     visible = false
-                    index = 15
+                    index = 16
                   }
                   CLASS = {
                     id = "CLASS"
                     label = "Class"
                     visible = false
-                    index = 16
+                    index = 17
                   }
                   LOCATION = {
                     id = "LOCATION"
                     label = "Location"
                     visible = false
-                    index = 17
+                    index = 18
                   }
                   EXCLUDEFROMRATEREQUEST = {
                     id = "EXCLUDEFROMRATEREQUEST"
                     label = "Exclude Item from Rate Request"
                     visible = true
-                    index = 18
+                    index = 19
                   }
                   FREEGIFTPROMOTION = {
                     id = "FREEGIFTPROMOTION"
                     label = "Free Gift Promotion"
                     visible = true
-                    index = 19
+                    index = 20
                   }
                   REVRECSTARTDATE = {
                     id = "REVRECSTARTDATE"
                     label = "Rev. Rec. Start Date"
                     visible = true
-                    index = 20
+                    index = 21
                   }
                   custcol_slt_billable = {
                     id = netsuite.transactioncolumncustomfield.instance.custcol_slt_billable.scriptid
                     label = "Billable"
                     visible = true
-                    index = 21
+                    index = 22
                   }
                   REVRECENDDATE = {
                     id = "REVRECENDDATE"
                     label = "Rev. Rec. End Date"
                     visible = true
-                    index = 22
+                    index = 23
                   }
                   cseg1 = {
                     id = "[type=transactioncolumncustomfield, scriptid=cseg1]"
                     label = "Stam"
                     visible = false
-                    index = 23
+                    index = 24
                   }
                   QUANTITYORDERED = {
                     id = "QUANTITYORDERED"
                     label = "Ordered"
                     visible = false
-                    index = 24
+                    index = 25
                   }
                   QUANTITY = {
                     id = "QUANTITY"
                     label = "Quantity"
                     visible = false
-                    index = 25
+                    index = 26
                   }
                   UNITS = {
                     id = "UNITS"
                     label = "Units"
                     visible = false
-                    index = 26
+                    index = 27
                   }
                   SERIALNUMBERS = {
                     id = "SERIALNUMBERS"
                     label = "Serial/Lot Numbers"
                     visible = false
-                    index = 27
+                    index = 28
                   }
                   RATE = {
                     id = "RATE"
                     label = "Rate"
                     visible = false
-                    index = 28
+                    index = 29
                   }
                   PRICE = {
                     id = "PRICE"
                     label = "Price Level"
                     visible = false
-                    index = 29
+                    index = 30
                   }
                   custcol_with_stam_dependency = {
                     id = netsuite.transactioncolumncustomfield.instance.custcol_with_stam_dependency.scriptid
                     label = "with Stam dependency"
                     visible = false
-                    index = 30
+                    index = 31
                   }
                   custcol_slt_e2e_test = {
                     id = netsuite.transactioncolumncustomfield.instance.custcol_slt_e2e_test.scriptid
                     label = "created by oss e2e - 4090037"
                     visible = true
-                    index = 31
+                    index = 32
                   }
                   cseg_slt_order = {
                     id = "[type=transactioncolumncustomfield, scriptid=cseg_slt_order]"
                     label = "Test Applications Order"
                     visible = false
-                    index = 32
+                    index = 33
                   }
                   cseg_erp_property = {
                     id = "[type=transactioncolumncustomfield, scriptid=cseg_erp_property]"
                     label = "Kavel"
                     visible = true
-                    index = 33
+                    index = 37
                   }
                   cseg3 = {
                     id = "[type=transactioncolumncustomfield, scriptid=cseg3]"
@@ -804,13 +871,19 @@ netsuite.transactionForm custform_slt_progress_invoice {
                     id = "[type=transactioncolumncustomfield, scriptid=cseg4]"
                     label = "csegggg"
                     visible = false
-                    index = 37
+                    index = 38
                   }
                   cseg2 = {
                     id = "[type=transactioncolumncustomfield, scriptid=cseg2]"
                     label = "Region"
                     visible = false
-                    index = 38
+                    index = 39
+                  }
+                  DISPLAYNAME = {
+                    id = "DISPLAYNAME"
+                    label = "Display Name"
+                    visible = false
+                    index = 2
                   }
                 }
               }
@@ -1507,6 +1580,51 @@ netsuite.transactionForm custform_slt_progress_invoice {
           }
         }
         index = 8
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = {
+              MIDDLE = {
+                position = "MIDDLE"
+                field = {
+                  custbody_aw_second_lvl_approval = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_aw_second_lvl_approval.scriptid
+                    label = "GWR Amp 2nd Level Approval"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "USE_FIELD_DEFAULT"
+                    index = 0
+                  }
+                  custbody_aw_first_lvl_approval = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_aw_first_lvl_approval.scriptid
+                    label = "GWR Amp 1st Level Approval"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "USE_FIELD_DEFAULT"
+                    index = 1
+                  }
+                  custbody_aw_edit = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_aw_edit.scriptid
+                    label = "GWR Amp Edit - WA"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "USE_FIELD_DEFAULT"
+                    index = 2
+                  }
+                }
+                index = 0
+              }
+            }
+          }
+        }
       }
       TRANSACTIONADDRESS = {
         id = "TRANSACTIONADDRESS"
@@ -1593,6 +1711,16 @@ netsuite.transactionForm custform_slt_progress_invoice {
                     columnBreak = false
                     sameRowAsPrevious = false
                     index = 6
+                  }
+                  custbody_itr_doc_number = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_itr_doc_number.scriptid
+                    label = "GWR Amp doc number"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 7
                   }
                 }
                 index = 0
@@ -1887,6 +2015,22 @@ netsuite.transactionForm custform_slt_progress_invoice {
       }
       REVENUE_MANAGER = {
         id = "REVENUE_MANAGER"
+        preferred = false
+      }
+      customrole1036_0 = {
+        id = netsuite.role.instance.customrole1036_0.scriptid
+        preferred = false
+      }
+      customrole1030 = {
+        id = netsuite.role.instance.customrole1030.scriptid
+        preferred = false
+      }
+      customrole1040 = {
+        id = netsuite.role.instance.customrole1040.scriptid
+        preferred = false
+      }
+      customrole1039 = {
+        id = netsuite.role.instance.customrole1039.scriptid
         preferred = false
       }
     }

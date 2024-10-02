@@ -30,4 +30,5 @@ netsuite.entitycustomfield custentity_ebd_pay_data {
   showinlist = false
   storevalue = true
   _alias = "Entity Bank Details - Payment Data"
+  appliestogenericrsrc = false
 }

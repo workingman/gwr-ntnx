@@ -41,4 +41,5 @@ netsuite.entitycustomfield custentity_slt_dummy_2 {
     }
   }
   _alias = "dummy"
+  appliestogenericrsrc = false
 }

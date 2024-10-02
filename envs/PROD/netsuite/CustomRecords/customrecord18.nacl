@@ -104,10 +104,10 @@ type netsuite.customrecord18 {
     boolean isInactive {
     }
   }
-  serviceid scriptid {
+  string scriptid {
     _required = true
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.customRecordTranslationsList translationsList {
@@ -237,4 +237,25 @@ type netsuite.customrecord18 {
     },
   ]
   isInactive = false
+  string custom_custrecord18_account_id2 {
+    scriptid = "custrecord18_account_id2"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = false
+    checkspelling = false
+    defaultchecked = false
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "TEXT"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "Account id 2"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = false
+    storevalue = true
+    index = 2
+  }
 }

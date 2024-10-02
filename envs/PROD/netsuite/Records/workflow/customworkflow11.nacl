@@ -18,7 +18,7 @@ netsuite.workflow customworkflow11 {
       workflowstate112 = {
         scriptid = "workflowstate112"
         donotexitworkflow = false
-        name = "State 1"
+        name = "State 1 1"
         positionx = 243
         positiony = 133
         index = 0

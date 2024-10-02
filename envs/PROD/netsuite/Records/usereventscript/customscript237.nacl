@@ -3,7 +3,7 @@ netsuite.usereventscript customscript237 {
   
   name = "seggev3"
   notifyadmins = false
-  notifyowner = true
+  notifyowner = false
   notifyuser = false
   scriptfile = "[/SuiteBundles/Bundle 53195/src/lsa_date_ss.js]"
   scriptcustomfields = {

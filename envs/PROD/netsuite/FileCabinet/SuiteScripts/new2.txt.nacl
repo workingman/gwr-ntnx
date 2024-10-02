@@ -1,4 +1,5 @@
 netsuite.file SuiteScripts_new2_txt@dv {
+  description = "test"
   bundleable = false
   
   availablewithoutlogin = false

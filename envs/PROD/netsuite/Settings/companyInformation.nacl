@@ -39,9 +39,17 @@ United States
     value = "1"
     text = "Standard Fiscal Calendar"
   }
-  lastmodifieddate = "7/30/2023 5:49 am"
+  lastmodifieddate = "3/21/2024 4:52 pm"
   restleturl = "https://tstdrv2257860.restlets.api.netsuite.com"
   iselimination = false
   displaylogointernally = false
   _alias = "Company Information"
+  shippingaddress_text = '''
+CA  United States
+United States
+'''
+  returnaddress_text = '''
+CA  United States
+United States
+'''
 }

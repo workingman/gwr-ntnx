@@ -31,4 +31,5 @@ netsuite.entitycustomfield custentityhqentityfield01 {
   showinlist = false
   storevalue = true
   _alias = "HQ_Entity_Field01"
+  appliestogenericrsrc = false
 }

@@ -33,7 +33,8 @@ type netsuite.purchaseRequisitionExpense {
   netsuite.customer customer {
     isReference = true
   }
-  netsuite.recordRefList linkedOrderList {
+  "List<netsuite.recordRef>" linkedOrderList {
+    isReference = true
   }
   string linkedOrderStatus {
   }

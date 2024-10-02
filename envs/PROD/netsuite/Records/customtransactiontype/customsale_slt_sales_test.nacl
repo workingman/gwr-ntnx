@@ -16,6 +16,10 @@ netsuite.customtransactiontype customsale_slt_sales_test {
         permittedlevel = "FULL"
         permittedrole = "ADMINISTRATOR"
       }
+      customrole1036_0 = {
+        permittedlevel = "VIEW"
+        permittedrole = netsuite.role.instance.customrole1036_0.scriptid
+      }
     }
   }
   _alias = "sales"

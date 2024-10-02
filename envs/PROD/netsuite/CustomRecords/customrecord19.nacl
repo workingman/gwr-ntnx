@@ -104,10 +104,10 @@ type netsuite.customrecord19 {
     boolean isInactive {
     }
   }
-  serviceid scriptid {
+  string scriptid {
     _required = true
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.customRecordTranslationsList translationsList {
@@ -134,7 +134,7 @@ type netsuite.customrecord19 {
     storevalue = true
     index = 0
   }
-  string custom_custrecord19_account_id {
+  netsuite.account custom_custrecord19_account_id {
     scriptid = "custrecord19_account_id"
     accesslevel = "2"
     allowquickadd = false
@@ -143,14 +143,16 @@ type netsuite.customrecord19 {
     defaultchecked = false
     displaytype = "NORMAL"
     encryptatrest = false
-    fieldtype = "TEXT"
+    fieldtype = "SELECT"
     globalsearch = false
     isformula = false
     ismandatory = false
     isparent = false
     label = "Account id"
+    onparentdelete = "NO_ACTION"
     rolerestrict = false
     searchlevel = "2"
+    selectrecordtype = "-112"
     showinlist = false
     storevalue = true
     index = 1
@@ -237,4 +239,48 @@ type netsuite.customrecord19 {
     },
   ]
   isInactive = false
+  string custom_custrecord_test {
+    scriptid = "custrecord_test"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = false
+    checkspelling = false
+    defaultchecked = false
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "TEXT"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "test"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = false
+    storevalue = true
+    index = 2
+  }
+  netsuite.subsidiary custom_custrecord_test2 {
+    scriptid = "custrecord_test2"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = false
+    checkspelling = false
+    defaultchecked = false
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "SELECT"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "test2"
+    onparentdelete = "NO_ACTION"
+    rolerestrict = false
+    searchlevel = "2"
+    selectrecordtype = "-117"
+    showinlist = false
+    storevalue = true
+    index = 3
+  }
 }

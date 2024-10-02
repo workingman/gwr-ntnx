@@ -30,4 +30,5 @@ netsuite.entitycustomfield custentityscript_id_2 {
   showinlist = false
   storevalue = true
   _alias = "EDITTED2"
+  appliestogenericrsrc = false
 }

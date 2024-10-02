@@ -35,4 +35,5 @@ netsuite.entitycustomfield custentity_crpsm {
   storevalue = true
   subtab = "ENTITYMAIN"
   _alias = "Project Status Metric"
+  appliestogenericrsrc = false
 }

@@ -46,4 +46,5 @@ netsuite.entitycustomfield custentity_slt_edited2 {
     }
   }
   _alias = "EDITTEDD2"
+  appliestogenericrsrc = false
 }

@@ -112,14 +112,14 @@ type netsuite.nonInventoryPurchaseItem {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
   }
-  serviceid identifier {
+  string identifier {
   }
   string custom_custitemhqcuitemfieldid01 {
     field_instance = netsuite.itemcustomfield.instance.custitemhqcuitemfieldid01.scriptid

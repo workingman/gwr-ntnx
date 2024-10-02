@@ -47,4 +47,8 @@ Time format is 24hr i.e. 16:00 and not 4pm
   storevalue = true
   subtab = "TRANSACTIONMAIN"
   _alias = "Must be Shipped By"
+  bodypaycheck = false
+  bodybtegata = false
+  bodyfulfillmentrequest = false
+  bodystorepickup = false
 }

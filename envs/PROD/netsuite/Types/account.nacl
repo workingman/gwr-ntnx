@@ -51,7 +51,8 @@ type netsuite.account {
   netsuite.location location {
     isReference = true
   }
-  netsuite.recordRefList restrictToAccountingBookList {
+  "List<netsuite.recordRef>" restrictToAccountingBookList {
+    isReference = true
   }
   boolean inventory {
   }
@@ -72,14 +73,14 @@ type netsuite.account {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
   }
-  serviceid identifier {
+  string identifier {
   }
   string custom_custrecord15 {
     field_instance = netsuite.othercustomfield.instance.custrecord15.scriptid

@@ -5,7 +5,7 @@ type netsuite.address {
   }
   netsuite.nullField nullFieldList {
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   unknown country {
@@ -33,5 +33,11 @@ type netsuite.address {
   boolean override {
   }
   netsuite.customFieldList customFieldList {
+  }
+  boolean custom_custrecord_address_field {
+    field_instance = netsuite.othercustomfield.instance.custrecord_address_field.scriptid
+  }
+  boolean custom_custrecord_scs {
+    field_instance = netsuite.othercustomfield.instance.custrecord_scs.scriptid
   }
 }

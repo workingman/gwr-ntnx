@@ -34,4 +34,5 @@ netsuite.entitycustomfield custentity_responsible_ap {
   storevalue = true
   subtab = "ENTITYMAIN"
   _alias = "Responsible AP"
+  appliestogenericrsrc = false
 }

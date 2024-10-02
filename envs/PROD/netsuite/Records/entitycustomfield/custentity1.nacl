@@ -33,4 +33,5 @@ netsuite.entitycustomfield custentity1 {
   storevalue = true
   _alias = "Gil's Field"
   help = "This is help \r"
+  appliestogenericrsrc = false
 }

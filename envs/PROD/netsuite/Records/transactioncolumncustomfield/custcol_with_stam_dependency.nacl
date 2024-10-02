@@ -42,4 +42,11 @@ netsuite.transactioncolumncustomfield custcol_with_stam_dependency {
     },
   ]
   _alias = "with Stam dependency"
+  colpaycheckcompanycontribution = false
+  colpaycheckcompanytax = false
+  colpaycheckdeduction = false
+  colpaycheckearning = false
+  colpaycheckemployeetax = false
+  colfulfillmentrequest = false
+  colstorepickup = false
 }

@@ -1,6 +1,6 @@
 netsuite.customlist customlist_crpsmbanner {
   scriptid = "customlist_crpsmbanner"
-  description = "Select the Banner to be displayed on the Project."
+  description = "Select the Banner to be displayed on the Project.__"
   ismatrixoption = false
   isordered = true
   name = "Project Status Banner"

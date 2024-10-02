@@ -31,4 +31,5 @@ netsuite.entitycustomfield custentity_payoneer_username {
   storevalue = true
   subtab = netsuite.subtab.instance.custtab_304_t1234693_274.scriptid
   _alias = "Payoneer Username"
+  appliestogenericrsrc = false
 }

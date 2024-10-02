@@ -888,6 +888,38 @@ netsuite.entryForm custform_slt_customer_form {
               index = 1
             }
           }
+          defaultFieldGroup = {
+            fields = {
+              MIDDLE = {
+                position = "MIDDLE"
+                field = {
+                  CAMPAIGNCATEGORY = {
+                    id = "CAMPAIGNCATEGORY"
+                    label = "Campaign Category"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                    index = 0
+                  }
+                  CAMPAIGNEVENT = {
+                    id = "CAMPAIGNEVENT"
+                    label = "Campaign Event"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                    index = 1
+                  }
+                }
+                index = 0
+              }
+            }
+          }
         }
         subItems = {
           subList = {
@@ -910,35 +942,56 @@ netsuite.entryForm custform_slt_customer_form {
               label = "Page Hits"
               visible = true
               neverEmpty = false
-              index = 2
+              index = 3
             }
             ENTITYHOSTEDHITS = {
               id = "ENTITYHOSTEDHITS"
               label = "Hosted Page Hits"
               visible = true
               neverEmpty = false
-              index = 3
+              index = 4
             }
             ENTITYCARTCONTENTS = {
               id = "ENTITYCARTCONTENTS"
               label = "Cart Contents"
               visible = true
               neverEmpty = false
-              index = 4
+              index = 6
             }
             ENTITYITEMORDERS = {
               id = "ENTITYITEMORDERS"
               label = "Item Orders"
               visible = true
               neverEmpty = false
-              index = 5
+              index = 7
             }
             ENTITYONLINEFORMEVENTS = {
               id = "ENTITYONLINEFORMEVENTS"
               label = "Online Forms"
               visible = true
               neverEmpty = false
-              index = 6
+              index = 8
+            }
+            ENTITYCAMPAIGNS = {
+              id = "ENTITYCAMPAIGNS"
+              label = "Campaigns"
+              visible = true
+              neverEmpty = false
+              index = 2
+            }
+            ENTITYKEYWORDS = {
+              id = "ENTITYKEYWORDS"
+              label = "Keywords"
+              visible = true
+              neverEmpty = false
+              index = 5
+            }
+            ENTITYREFERRER = {
+              id = "ENTITYREFERRER"
+              label = "Referrer"
+              visible = true
+              neverEmpty = false
+              index = 9
             }
           }
           subTab = {
@@ -947,6 +1000,40 @@ netsuite.entryForm custform_slt_customer_form {
               label = "Subscriptions"
               visible = true
               index = 0
+              fieldGroups = {
+                defaultFieldGroup = {
+                  fields = {
+                    MIDDLE = {
+                      position = "MIDDLE"
+                      field = {
+                        GLOBALSUBSCRIPTIONSTATUS = {
+                          id = "GLOBALSUBSCRIPTIONSTATUS"
+                          label = "Global Subscription Status"
+                          visible = true
+                          mandatory = false
+                          displayType = "NORMAL"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                          quickAdd = false
+                          index = 0
+                        }
+                      }
+                      index = 0
+                    }
+                  }
+                }
+              }
+              subLists = {
+                subList = {
+                  ENTITYSUBSCRIPTIONMSGMACH = {
+                    id = "ENTITYSUBSCRIPTIONMSGMACH"
+                    label = "Subscription Message History"
+                    visible = true
+                    neverEmpty = false
+                    index = 0
+                  }
+                }
+              }
             }
           }
         }
@@ -957,6 +1044,17 @@ netsuite.entryForm custform_slt_customer_form {
         label = "Support"
         visible = true
         index = 5
+        subItems = {
+          subList = {
+            ENTITYCASES = {
+              id = "ENTITYCASES"
+              label = "Cases"
+              visible = true
+              neverEmpty = false
+              index = 0
+            }
+          }
+        }
       }
       ENTITYFINANCIAL = {
         id = "ENTITYFINANCIAL"
@@ -1379,6 +1477,17 @@ netsuite.entryForm custform_slt_customer_form {
                     columnBreak = false
                     sameRowAsPrevious = false
                     quickAdd = false
+                    index = 1
+                  }
+                  BILLINGSCHEDULE = {
+                    id = "BILLINGSCHEDULE"
+                    label = "Billing Schedule"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
                     index = 0
                   }
                 }
@@ -1440,6 +1549,13 @@ netsuite.entryForm custform_slt_customer_form {
               visible = true
               neverEmpty = false
               index = 4
+            }
+            customrecord2813_custrecord_credit_cus@vuu = {
+              id = netsuite.customrecord2813.field.custom_custrecord_credit_cus.scriptid
+              label = "Credit Risk/Rating"
+              visible = true
+              neverEmpty = false
+              index = 5
             }
           }
         }
@@ -1769,6 +1885,17 @@ netsuite.entryForm custform_slt_customer_form {
                     quickAdd = false
                     index = 10
                   }
+                  custentity_seggev = {
+                    id = netsuite.entitycustomfield.instance.custentity_seggev.scriptid
+                    label = "seggev field"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                    index = 11
+                  }
                 }
                 index = 0
               }
@@ -1913,6 +2040,110 @@ netsuite.entryForm custform_slt_customer_form {
         label = "Messages"
         visible = true
         index = 17
+      }
+      custtab_63_t2257860_453 = {
+        id = netsuite.subtab.instance.custtab_63_t2257860_453.scriptid
+        label = "Geography"
+        visible = true
+        index = 19
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = {
+              MIDDLE = {
+                position = "MIDDLE"
+                field = {
+                  custentity_regions = {
+                    id = netsuite.entitycustomfield.instance.custentity_regions.scriptid
+                    label = "Regions"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                    index = 0
+                  }
+                }
+                index = 0
+              }
+            }
+          }
+        }
+      }
+      ENTITYSUBSIDIARIES = {
+        id = "ENTITYSUBSIDIARIES"
+        label = "Subsidiaries"
+        visible = true
+        subItems = {
+          subList = {
+            ENTITYSUBMACHINE = {
+              id = "ENTITYSUBMACHINE"
+              label = "Subsidiaries"
+              visible = true
+              neverEmpty = false
+              index = 0
+            }
+          }
+        }
+        index = 18
+      }
+      custtab_67_t2257860_548 = {
+        id = netsuite.subtab.instance.custtab_67_t2257860_548.scriptid
+        label = "Company Profile"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = {
+              MIDDLE = {
+                position = "MIDDLE"
+                field = {
+                  custentity_yearestablished = {
+                    id = netsuite.entitycustomfield.instance.custentity_yearestablished.scriptid
+                    label = "Year Established"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                    index = 0
+                  }
+                }
+                index = 0
+              }
+            }
+          }
+        }
+        index = 20
+      }
+      custtab_64_t2257860_856 = {
+        id = netsuite.subtab.instance.custtab_64_t2257860_856.scriptid
+        label = "Gender Identification"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = {
+              MIDDLE = {
+                position = "MIDDLE"
+                field = {
+                  custentity_area = {
+                    id = netsuite.entitycustomfield.instance.custentity_area.scriptid
+                    label = "Area"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                    index = 0
+                  }
+                }
+                index = 0
+              }
+            }
+          }
+        }
+        index = 21
       }
     }
   }

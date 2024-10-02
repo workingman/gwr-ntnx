@@ -32,4 +32,5 @@ netsuite.entitycustomfield custentity_slt_with_source_2 {
   sourcelist = "STDENTITYLOCATION"
   storevalue = true
   _alias = "WithSourceList2"
+  appliestogenericrsrc = false
 }

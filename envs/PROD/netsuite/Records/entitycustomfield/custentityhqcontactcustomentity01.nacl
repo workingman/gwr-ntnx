@@ -30,4 +30,5 @@ netsuite.entitycustomfield custentityhqcontactcustomentity01 {
   showinlist = false
   storevalue = true
   _alias = "hq-contact-customentity01"
+  appliestogenericrsrc = false
 }

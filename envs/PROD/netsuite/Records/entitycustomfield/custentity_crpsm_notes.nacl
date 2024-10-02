@@ -35,4 +35,5 @@ netsuite.entitycustomfield custentity_crpsm_notes {
   storevalue = true
   subtab = "ENTITYMAIN"
   _alias = "Project Status Metric Notes"
+  appliestogenericrsrc = false
 }

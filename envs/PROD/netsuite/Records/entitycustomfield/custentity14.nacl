@@ -31,4 +31,5 @@ netsuite.entitycustomfield custentity14 {
   showinlist = false
   storevalue = true
   _alias = "Amit2"
+  appliestogenericrsrc = false
 }

@@ -19,18 +19,54 @@ netsuite.subsidiary Parent_Company_Honeycomb_Holdings_Inc_@sussv {
     addrText = "Jeff Honeycomb - test<br>Honeycomb Mfg<br>100 Rodeo Drive<br>Beverly Hills CA 90210<br>United States"
     override = false
     
+    customFieldList = {
+      customField = [
+        {
+          value = false
+          scriptId = "custrecord_address_field"
+        },
+        {
+          value = false
+          scriptId = "custrecord_scs"
+        },
+      ]
+    }
   }
   shippingAddress = {
     country = "_unitedStates"
     addrText = "United States"
     override = false
     
+    customFieldList = {
+      customField = [
+        {
+          value = false
+          scriptId = "custrecord_address_field"
+        },
+        {
+          value = false
+          scriptId = "custrecord_scs"
+        },
+      ]
+    }
   }
   returnAddress = {
     country = "_unitedKingdom"
     addrText = "United Kingdom"
     override = false
     
+    customFieldList = {
+      customField = [
+        {
+          value = false
+          scriptId = "custrecord_address_field"
+        },
+        {
+          value = false
+          scriptId = "custrecord_scs"
+        },
+      ]
+    }
   }
   legalName = "Honeycomb Mfg"
   isElimination = false
@@ -53,6 +89,9 @@ netsuite.subsidiary Parent_Company_Honeycomb_Holdings_Inc_@sussv {
     classTranslation = {
       French__France_@sjk = {
         language = "French (France)"
+      }
+      English__CA_@sjk = {
+        language = "English (CA)"
       }
     }
   }

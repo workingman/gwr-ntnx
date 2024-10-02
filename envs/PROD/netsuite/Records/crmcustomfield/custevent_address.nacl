@@ -25,4 +25,8 @@ netsuite.crmcustomfield custevent_address {
   storevalue = true
   subtab = "CRMMAIN"
   _alias = "Address"
+  appliesperkeyword = false
+  appliestocampaign = false
+  appliestoprojecttask = false
+  appliestocase = false
 }

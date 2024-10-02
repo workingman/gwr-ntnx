@@ -35,4 +35,5 @@ netsuite.entitycustomfield custentitytier {
   storevalue = true
   subtab = "ENTITYSALES"
   _alias = "Tier in english"
+  appliestogenericrsrc = false
 }

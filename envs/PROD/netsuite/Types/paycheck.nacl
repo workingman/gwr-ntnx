@@ -61,7 +61,7 @@ type netsuite.paycheck {
   }
   netsuite.paycheckPayDisburseList payDisburseList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

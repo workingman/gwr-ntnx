@@ -39,4 +39,5 @@ netsuite.entitycustomfield custentityscript_id_31 {
     }
   }
   _alias = "createdByTestWithOwner331"
+  appliestogenericrsrc = false
 }

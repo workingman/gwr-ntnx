@@ -28,6 +28,10 @@ netsuite.customsegment cseg2 {
         role = netsuite.role.instance.customrole1003.scriptid
         valuemgmtaccesslevel = "FULL"
       }
+      customrole1036_0 = {
+        role = netsuite.role.instance.customrole1036_0.scriptid
+        valuemgmtaccesslevel = "NONE"
+      }
     }
   }
   _alias = "Region"

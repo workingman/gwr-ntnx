@@ -30,4 +30,5 @@ netsuite.entitycustomfield custentity20 {
   showinlist = false
   storevalue = true
   _alias = "test_nitzan..!With2021_2"
+  appliestogenericrsrc = false
 }

@@ -11,6 +11,7 @@ changed3
 	else {
 		// Global (browser)
 		root.CryptoJS = factory();
+      // another comment
 	}
 }(this, function () {
 

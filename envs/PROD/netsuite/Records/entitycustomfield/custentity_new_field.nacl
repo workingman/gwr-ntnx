@@ -30,4 +30,5 @@ netsuite.entitycustomfield custentity_new_field {
   showinlist = false
   storevalue = true
   _alias = "NewField"
+  appliestogenericrsrc = false
 }

@@ -30,4 +30,5 @@ netsuite.entitycustomfield custentitypurchasing_email_address {
   showinlist = false
   storevalue = true
   _alias = "Purchasing Email Address"
+  appliestogenericrsrc = false
 }

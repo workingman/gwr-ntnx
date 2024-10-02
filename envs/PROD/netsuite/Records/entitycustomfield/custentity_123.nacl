@@ -31,4 +31,5 @@ netsuite.entitycustomfield custentity_123 {
   showinlist = false
   storevalue = true
   _alias = "Omri1"
+  appliestogenericrsrc = false
 }

@@ -10,6 +10,18 @@ netsuite.location location_22@s {
     addrText = "location 22<br>United States"
     override = false
     
+    customFieldList = {
+      customField = [
+        {
+          value = false
+          scriptId = "custrecord_address_field"
+        },
+        {
+          value = false
+          scriptId = "custrecord_scs"
+        },
+      ]
+    }
   }
   timeZone = "_americaLosAngeles"
   makeInventoryAvailable = false
@@ -19,8 +31,12 @@ netsuite.location location_22@s {
       French__France_@sjk = {
         language = "French (France)"
       }
+      English__CA_@sjk = {
+        language = "English (CA)"
+      }
     }
   }
   identifier = "location 22"
   _alias = "location 22"
+  allowStorePickup = false
 }

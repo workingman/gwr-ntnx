@@ -109,6 +109,26 @@ netsuite.addressForm custform_7_2239021_592 {
               sameRowAsPrevious = true
               index = 9
             }
+            custrecord_address_field = {
+              id = netsuite.othercustomfield.instance.custrecord_address_field.scriptid
+              label = "address field"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 10
+            }
+            custrecord_scs = {
+              id = netsuite.othercustomfield.instance.custrecord_scs.scriptid
+              label = "Show Address in Customer's Portal Account"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 11
+            }
           }
           index = 0
         }

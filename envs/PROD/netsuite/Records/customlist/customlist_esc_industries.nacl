@@ -265,6 +265,6 @@ netsuite.customlist customlist_esc_industries {
     }
   }
   _alias = "Industry"
-  bundle = netsuite.bundle.instance.bundle_58416
+  
   isInactive = false
 }

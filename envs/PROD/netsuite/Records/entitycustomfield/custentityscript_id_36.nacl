@@ -44,4 +44,5 @@ netsuite.entitycustomfield custentityscript_id_36 {
     }
   }
   _alias = "test & 1"
+  appliestogenericrsrc = false
 }

@@ -30,4 +30,5 @@ netsuite.entitycustomfield custentity_saas_e2e {
   showinlist = false
   storevalue = true
   _alias = "DO NOT DELETE Saas E2E"
+  appliestogenericrsrc = false
 }

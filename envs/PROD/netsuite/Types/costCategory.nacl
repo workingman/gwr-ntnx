@@ -14,7 +14,7 @@ type netsuite.costCategory {
   }
   boolean isInactive {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

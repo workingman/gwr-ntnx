@@ -32,4 +32,5 @@ netsuite.entitycustomfield custentity_employee_last_mod_date {
   storevalue = false
   subtab = "ENTITYGENERAL"
   _alias = "Employee last modified2"
+  appliestogenericrsrc = false
 }

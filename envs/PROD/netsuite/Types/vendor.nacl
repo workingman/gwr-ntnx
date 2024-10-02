@@ -171,7 +171,7 @@ type netsuite.vendor {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
@@ -215,5 +215,9 @@ type netsuite.vendor {
   }
   string custom_custentity_ebd_pay_data {
     field_instance = netsuite.entitycustomfield.instance.custentity_ebd_pay_data.scriptid
+  }
+  unknown custom_custentity_seggev {
+    select_type_id = netsuite.customrecord2823.attr.scriptid
+    field_instance = netsuite.entitycustomfield.instance.custentity_seggev.scriptid
   }
 }

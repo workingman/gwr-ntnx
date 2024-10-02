@@ -31,4 +31,5 @@ netsuite.entitycustomfield custentity_slt_tax_reg {
   storevalue = true
   subtab = "ENTITYMAIN"
   _alias = "Tax registration number"
+  appliestogenericrsrc = false
 }

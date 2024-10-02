@@ -7,7 +7,7 @@ type netsuite.solution {
   }
   netsuite.recordRef customForm {
   }
-  serviceid solutionCode {
+  string solutionCode {
   }
   string title {
   }
@@ -29,7 +29,7 @@ type netsuite.solution {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

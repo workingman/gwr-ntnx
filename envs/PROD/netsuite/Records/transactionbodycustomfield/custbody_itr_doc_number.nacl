@@ -2,8 +2,8 @@ netsuite.transactionbodycustomfield custbody_itr_doc_number {
   scriptid = "custbody_itr_doc_number"
   accesslevel = "2"
   applyformatting = false
-  bodyassemblybuild = false
-  bodybom = false
+  
+  
   bodycustomerpayment = false
   bodydeposit = false
   bodydepositapplication = false
@@ -16,7 +16,7 @@ netsuite.transactionbodycustomfield custbody_itr_doc_number {
   bodyjournal = false
   bodyopportunity = false
   bodyothertransaction = false
-  bodyperiodendjournal = false
+  
   bodypickingticket = false
   bodyprintflag = false
   bodyprintpackingslip = false
@@ -41,4 +41,9 @@ netsuite.transactionbodycustomfield custbody_itr_doc_number {
   showinlist = false
   storevalue = true
   _alias = "GWR Amp doc number"
+  bodypaycheck = false
+  bodystore = false
+  bodybtegata = false
+  bodyfulfillmentrequest = false
+  bodystorepickup = false
 }

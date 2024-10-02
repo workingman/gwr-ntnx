@@ -2,8 +2,8 @@ netsuite.transactionbodycustomfield custbody_aw_edit {
   scriptid = "custbody_aw_edit"
   accesslevel = "2"
   applyformatting = false
-  bodyassemblybuild = false
-  bodybom = false
+  
+  
   bodycustomerpayment = false
   bodydeposit = false
   bodydepositapplication = false
@@ -16,7 +16,7 @@ netsuite.transactionbodycustomfield custbody_aw_edit {
   bodyjournal = false
   bodyopportunity = false
   bodyothertransaction = false
-  bodyperiodendjournal = false
+  
   bodypickingticket = false
   bodyprintflag = false
   bodyprintpackingslip = false
@@ -41,4 +41,9 @@ netsuite.transactionbodycustomfield custbody_aw_edit {
   storevalue = true
   subtab = "TRANSACTIONSYSTEMINFORMATION"
   _alias = "GWR Amp Edit - WA"
+  bodypaycheck = false
+  bodystore = false
+  bodybtegata = false
+  bodyfulfillmentrequest = false
+  bodystorepickup = false
 }

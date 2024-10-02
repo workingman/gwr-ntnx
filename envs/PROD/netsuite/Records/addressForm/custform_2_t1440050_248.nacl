@@ -10,7 +10,7 @@ netsuite.addressForm custform_2_t1440050_248 {
           field = {
             COUNTRY = {
               id = "COUNTRY"
-              label = "Country2/"
+              label = "Country2/1"
               visible = true
               mandatory = true
               displayType = "NORMAL"
@@ -107,6 +107,26 @@ netsuite.addressForm custform_2_t1440050_248 {
               columnBreak = false
               sameRowAsPrevious = true
               index = 9
+            }
+            custrecord_address_field = {
+              id = netsuite.othercustomfield.instance.custrecord_address_field.scriptid
+              label = "address field"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 10
+            }
+            custrecord_scs = {
+              id = netsuite.othercustomfield.instance.custrecord_scs.scriptid
+              label = "Show Address in Customer's Portal Account"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 11
             }
           }
           index = 0

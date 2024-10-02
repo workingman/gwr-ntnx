@@ -37,4 +37,5 @@ netsuite.entitycustomfield custentity_slt_with_source_list {
     },
   ]
   _alias = "With Source List"
+  appliestogenericrsrc = false
 }

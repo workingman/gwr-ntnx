@@ -41,4 +41,8 @@ netsuite.transactionbodycustomfield custbody_approval_status {
   storevalue = true
   subtab = "TRANSACTIONMAIN"
   _alias = "Bill Approval Status"
+  bodypaycheck = false
+  bodybtegata = false
+  bodyfulfillmentrequest = false
+  bodystorepickup = false
 }

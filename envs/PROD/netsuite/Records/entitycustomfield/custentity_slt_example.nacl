@@ -31,4 +31,5 @@ netsuite.entitycustomfield custentity_slt_example {
   showinlist = false
   storevalue = true
   _alias = "CreatedUsingSalto"
+  appliestogenericrsrc = false
 }

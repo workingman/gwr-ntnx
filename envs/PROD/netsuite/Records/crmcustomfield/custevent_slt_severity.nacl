@@ -37,4 +37,8 @@ netsuite.crmcustomfield custevent_slt_severity {
     },
   ]
   _alias = "Severity"
+  appliesperkeyword = false
+  appliestocampaign = false
+  appliestoprojecttask = false
+  appliestocase = false
 }

@@ -30,4 +30,5 @@ netsuite.entitycustomfield custentitymynewcustomgfield2 {
   showinlist = false
   storevalue = true
   _alias = "MyNewCustomgField2"
+  appliestogenericrsrc = true
 }

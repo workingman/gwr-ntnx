@@ -30,4 +30,5 @@ netsuite.entitycustomfield custentity18 {
   showinlist = false
   storevalue = true
   _alias = "myNewLazyField"
+  appliestogenericrsrc = false
 }

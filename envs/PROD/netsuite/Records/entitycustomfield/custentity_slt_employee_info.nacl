@@ -31,4 +31,5 @@ netsuite.entitycustomfield custentity_slt_employee_info {
   showinlist = false
   storevalue = true
   _alias = "Checkbox Field 14"
+  appliestogenericrsrc = false
 }

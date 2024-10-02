@@ -8,7 +8,7 @@ settings netsuite.accountingPreferences {
     type = "checkbox"
   }
   number MAXLOCATIONS {
-    label = "Maximum number of MLI locations"
+    label = "Maximum number of MLI warehouses"
     type = "integer"
   }
   netsuite.selectOption CONTRACTCOSTEXPENSESOURCEACCOUNT {
@@ -147,6 +147,10 @@ settings netsuite.accountingPreferences {
     label = "Value"
     type = "timetrack"
   }
+  boolean NO_NEGATIVE_RCOMMITTED {
+    label = "Do not allow negative committed quantities"
+    type = "checkbox"
+  }
   boolean UNRECEIVEDRTNAUTHS {
     label = "Refund in Advance of Return"
     type = "checkbox"
@@ -256,7 +260,7 @@ settings netsuite.accountingPreferences {
     type = "checkbox"
   }
   boolean CURCOUNTONTRANSFERS {
-    label = "SCM: Inventory: Display Current Count on Transfers"
+    label = "Display Current Count on Transfers"
     type = "checkbox"
   }
   netsuite.selectOption BILLEXCHRATEVARIANCEACCT {
@@ -572,7 +576,7 @@ settings netsuite.accountingPreferences {
     type = "checkbox"
   }
   boolean BULKFULFILLLOCFILTERING {
-    label = "Filter Bulk Fulfillment Page by Location"
+    label = "Filter Bulk Fulfillment Page by Warehouse"
     type = "checkbox"
   }
   netsuite.selectOption DEFRTNAUTHSTATUS {
@@ -720,7 +724,7 @@ settings netsuite.accountingPreferences {
     type = "date"
   }
   netsuite.selectOption DEFAULTPURCHORDERLOCATION {
-    label = "Default Location for Purchase Orders"
+    label = "Default Warehouse for Purchase Orders"
     type = "select"
   }
   boolean EXTENDEDLEVEL3DATA {
@@ -732,7 +736,7 @@ settings netsuite.accountingPreferences {
     type = "checkbox"
   }
   boolean CENTRALIZEDPURCHASING {
-    label = "Centralize Purchasing in a Single Location"
+    label = "Centralize Purchasing in a Single Warehouse"
     type = "checkbox"
   }
   netsuite.selectOption TIMELIMITENTRYMIN {
@@ -804,7 +808,7 @@ settings netsuite.accountingPreferences {
     type = "integer"
   }
   netsuite.selectOption DEFAULTSALESORDERLOCATION {
-    label = "Default Location for Sales Orders"
+    label = "Default Warehouse for Sales Orders"
     type = "select"
   }
   netsuite.selectOption CUSTOMERPAYMENTSAPPLYLOGIC {
@@ -1036,7 +1040,7 @@ settings netsuite.accountingPreferences {
     type = "integer"
   }
   boolean LOCMANDATORY {
-    label = "Make Locations Mandatory"
+    label = "Make Warehouses Mandatory"
     type = "checkbox"
   }
   number MAX_LINES_IN_REVAL_BUCKET {
@@ -1128,7 +1132,7 @@ settings netsuite.accountingPreferences {
     type = "select"
   }
   boolean CURCOUNTONADJUSTMENTS {
-    label = "SCM: Inventory: Display Current Count on Adjustments"
+    label = "Display Current Count on Adjustments"
     type = "checkbox"
   }
   netsuite.selectOption DEFAULTSTANDARDREVRECRULE {
@@ -1140,7 +1144,7 @@ settings netsuite.accountingPreferences {
     type = "checkbox"
   }
   boolean CURCOUNTONWORKSHEETS {
-    label = "SCM: Inventory: Display Current Count on Worksheets"
+    label = "Display Current Count on Worksheets"
     type = "checkbox"
   }
   netsuite.selectOption TIMELIMITDAYMIN {
@@ -1212,4 +1216,44 @@ settings netsuite.accountingPreferences {
     _hidden_value = true
   }
   _alias = "Accounting Preferences"
+  boolean SHOWPLANNEDTIME {
+    label = "Show Planned Time in Time Entry"
+    type = "checkbox"
+  }
+  boolean TIMEEXPENSEJOBSONLY {
+    label = "Show Jobs Only for Time and Expense Entry"
+    type = "checkbox"
+  }
+  boolean USESYSCALCPCT4REVREC {
+    label = "Use System Percentage of Completion For Schedules"
+    type = "checkbox"
+  }
+  number DEFAULT_RFQ_TIERS {
+    label = "Default Number of Request for Quote Pricing Tiers"
+    type = "integer"
+  }
+  boolean CUSTOMAPPROVALPURCHCON {
+    label = "Purchase Contracts"
+    type = "checkbox"
+  }
+  boolean ARC_BETA_REENABLED {
+    label = "ARC: Forcibly re-enable deprecated feature Record Customization (Beta)"
+    type = "checkbox"
+  }
+  number RETRY_WAIT_TIME_ON_ELEM_PLAN_UPDATE {
+    label = "Time in Between Each Retry in Bulk Revenue Element Plan Status Update (Milliseconds)"
+    type = "integer"
+  }
+  number RETRY_LIMIT_ON_ELEM_PLAN_UPDATE {
+    label = "Number of Retries in Bulk Revenue Element Plan Status Update"
+    type = "integer"
+  }
+  boolean REST_BETA_RECORD_REENABLED {
+    label = "REST WS: Forcibly re-enable deprecated feature REST Record Service (Beta)"
+    type = "checkbox"
+  }
+  number SCM_BULK_PROC_SUBMISSIONS_TO_DELETE {
+    label = "SCM: Number of bulk processing submissions to delete per day"
+    type = "integer"
+  }
 }

@@ -32,4 +32,5 @@ netsuite.entitycustomfield custentity_vendor_status {
   showinlist = false
   storevalue = true
   _alias = "Vendor Status"
+  appliestogenericrsrc = false
 }

@@ -30,4 +30,5 @@ netsuite.entitycustomfield custentity21 {
   showinlist = false
   storevalue = true
   _alias = "Lior's entity test field"
+  appliestogenericrsrc = false
 }

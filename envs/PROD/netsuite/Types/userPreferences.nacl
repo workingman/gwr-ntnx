@@ -97,7 +97,7 @@ settings netsuite.userPreferences {
     type = "select"
   }
   netsuite.selectOption LOCATION {
-    label = "Location"
+    label = "Warehouse"
     type = "select"
   }
   netsuite.selectOption MSIE_ZOOM_FACTOR {
@@ -306,7 +306,7 @@ settings netsuite.userPreferences {
     type = "checkbox"
   }
   boolean TASK_DEFAULTPUBLIC {
-    label = "Default New Tasks Public"
+    label = "Default New Salto Tasks Public"
     type = "checkbox"
   }
   boolean VENDCREDLIMWARNINGS {
@@ -406,7 +406,7 @@ settings netsuite.userPreferences {
     type = "checkbox"
   }
   netsuite.selectOption DEFAULTTASKPRIORITY {
-    label = "Default Priority for Tasks"
+    label = "Default Priority for Salto Tasks"
     type = "select"
   }
   netsuite.selectOption SEARCHSORTING {
@@ -465,6 +465,14 @@ settings netsuite.userPreferences {
   }
   boolean DEPARTMENTSUBS {
     label = "Include Sub-Departments"
+    type = "checkbox"
+  }
+  boolean CAMPAIGN_BOUNCE_WARNING {
+    label = "Display Bounce Warning on Campaigns"
+    type = "checkbox"
+  }
+  boolean DROPDOWN_FAVORITES {
+    label = "Allow Favorites in Dropdowns"
     type = "checkbox"
   }
 }

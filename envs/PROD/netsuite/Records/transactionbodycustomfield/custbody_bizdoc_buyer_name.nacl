@@ -64,4 +64,8 @@ netsuite.transactionbodycustomfield custbody_bizdoc_buyer_name {
     }
   }
   _alias = "Buyer"
+  bodypaycheck = false
+  bodybtegata = false
+  bodyfulfillmentrequest = false
+  bodystorepickup = false
 }

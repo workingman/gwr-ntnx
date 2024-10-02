@@ -38,4 +38,8 @@ netsuite.transactionbodycustomfield custbodybundle_type {
   showinlist = true
   storevalue = true
   _alias = "Bundle Type"
+  bodypaycheck = false
+  bodybtegata = false
+  bodyfulfillmentrequest = false
+  bodystorepickup = false
 }

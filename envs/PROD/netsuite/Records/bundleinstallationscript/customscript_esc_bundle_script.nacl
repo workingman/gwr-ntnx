@@ -19,6 +19,6 @@ netsuite.bundleinstallationscript customscript_esc_bundle_script {
     }
   }
   _alias = "Enhanced Sales Center Bundle Script"
-  bundle = netsuite.bundle.instance.bundle_58416
+  
   isInactive = false
 }

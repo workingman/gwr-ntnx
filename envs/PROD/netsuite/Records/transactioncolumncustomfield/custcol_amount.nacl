@@ -35,4 +35,11 @@ netsuite.transactioncolumncustomfield custcol_amount {
   showhierarchy = false
   storevalue = true
   _alias = "Amount"
+  colpaycheckcompanycontribution = false
+  colpaycheckcompanytax = false
+  colpaycheckdeduction = false
+  colpaycheckearning = false
+  colpaycheckemployeetax = false
+  colfulfillmentrequest = false
+  colstorepickup = false
 }

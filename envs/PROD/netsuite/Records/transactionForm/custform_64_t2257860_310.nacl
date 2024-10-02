@@ -335,6 +335,63 @@ netsuite.transactionForm custform_64_t2257860_310 {
               sameRowAsPrevious = false
               index = 12
             }
+            custbody_dep_percent = {
+              id = netsuite.transactionbodycustomfield.instance.custbody_dep_percent.scriptid
+              label = "Deposit Percent"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 13
+            }
+            custbody_dep_formula = {
+              id = netsuite.transactionbodycustomfield.instance.custbody_dep_formula.scriptid
+              label = "Deposit Due"
+              visible = true
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 14
+            }
+            custbody_contactontrans = {
+              id = netsuite.transactionbodycustomfield.instance.custbody_contactontrans.scriptid
+              label = "Contact Name"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 15
+            }
+            custbody_contactphonenumber = {
+              id = netsuite.transactionbodycustomfield.instance.custbody_contactphonenumber.scriptid
+              label = "Contact Phone Number"
+              visible = true
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 16
+            }
+          }
+          index = 1
+        }
+        TOP = {
+          position = "TOP"
+          field = {
+            custbody_acctg_approval = {
+              id = netsuite.transactionbodycustomfield.instance.custbody_acctg_approval.scriptid
+              label = "Accounting Approval"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              checkBoxDefault = "USE_FIELD_DEFAULT"
+              index = 0
+            }
           }
           index = 0
         }
@@ -364,97 +421,103 @@ netsuite.transactionForm custform_64_t2257860_310 {
                     id = "DESCRIPTION"
                     label = "Description"
                     visible = true
-                    index = 1
+                    index = 2
                   }
                   UNITS = {
                     id = "UNITS"
                     label = "Units"
                     visible = true
-                    index = 2
+                    index = 3
                   }
                   QUANTITYONHAND = {
                     id = "QUANTITYONHAND"
                     label = "Qty. On Hand"
                     visible = true
-                    index = 3
+                    index = 4
                   }
                   ADJUSTQTYBY = {
                     id = "ADJUSTQTYBY"
                     label = "Qty. To Transfer"
                     visible = true
-                    index = 4
+                    index = 5
                   }
                   SERIALNUMBERS = {
                     id = "SERIALNUMBERS"
                     label = "Serial/Lot Numbers"
                     visible = true
-                    index = 5
+                    index = 6
                   }
                   custcol_slt_billable = {
                     id = netsuite.transactioncolumncustomfield.instance.custcol_slt_billable.scriptid
                     label = "Billable"
                     visible = false
-                    index = 6
+                    index = 7
                   }
                   custcol_with_stam_dependency = {
                     id = netsuite.transactioncolumncustomfield.instance.custcol_with_stam_dependency.scriptid
                     label = "with Stam dependency"
                     visible = false
-                    index = 7
+                    index = 8
                   }
                   custcol_slt_e2e_test = {
                     id = netsuite.transactioncolumncustomfield.instance.custcol_slt_e2e_test.scriptid
                     label = "created by oss e2e - 1191057"
                     visible = false
-                    index = 8
+                    index = 9
                   }
                   cseg1 = {
                     id = "[type=transactioncolumncustomfield, scriptid=cseg1]"
                     label = "Stam2"
                     visible = false
-                    index = 9
+                    index = 10
                   }
                   cseg_slt_order = {
                     id = "[type=transactioncolumncustomfield, scriptid=cseg_slt_order]"
                     label = "Test Applications Order"
                     visible = false
-                    index = 10
+                    index = 11
                   }
                   cseg2 = {
                     id = "[type=transactioncolumncustomfield, scriptid=cseg2]"
                     label = "Region"
                     visible = false
-                    index = 11
+                    index = 12
                   }
                   cseg_erp_property = {
                     id = "[type=transactioncolumncustomfield, scriptid=cseg_erp_property]"
                     label = "Kavel"
                     visible = true
-                    index = 12
+                    index = 13
                   }
                   cseg_test2 = {
                     id = "[type=transactioncolumncustomfield, scriptid=cseg_test2]"
                     label = "test2"
                     visible = false
-                    index = 13
+                    index = 14
                   }
                   cseg3 = {
                     id = "[type=transactioncolumncustomfield, scriptid=cseg3]"
                     label = "cseg6"
                     visible = false
-                    index = 14
+                    index = 15
                   }
                   cseg4 = {
                     id = "[type=transactioncolumncustomfield, scriptid=cseg4]"
                     label = "csegggg"
                     visible = false
-                    index = 15
+                    index = 16
                   }
                   cseg_sales_region = {
                     id = "[type=transactioncolumncustomfield, scriptid=cseg_sales_region]"
                     label = "Sales Region"
                     visible = true
-                    index = 16
+                    index = 17
+                  }
+                  DISPLAYNAME = {
+                    id = "DISPLAYNAME"
+                    label = "Display Name"
+                    visible = false
+                    index = 1
                   }
                 }
               }
@@ -546,6 +609,51 @@ netsuite.transactionForm custform_64_t2257860_310 {
           }
         }
         index = 2
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = {
+              MIDDLE = {
+                position = "MIDDLE"
+                field = {
+                  custbody_aw_second_lvl_approval = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_aw_second_lvl_approval.scriptid
+                    label = "GWR Amp 2nd Level Approval"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "USE_FIELD_DEFAULT"
+                    index = 0
+                  }
+                  custbody_aw_first_lvl_approval = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_aw_first_lvl_approval.scriptid
+                    label = "GWR Amp 1st Level Approval"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "USE_FIELD_DEFAULT"
+                    index = 1
+                  }
+                  custbody_aw_edit = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_aw_edit.scriptid
+                    label = "GWR Amp Edit - WA"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "USE_FIELD_DEFAULT"
+                    index = 2
+                  }
+                }
+                index = 0
+              }
+            }
+          }
+        }
       }
       CUSTOM = {
         id = "CUSTOM"
@@ -576,6 +684,16 @@ netsuite.transactionForm custform_64_t2257860_310 {
                     columnBreak = false
                     sameRowAsPrevious = false
                     index = 1
+                  }
+                  custbody_itr_doc_number = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_itr_doc_number.scriptid
+                    label = "GWR Amp doc number"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 2
                   }
                 }
                 index = 0
@@ -670,6 +788,10 @@ netsuite.transactionForm custform_64_t2257860_310 {
       }
       FULL_ACCESS = {
         id = "FULL_ACCESS"
+        preferred = false
+      }
+      customrole1039 = {
+        id = netsuite.role.instance.customrole1039.scriptid
         preferred = false
       }
     }

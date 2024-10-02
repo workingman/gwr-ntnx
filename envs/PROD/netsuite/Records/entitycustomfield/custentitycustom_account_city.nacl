@@ -31,4 +31,5 @@ netsuite.entitycustomfield custentitycustom_account_city {
   showinlist = false
   storevalue = true
   _alias = "Custom account city"
+  appliestogenericrsrc = false
 }

@@ -1,7 +1,10 @@
 netsuite.customlist customlist17 {
   scriptid = "customlist17"
   description = '''
-Favorite TV shows from the past decade, rated 7 and above
+Favorite TV shows from the past decade, rated 7 & above
+
+&lt;&gt;'&
+
 test
 '''
   

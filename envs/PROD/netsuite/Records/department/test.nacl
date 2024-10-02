@@ -7,6 +7,9 @@ netsuite.department test {
       French__France_@sjk = {
         language = "French (France)"
       }
+      English__CA_@sjk = {
+        language = "English (CA)"
+      }
     }
   }
   subsidiaryList = [

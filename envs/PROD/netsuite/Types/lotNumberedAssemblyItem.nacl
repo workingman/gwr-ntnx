@@ -188,7 +188,8 @@ type netsuite.lotNumberedAssemblyItem {
   }
   boolean isPhantom {
   }
-  netsuite.recordRefList itemShipMethodList {
+  "List<netsuite.recordRef>" itemShipMethodList {
+    isReference = true
   }
   string scheduleBNumber {
   }
@@ -425,7 +426,8 @@ type netsuite.lotNumberedAssemblyItem {
   }
   netsuite.itemOptionsList itemOptionsList {
   }
-  netsuite.recordRefList itemNumberOptionsList {
+  "List<netsuite.recordRef>" itemNumberOptionsList {
+    isReference = true
   }
   netsuite.itemVendorList itemVendorList {
   }
@@ -457,14 +459,14 @@ type netsuite.lotNumberedAssemblyItem {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
   }
-  serviceid identifier {
+  string identifier {
   }
   _alias = "Lot Numbered Assembly Item"
   _important_values = [

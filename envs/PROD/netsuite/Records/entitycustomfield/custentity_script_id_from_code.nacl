@@ -30,4 +30,5 @@ netsuite.entitycustomfield custentity_script_id_from_code {
   showinlist = false
   storevalue = true
   _alias = "createdByTestWithOwner5"
+  appliestogenericrsrc = false
 }

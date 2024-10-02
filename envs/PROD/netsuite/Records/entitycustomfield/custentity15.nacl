@@ -30,4 +30,5 @@ netsuite.entitycustomfield custentity15 {
   showinlist = false
   storevalue = true
   _alias = "Some editelabel"
+  appliestogenericrsrc = false
 }

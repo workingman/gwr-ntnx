@@ -103,10 +103,10 @@ type netsuite.customrecord_crpsm {
     hidden_string internalId {
     }
   }
-  serviceid scriptid {
+  string scriptid {
     _required = true
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.customRecordTranslationsList translationsList {
@@ -201,11 +201,13 @@ type netsuite.customrecord_crpsm {
   enablenumbering = false
   enableoptimisticlocking = false
   enablesystemnotes = true
+  externalrolepermissionlevel = "NONE"
   hierarchical = false
   iconbuiltin = true
   includeinsearchmenu = false
   includename = true
   isordered = true
+  publicpermissionlevel = "NONE"
   recordname = "Project Status Metric"
   showcreationdate = false
   showcreationdateonlist = false
@@ -263,4 +265,5 @@ type netsuite.customrecord_crpsm {
       indexed = true
     },
   ]
+  description = "update for version bump 20240301-235130"
 }

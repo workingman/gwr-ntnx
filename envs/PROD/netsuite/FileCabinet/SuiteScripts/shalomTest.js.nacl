@@ -15,6 +15,6 @@ netsuite.file SuiteScripts_shalomTest_js@dv {
     },
   ]
   _alias = "shalomTest.js"
-  description = "some test changes"
+  description = "some test changes wow "
   isInactive = false
 }

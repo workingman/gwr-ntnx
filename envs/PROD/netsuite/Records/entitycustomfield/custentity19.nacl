@@ -30,4 +30,5 @@ netsuite.entitycustomfield custentity19 {
   showinlist = false
   storevalue = true
   _alias = "myNewLazyField19With2021_2"
+  appliestogenericrsrc = false
 }

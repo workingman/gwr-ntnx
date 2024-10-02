@@ -41,4 +41,8 @@ netsuite.transactionbodycustomfield custbody_slt_customer_balance {
   storevalue = false
   subtab = "TRANSACTIONMAIN"
   _alias = "Customer Balance"
+  bodypaycheck = false
+  bodybtegata = false
+  bodyfulfillmentrequest = false
+  bodystorepickup = false
 }

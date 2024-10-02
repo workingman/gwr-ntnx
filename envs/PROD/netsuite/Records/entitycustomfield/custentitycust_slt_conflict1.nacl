@@ -32,4 +32,5 @@ netsuite.entitycustomfield custentitycust_slt_conflict1 {
   showinlist = false
   storevalue = true
   _alias = "Conflict field1"
+  appliestogenericrsrc = false
 }

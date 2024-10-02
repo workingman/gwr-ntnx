@@ -7,6 +7,9 @@ netsuite.classification test2 {
       French__France_@sjk = {
         language = "French (France)"
       }
+      English__CA_@sjk = {
+        language = "English (CA)"
+      }
     }
   }
   subsidiaryList = [

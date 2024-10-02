@@ -10,7 +10,7 @@ type netsuite.manufacturingCostTemplate {
   netsuite.subsidiary subsidiary {
     isReference = true
   }
-  serviceid name {
+  string name {
   }
   string memo {
   }
@@ -20,7 +20,7 @@ type netsuite.manufacturingCostTemplate {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

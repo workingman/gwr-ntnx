@@ -1,6 +1,6 @@
 netsuite.customlist customlist_testlist2 {
   scriptid = "customlist_testlist2"
-  description = "desc2.. (change for audit!)"
+  description = "desc2.. (change for audit2!)"
   
   ismatrixoption = false
   isordered = true

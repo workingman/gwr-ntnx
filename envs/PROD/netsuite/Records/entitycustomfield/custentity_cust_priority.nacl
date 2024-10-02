@@ -33,4 +33,5 @@ netsuite.entitycustomfield custentity_cust_priority {
   showinlist = true
   storevalue = true
   _alias = "Priority"
+  appliestogenericrsrc = false
 }

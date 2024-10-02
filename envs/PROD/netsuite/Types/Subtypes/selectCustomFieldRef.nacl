@@ -3,7 +3,7 @@ type netsuite.selectCustomFieldRef {
     hidden_string source {
     }
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

@@ -17,7 +17,7 @@ netsuite.entitycustomfield custentity_15 {
   availableexternally = false
   checkspelling = false
   defaultchecked = false
-  description = "description2"
+  description = "description3"
   displaytype = "NORMAL"
   encryptatrest = false
   fieldtype = "CHECKBOX"
@@ -31,4 +31,5 @@ netsuite.entitycustomfield custentity_15 {
   showinlist = false
   storevalue = true
   _alias = "Checkbox Field 15"
+  appliestogenericrsrc = false
 }

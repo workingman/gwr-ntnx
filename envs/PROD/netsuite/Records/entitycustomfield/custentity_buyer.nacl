@@ -31,4 +31,5 @@ netsuite.entitycustomfield custentity_buyer {
   storevalue = true
   subtab = "ENTITYHUMANRESOURCES"
   _alias = "Buyer"
+  appliestogenericrsrc = false
 }

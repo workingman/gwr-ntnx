@@ -38,4 +38,11 @@ netsuite.transactioncolumncustomfield custcol_slt_billable {
   sourcelist = "STDBODYENTITY"
   storevalue = true
   _alias = "Billable"
+  colpaycheckcompanycontribution = false
+  colpaycheckcompanytax = false
+  colpaycheckdeduction = false
+  colpaycheckearning = false
+  colpaycheckemployeetax = false
+  colfulfillmentrequest = false
+  colstorepickup = false
 }

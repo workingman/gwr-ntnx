@@ -52,7 +52,7 @@ settings netsuite.companyPreferences {
     type = "select"
   }
   boolean ASSIGNTASKSTOPARTNERS {
-    label = "Assign Tasks to Partners"
+    label = "Assign Salto Tasks to Partners"
     type = "checkbox"
   }
   netsuite.selectOption ACCOUNT_LEVEL_SWITCH {
@@ -62,6 +62,10 @@ settings netsuite.companyPreferences {
   boolean custscript_lsa_primary_sales_rep {
     label = "Track Only Primary Sales Rep Activities"
     type = "checkbox"
+  }
+  netsuite.selectOption ORACLE_GUIDED_LEARNING_ENV {
+    label = "Set NetSuite Guided Learning Environment"
+    type = "select"
   }
   netsuite.selectOption CALENDARSYSTEM {
     label = "Calendar System"
@@ -419,13 +423,30 @@ settings netsuite.companyPreferences {
     label = "Company Logo Folder"
     type = "select"
   }
+  netsuite.selectOption custscript_sw_sah_settings_pref {
+    label = "SAH Settings"
+    type = "select"
+  }
   string configType {
     _required = true
     _hidden_value = true
   }
   _alias = "Company Preferences"
-  boolean USE_DART_SASS_COMPILER {
-    label = "Use Dart Sass compiler"
+  
+  boolean SHOWPROJECTTASKINNEWUI {
+    label = "Show Project Task in new UI"
+    type = "checkbox"
+  }
+  number MAXPLANNEDTIMEPERPROJECTASSIGNMENT {
+    label = "Maximum Planned Time Entries Per Project Task Assignment"
+    type = "integer"
+  }
+  boolean ASYNCHRONOUS_PROJECT_RECALCULATION {
+    label = "Asynchronous Job Plan Recalculation"
+    type = "checkbox"
+  }
+  boolean BUNDLE_FILES_PUBLIC {
+    label = "SuiteBundle files always available"
     type = "checkbox"
   }
 }

@@ -104,10 +104,10 @@ type netsuite.customrecord_cseg_erp_property {
     boolean isInactive {
     }
   }
-  serviceid scriptid {
+  string scriptid {
     _required = true
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.customRecordTranslationsList translationsList {
@@ -137,33 +137,11 @@ type netsuite.customrecord_cseg_erp_property {
   showowneronlist = false
   instances = {
     instance = {
-      val_123 = {
-        scriptid = "val_123"
-        
-        name = "a"
-        index = 0
-        isInactive = false
-      }
       val_5913_2239021_335 = {
         scriptid = "val_5913_2239021_335"
         
         name = "b"
-        index = 1
-        isInactive = false
-      }
-      val_121639_t2257860_428 = {
-        scriptid = "val_121639_t2257860_428"
-        
-        name = "c"
-        index = 2
-        isInactive = false
-      }
-      val_5915_2239021_234 = {
-        scriptid = "val_5915_2239021_234"
-        
-        name = "aSon"
-        parent = netsuite.customrecord_cseg_erp_property.attr.instances.instance.val_123.scriptid
-        index = 3
+        index = 0
         isInactive = false
       }
     }

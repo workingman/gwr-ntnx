@@ -44,4 +44,5 @@ netsuite.entitycustomfield custentityscript_id_32_copy {
     }
   }
   _alias = "copy of custentityscript_id_32"
+  appliestogenericrsrc = false
 }

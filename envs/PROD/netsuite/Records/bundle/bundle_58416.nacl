@@ -14,6 +14,6 @@ netsuite.bundle bundle_58416 {
     id = 2063
     name = "Chidi Okwudire"
   }
-  isPrivate = false
+  
   _alias = "Enhanced Sales Center"
 }

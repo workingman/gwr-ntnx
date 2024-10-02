@@ -32,4 +32,5 @@ netsuite.entitycustomfield custentitycust_active_edited {
   storevalue = true
   subtab = "ENTITYSALES"
   _alias = "IsActive 12345"
+  appliestogenericrsrc = true
 }
