@@ -25,11 +25,11 @@ netsuite.entitycustomfield custentity_slt_e2e_test {
   isformula = false
   ismandatory = false
   isparent = false
-  label = "created by e2e - 0707038"
+  label = "created by e2e - 7424447"
   searchlevel = "2"
   showhierarchy = false
   showinlist = false
   storevalue = true
-  _alias = "created by e2e - 0707038"
+  _alias = "created by e2e - 7424447"
   appliestogenericrsrc = false
 }

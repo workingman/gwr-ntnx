@@ -1,5 +1,5 @@
 netsuite.file SuiteScripts_ns_js_showmsg_js@dbbv {
-  description = "e2e-branch-1"
+  description = "e2e-branch-2"
   bundleable = false
   
   availablewithoutlogin = false

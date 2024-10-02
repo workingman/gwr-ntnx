@@ -194,4 +194,26 @@ type netsuite.customrecord1234567 {
     },
   ]
   isInactive = false
+  unknown custom_custrecord_email_template {
+    scriptid = "custrecord_email_template"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = false
+    checkspelling = false
+    defaultchecked = false
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "SELECT"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "email template"
+    rolerestrict = false
+    searchlevel = "2"
+    selectrecordtype = "-120"
+    showinlist = false
+    storevalue = false
+    index = 0
+  }
 }

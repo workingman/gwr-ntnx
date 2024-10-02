@@ -392,7 +392,7 @@ type netsuite.customrecord_slt_testforrest {
   allowquickadd = false
   allowquicksearch = false
   allowuiaccess = true
-  description = "This is the desription!!"
+  description = "This is the desription!"
   enabledle = true
   enablekeywords = true
   enablemailmerge = false
