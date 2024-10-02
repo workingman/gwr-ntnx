@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_dp_dp_searchdemo_2_js@dduuv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_dp_dp_searchdemo_2_js@dduuv {
     netsuite.folder.instance.SuiteScripts_dp@d,
   ]
   _alias = "dp_searchdemo_2.js"
+  isInactive = false
 }

@@ -62,8 +62,7 @@ type netsuite.customrecord_slt_testforrest {
     }
     boolean includename {
     }
-    boolean isinactive {
-    }
+    
     boolean isordered {
     }
     boolean showcreationdate {
@@ -100,11 +99,15 @@ type netsuite.customrecord_slt_testforrest {
     }
     hidden_string internalId {
     }
+    netsuite.bundle bundle {
+    }
+    boolean isInactive {
+    }
   }
-  serviceid scriptid {
+  string scriptid {
     _required = true
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.customRecordTranslationsList translationsList {
@@ -198,7 +201,7 @@ type netsuite.customrecord_slt_testforrest {
   iconbuiltin = true
   includeinsearchmenu = true
   includename = true
-  isinactive = false
+  
   isordered = false
   recordname = "test for rest"
   showcreationdate = false
@@ -224,7 +227,12 @@ type netsuite.customrecord_slt_testforrest {
       indexed = false
     },
     {
-      value = "isinactive"
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },
@@ -245,5 +253,11 @@ type netsuite.customrecord_slt_testforrest {
       highlighted = true
       indexed = true
     },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
   ]
+  isInactive = false
 }

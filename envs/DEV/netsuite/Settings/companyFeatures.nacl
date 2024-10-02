@@ -25,7 +25,7 @@ netsuite.companyFeatures {
   FCEXPENSEMIGRATECONTROLLER = false
   DUPLICATES = false
   FCADVANCEDSECURITY = false
-  IPADDRESSRULES = false
+  IPADDRESSRULES = true
   MOBILEPUSHNTF = true
   ACCOUNTING = true
   RECEIVABLES = true
@@ -219,4 +219,5 @@ netsuite.companyFeatures {
   TELEPHONY = false
   SUITEAPPCONTROLCENTER = false
   _alias = "Company Features"
+  UPLIFTPRICING = false
 }

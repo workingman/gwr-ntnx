@@ -107,10 +107,10 @@ type netsuite.downloadItem {
   }
   string storeDisplayName {
   }
-  netsuite.file storeDisplayThumbnail {
+  netsuite.fileReference storeDisplayThumbnail {
     isReference = true
   }
-  netsuite.file storeDisplayImage {
+  netsuite.fileReference storeDisplayImage {
     isReference = true
   }
   string featuredDescription {
@@ -159,14 +159,14 @@ type netsuite.downloadItem {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
   }
-  serviceid identifier {
+  string identifier {
   }
   _alias = "Download Item"
   _important_values = [

@@ -66,8 +66,7 @@ type netsuite.customrecordtype {
   }
   boolean includename {
   }
-  boolean isinactive {
-  }
+  
   boolean isordered {
   }
   boolean showcreationdate {
@@ -118,11 +117,21 @@ type netsuite.customrecordtype {
       indexed = false
     },
     {
-      value = "isinactive"
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },
   ]
+  netsuite.bundle bundle {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
 }
 type netsuite.customrecordtype_customrecordcustomfields_customrecordcustomfield_customfieldfilters_customfieldfilter {
   string fldfilter {
@@ -268,11 +277,13 @@ type netsuite.customrecordtype_instances_instance {
   }
   string name {
   }
-  boolean isinactive {
-  }
+  
   string parent {
   }
   number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
   }
 }
 type netsuite.customrecordtype_instances {

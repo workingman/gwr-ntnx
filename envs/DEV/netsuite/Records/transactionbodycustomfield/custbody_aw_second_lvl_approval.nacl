@@ -34,11 +34,11 @@ netsuite.transactionbodycustomfield custbody_aw_second_lvl_approval {
   isformula = false
   ismandatory = false
   isparent = false
-  label = "GWR Amp 2nd Level Approval"
+  label = "GWR Amp 2nd Level Approval (2)"
   searchlevel = "2"
   showhierarchy = false
   showinlist = false
   storevalue = true
   subtab = "TRANSACTIONSYSTEMINFORMATION"
-  _alias = "GWR Amp 2nd Level Approval"
+  _alias = "GWR Amp 2nd Level Approval (2)"
 }

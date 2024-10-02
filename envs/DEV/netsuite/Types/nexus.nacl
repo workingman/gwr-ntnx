@@ -25,14 +25,14 @@ type netsuite.nexus {
   }
   boolean taxDateFromFulfillment {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
   }
-  serviceid identifier {
+  string identifier {
   }
   _alias = "Nexus"
   _important_values = [

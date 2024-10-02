@@ -21,7 +21,7 @@ type netsuite.paymentItem {
   }
   netsuite.recordRef customForm {
   }
-  serviceid itemId {
+  string itemId {
   }
   string displayName {
   }
@@ -45,7 +45,7 @@ type netsuite.paymentItem {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

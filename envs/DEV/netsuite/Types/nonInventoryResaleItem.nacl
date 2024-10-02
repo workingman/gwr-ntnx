@@ -187,10 +187,10 @@ type netsuite.nonInventoryResaleItem {
   }
   string storeDisplayName {
   }
-  netsuite.file storeDisplayThumbnail {
+  netsuite.fileReference storeDisplayThumbnail {
     isReference = true
   }
-  netsuite.file storeDisplayImage {
+  netsuite.fileReference storeDisplayImage {
     isReference = true
   }
   string storeDescription {
@@ -293,7 +293,8 @@ type netsuite.nonInventoryResaleItem {
   }
   unknown itemCarrier {
   }
-  netsuite.recordRefList itemShipMethodList {
+  "List<netsuite.recordRef>" itemShipMethodList {
+    isReference = true
   }
   "List<netsuite.subsidiary>" subsidiaryList {
     isReference = true
@@ -331,14 +332,14 @@ type netsuite.nonInventoryResaleItem {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
   }
-  serviceid identifier {
+  string identifier {
   }
   string custom_custitemhq_clone_itemfield01 {
     field_instance = netsuite.itemcustomfield.instance.custitemhq_clone_itemfield01.scriptid

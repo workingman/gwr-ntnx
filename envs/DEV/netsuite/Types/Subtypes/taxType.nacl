@@ -25,7 +25,7 @@ type netsuite.taxType {
   }
   unknown country {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

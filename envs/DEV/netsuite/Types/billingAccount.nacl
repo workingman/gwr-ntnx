@@ -19,8 +19,7 @@ type netsuite.billingAccount {
   }
   string name {
   }
-  boolean inactive {
-  }
+  
   string memo {
   }
   string createdBy {
@@ -55,11 +54,14 @@ type netsuite.billingAccount {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
+  }
+  boolean isInactive {
+    originalName = "inactive"
   }
 }

@@ -14,8 +14,7 @@ type netsuite.transactionForm {
   }
   string recordType {
   }
-  boolean inactive {
-  }
+  
   boolean preferred {
   }
   boolean storedWithRecord {
@@ -65,11 +64,21 @@ type netsuite.transactionForm {
       indexed = false
     },
     {
-      value = "inactive"
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },
   ]
+  netsuite.bundle bundle {
+  }
+  boolean isInactive {
+    originalName = "inactive"
+  }
 }
 type netsuite.transactionForm_actionbar_buttons_button {
   netsuite.transactionform_buttonid id {

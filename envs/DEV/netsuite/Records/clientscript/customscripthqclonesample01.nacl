@@ -1,6 +1,6 @@
 netsuite.clientscript customscripthqclonesample01 {
   scriptid = "customscripthqclonesample01"
-  isinactive = false
+  
   name = "hq-clone-sample01"
   notifyadmins = false
   notifyowner = true
@@ -23,4 +23,5 @@ netsuite.clientscript customscripthqclonesample01 {
     }
   }
   _alias = "hq-clone-sample01"
+  isInactive = false
 }

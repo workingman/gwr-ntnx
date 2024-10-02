@@ -14,8 +14,7 @@ type netsuite.usereventscript {
   }
   string description {
   }
-  boolean isinactive {
-  }
+  
   boolean notifyadmins {
   }
   string notifyemails {
@@ -63,11 +62,21 @@ type netsuite.usereventscript {
       indexed = false
     },
     {
-      value = "isinactive"
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },
   ]
+  netsuite.bundle bundle {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
 }
 type netsuite.usereventscript_customplugintypes_plugintype {
   string plugintype {

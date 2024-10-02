@@ -62,8 +62,7 @@ type netsuite.customrecord_svb_line_is_source_sub {
     }
     boolean includename {
     }
-    boolean isinactive {
-    }
+    
     boolean isordered {
     }
     boolean showcreationdate {
@@ -100,11 +99,15 @@ type netsuite.customrecord_svb_line_is_source_sub {
     }
     hidden_string internalId {
     }
+    netsuite.bundle bundle {
+    }
+    boolean isInactive {
+    }
   }
-  serviceid scriptid {
+  string scriptid {
     _required = true
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.customRecordTranslationsList translationsList {
@@ -599,12 +602,14 @@ type netsuite.customrecord_svb_line_is_source_sub {
   enablenumbering = false
   enableoptimisticlocking = false
   enablesystemnotes = true
+  externalrolepermissionlevel = "NONE"
   hierarchical = false
   iconbuiltin = true
   includeinsearchmenu = true
   includename = false
-  isinactive = false
+  
   isordered = false
+  publicpermissionlevel = "NONE"
   recordname = "SVB | Bill Distribtn Sched Line"
   showcreationdate = true
   showcreationdateonlist = false
@@ -629,7 +634,12 @@ type netsuite.customrecord_svb_line_is_source_sub {
       indexed = false
     },
     {
-      value = "isinactive"
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },
@@ -650,5 +660,11 @@ type netsuite.customrecord_svb_line_is_source_sub {
       highlighted = true
       indexed = true
     },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
   ]
+  isInactive = false
 }

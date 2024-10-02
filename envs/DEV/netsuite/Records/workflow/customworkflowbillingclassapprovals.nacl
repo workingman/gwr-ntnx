@@ -5,7 +5,7 @@ netsuite.workflow customworkflowbillingclassapprovals {
   initoncreate = false
   initonvieworupdate = true
   inittriggertype = "AFTERSUBMIT"
-  isinactive = false
+  
   islogenabled = false
   keephistory = "ONLYWHENTESTING"
   name = "Billing Class Approvals"
@@ -32,12 +32,13 @@ netsuite.workflow customworkflowbillingclassapprovals {
                 scriptid = "workflowaction1280"
                 contexttypes = "CLIENT"
                 eventtypes = "EDIT"
-                isinactive = true
+                
                 targetpage = "LIST_BILLINGCLASS"
                 initcondition = {
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = true
               }
             }
           }
@@ -47,4 +48,5 @@ netsuite.workflow customworkflowbillingclassapprovals {
     }
   }
   _alias = "Billing Class Approvals"
+  isInactive = false
 }

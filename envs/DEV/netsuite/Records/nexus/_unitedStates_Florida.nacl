@@ -1,12 +1,12 @@
 netsuite.nexus _unitedStates_Florida {
   country = "_unitedStates"
   state = {
-    name = "Florida"
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
+    id = "[ACCOUNT_SPECIFIC_VALUE] (object) (Florida)"
   }
   taxAgency = {
-    name = "Tax Agency FL"
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
+    id = "[ACCOUNT_SPECIFIC_VALUE] (object) (Tax Agency FL)"
   }
   description = "FL"
   identifier = "_unitedStates_Florida"

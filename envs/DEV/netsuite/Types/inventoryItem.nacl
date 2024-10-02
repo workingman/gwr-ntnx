@@ -162,7 +162,8 @@ type netsuite.inventoryItem {
   }
   unknown itemCarrier {
   }
-  netsuite.recordRefList itemShipMethodList {
+  "List<netsuite.recordRef>" itemShipMethodList {
+    isReference = true
   }
   string manufacturerTaxId {
   }
@@ -288,10 +289,10 @@ type netsuite.inventoryItem {
   }
   string storeDisplayName {
   }
-  netsuite.file storeDisplayThumbnail {
+  netsuite.fileReference storeDisplayThumbnail {
     isReference = true
   }
-  netsuite.file storeDisplayImage {
+  netsuite.fileReference storeDisplayImage {
     isReference = true
   }
   string storeDescription {
@@ -505,17 +506,20 @@ type netsuite.inventoryItem {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
   }
-  serviceid identifier {
+  string identifier {
   }
   string custom_custitem1 {
     field_instance = netsuite.itemcustomfield.instance.custitem1.scriptid
+  }
+  string custom_custitem_mkd_custom_item_field {
+    field_instance = netsuite.itemcustomfield.instance.custitem_mkd_custom_item_field.scriptid
   }
   string custom_custitem_slt_category {
     field_instance = netsuite.itemcustomfield.instance.custitem_slt_category.scriptid

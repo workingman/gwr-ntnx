@@ -35,7 +35,14 @@ type netsuite.addressForm {
       highlighted = true
       indexed = false
     },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
   ]
+  netsuite.bundle bundle {
+  }
 }
 type netsuite.addressForm_customCode {
   string scriptFile {

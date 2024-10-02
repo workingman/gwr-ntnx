@@ -62,8 +62,7 @@ type netsuite.customrecord_slt_e2e_test {
     }
     boolean includename {
     }
-    boolean isinactive {
-    }
+    
     boolean isordered {
     }
     boolean showcreationdate {
@@ -100,11 +99,15 @@ type netsuite.customrecord_slt_e2e_test {
     }
     hidden_string internalId {
     }
+    netsuite.bundle bundle {
+    }
+    boolean isInactive {
+    }
   }
-  serviceid scriptid {
+  string scriptid {
     _required = true
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.customRecordTranslationsList translationsList {
@@ -176,7 +179,7 @@ type netsuite.customrecord_slt_e2e_test {
   iconbuiltin = true
   includeinsearchmenu = true
   includename = true
-  isinactive = false
+  
   isordered = false
   recordname = "created by oss e2e - 8060213"
   showcreationdate = false
@@ -202,7 +205,12 @@ type netsuite.customrecord_slt_e2e_test {
       indexed = false
     },
     {
-      value = "isinactive"
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },
@@ -223,5 +231,11 @@ type netsuite.customrecord_slt_e2e_test {
       highlighted = true
       indexed = true
     },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
   ]
+  isInactive = false
 }

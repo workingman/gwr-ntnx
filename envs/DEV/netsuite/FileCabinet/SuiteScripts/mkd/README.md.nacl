@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_mkd_README_md@ddv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_mkd_README_md@ddv {
     netsuite.folder.instance.SuiteScripts_mkd@d,
   ]
   _alias = "README.md"
+  isInactive = false
 }

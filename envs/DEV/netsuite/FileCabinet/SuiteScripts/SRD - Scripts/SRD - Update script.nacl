@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_SRD___Scripts_SRD___Update_script@dsbsdsbss {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -15,4 +15,5 @@ netsuite.file SuiteScripts_SRD___Scripts_SRD___Update_script@dsbsdsbss {
     },
   ]
   _alias = "SRD - Update script"
+  isInactive = false
 }

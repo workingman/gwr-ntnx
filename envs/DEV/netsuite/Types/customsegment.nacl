@@ -60,7 +60,14 @@ type netsuite.customsegment {
       highlighted = true
       indexed = false
     },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
   ]
+  netsuite.bundle bundle {
+  }
 }
 type netsuite.customsegment_permissions_permission {
   string role {

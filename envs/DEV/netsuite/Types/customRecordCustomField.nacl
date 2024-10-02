@@ -91,7 +91,7 @@ type netsuite.customRecordCustomField {
   }
   netsuite.customFieldTranslationsList translationsList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

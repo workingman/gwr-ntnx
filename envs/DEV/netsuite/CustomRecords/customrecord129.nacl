@@ -62,8 +62,7 @@ type netsuite.customrecord129 {
     }
     boolean includename {
     }
-    boolean isinactive {
-    }
+    
     boolean isordered {
     }
     boolean showcreationdate {
@@ -100,11 +99,15 @@ type netsuite.customrecord129 {
     }
     hidden_string internalId {
     }
+    netsuite.bundle bundle {
+    }
+    boolean isInactive {
+    }
   }
-  serviceid scriptid {
+  string scriptid {
     _required = true
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.customRecordTranslationsList translationsList {
@@ -131,7 +134,7 @@ type netsuite.customrecord129 {
   iconbuiltin = true
   includeinsearchmenu = true
   includename = true
-  isinactive = false
+  
   isordered = false
   recordname = "EGO Super Record 2"
   showcreationdate = false
@@ -166,7 +169,12 @@ type netsuite.customrecord129 {
       indexed = false
     },
     {
-      value = "isinactive"
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },
@@ -187,5 +195,11 @@ type netsuite.customrecord129 {
       highlighted = true
       indexed = true
     },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
   ]
+  isInactive = false
 }

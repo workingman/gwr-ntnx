@@ -8,6 +8,6 @@ type netsuite.accountingPeriodFiscalCalendars {
   netsuite.accountingPeriodFiscalCalendars parent {
     isReference = true
   }
-  serviceid identifier {
+  string identifier {
   }
 }

@@ -1,7 +1,7 @@
 netsuite.customlist customlist6 {
   scriptid = "customlist6"
   description = "desc.."
-  isinactive = false
+  
   ismatrixoption = false
   isordered = true
   name = "testlist1"
@@ -10,18 +10,21 @@ netsuite.customlist customlist6 {
       "1@" = {
         scriptid = "1"
         abbreviation = "a"
-        isinactive = false
+        
         value = "a"
         index = 0
+        isInactive = false
       }
       "2@" = {
         scriptid = "2"
         abbreviation = "b"
-        isinactive = false
+        
         value = "b"
         index = 1
+        isInactive = false
       }
     }
   }
   _alias = "testlist1"
+  isInactive = false
 }

@@ -197,7 +197,8 @@ type netsuite.lotNumberedInventoryItem {
   }
   number receiptQuantityDiff {
   }
-  netsuite.recordRefList itemShipMethodList {
+  "List<netsuite.recordRef>" itemShipMethodList {
+    isReference = true
   }
   string manufacturerTaxId {
   }
@@ -301,14 +302,14 @@ type netsuite.lotNumberedInventoryItem {
   }
   string storeDisplayName {
   }
-  netsuite.file storeDisplayThumbnail {
+  netsuite.fileReference storeDisplayThumbnail {
     isReference = true
   }
   unknown weightUnit {
   }
   string weightUnits {
   }
-  netsuite.file storeDisplayImage {
+  netsuite.fileReference storeDisplayImage {
     isReference = true
   }
   string storeDescription {
@@ -439,7 +440,8 @@ type netsuite.lotNumberedInventoryItem {
   }
   netsuite.itemAccountingBookDetailList accountingBookDetailList {
   }
-  netsuite.recordRefList itemNumberOptionsList {
+  "List<netsuite.recordRef>" itemNumberOptionsList {
+    isReference = true
   }
   netsuite.lotNumberedInventoryItemNumbersList numbersList {
   }
@@ -480,14 +482,14 @@ type netsuite.lotNumberedInventoryItem {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
   }
-  serviceid identifier {
+  string identifier {
   }
   _alias = "Lot Numbered Inventory Item"
   _important_values = [

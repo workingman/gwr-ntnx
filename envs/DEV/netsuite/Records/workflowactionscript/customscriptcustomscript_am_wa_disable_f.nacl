@@ -1,7 +1,7 @@
 netsuite.workflowactionscript customscriptcustomscript_am_wa_disable_f {
   scriptid = "customscriptcustomscript_am_wa_disable_f"
   description = "GWR Disable form fields."
-  isinactive = false
+  
   name = "GWR Amp | WA Disable Fields"
   notifyadmins = false
   notifyowner = false
@@ -23,4 +23,5 @@ netsuite.workflowactionscript customscriptcustomscript_am_wa_disable_f {
     }
   }
   _alias = "GWR Amp | WA Disable Fields"
+  isInactive = false
 }

@@ -33,7 +33,14 @@ type netsuite.centercategory {
       highlighted = true
       indexed = false
     },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
   ]
+  netsuite.bundle bundle {
+  }
 }
 type netsuite.centercategory_links_link {
   netsuite.generic_task linkid {

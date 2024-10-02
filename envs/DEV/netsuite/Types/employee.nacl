@@ -9,7 +9,7 @@ type netsuite.employee {
   }
   netsuite.recordRef template {
   }
-  serviceid entityId {
+  string entityId {
   }
   string salutation {
   }
@@ -67,7 +67,7 @@ type netsuite.employee {
   }
   unknown globalSubscriptionStatus {
   }
-  netsuite.file image {
+  netsuite.fileReference image {
     isReference = true
   }
   unknown payFrequency {
@@ -229,7 +229,7 @@ type netsuite.employee {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

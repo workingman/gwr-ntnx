@@ -1,8 +1,8 @@
 netsuite.folder SuiteScripts_gwr_archive@d {
   bundleable = false
-  isinactive = false
   isprivate = false
   path = "/SuiteScripts/gwr/archive"
+  isInactive = false
   _parent = [
     netsuite.folder.instance.SuiteScripts_gwr@d,
   ]

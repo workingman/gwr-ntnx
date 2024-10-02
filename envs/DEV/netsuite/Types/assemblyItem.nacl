@@ -174,7 +174,8 @@ type netsuite.assemblyItem {
   }
   unknown itemCarrier {
   }
-  netsuite.recordRefList itemShipMethodList {
+  "List<netsuite.recordRef>" itemShipMethodList {
+    isReference = true
   }
   string manufacturerTaxId {
   }
@@ -371,10 +372,10 @@ type netsuite.assemblyItem {
   }
   number quantityOnOrder {
   }
-  netsuite.file storeDisplayThumbnail {
+  netsuite.fileReference storeDisplayThumbnail {
     isReference = true
   }
-  netsuite.file storeDisplayImage {
+  netsuite.fileReference storeDisplayImage {
     isReference = true
   }
   string storeDescription {
@@ -427,7 +428,8 @@ type netsuite.assemblyItem {
   }
   netsuite.itemOptionsList itemOptionsList {
   }
-  netsuite.recordRefList itemNumberOptionsList {
+  "List<netsuite.recordRef>" itemNumberOptionsList {
+    isReference = true
   }
   netsuite.itemVendorList itemVendorList {
   }
@@ -457,14 +459,14 @@ type netsuite.assemblyItem {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
   }
-  serviceid identifier {
+  string identifier {
   }
   _alias = "Assembly Item"
   _important_values = [

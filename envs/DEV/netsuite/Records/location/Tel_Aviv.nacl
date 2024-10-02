@@ -11,10 +11,13 @@ netsuite.location Tel_Aviv@s {
     override = false
     customFieldList = {
       customField = [
-        netsuite.customFieldRef.instance.location_customField_466,
+        {
+          value = false
+          scriptId = "custrecordsame_as_shipping_address"
+        },
       ]
     }
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
   }
   locationType = "_warehouse"
   timeZone = "_americaLosAngeles"

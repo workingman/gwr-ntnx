@@ -64,7 +64,7 @@ type netsuite.customer {
   }
   unknown negativeNumberFormat {
   }
-  netsuite.file image {
+  netsuite.fileReference image {
     isReference = true
   }
   unknown emailPreference {
@@ -282,14 +282,14 @@ type netsuite.customer {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
   }
-  serviceid identifier {
+  string identifier {
   }
   boolean custom_custentity10 {
     field_instance = netsuite.entitycustomfield.instance.custentity10.scriptid

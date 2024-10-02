@@ -3,7 +3,7 @@ netsuite.entryForm custform_employee {
   standard = "STANDARDEMPLOYEEFORM"
   name = "EMPLOYEE FORM"
   recordType = "EMPLOYEE"
-  inactive = false
+  
   preferred = true
   storedWithRecord = false
   mainFields = {
@@ -1141,7 +1141,7 @@ netsuite.entryForm custform_employee {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 3
+                    index = 4
                   }
                   PASSWORD2 = {
                     id = "PASSWORD2"
@@ -1151,7 +1151,7 @@ netsuite.entryForm custform_employee {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 4
+                    index = 6
                   }
                   REQUIREPWDCHANGE = {
                     id = "REQUIREPWDCHANGE"
@@ -1161,7 +1161,7 @@ netsuite.entryForm custform_employee {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 5
+                    index = 7
                   }
                   CONCURRENTWEBSERVICESUSER = {
                     id = "CONCURRENTWEBSERVICESUSER"
@@ -1171,7 +1171,27 @@ netsuite.entryForm custform_employee {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 6
+                    index = 8
+                  }
+                  INHERITIPRULES = {
+                    id = "INHERITIPRULES"
+                    label = "Inherit IP Rules from Company"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 3
+                  }
+                  IPADDRESSRULE = {
+                    id = "IPADDRESSRULE"
+                    label = "IP Address Restriction"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 5
                   }
                 }
                 index = 0
@@ -1535,4 +1555,5 @@ netsuite.entryForm custform_employee {
     },
   ]
   _alias = "EMPLOYEE FORM"
+  isInactive = false
 }

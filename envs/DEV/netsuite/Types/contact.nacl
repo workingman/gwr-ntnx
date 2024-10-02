@@ -63,7 +63,7 @@ type netsuite.contact {
   }
   unknown globalSubscriptionStatus {
   }
-  netsuite.file image {
+  netsuite.fileReference image {
     isReference = true
   }
   boolean billPay {
@@ -74,7 +74,7 @@ type netsuite.contact {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
@@ -102,13 +102,14 @@ type netsuite.contact {
   boolean custom_custentity_slt_e2e_test {
     field_instance = netsuite.entitycustomfield.instance.custentity_slt_e2e_test.scriptid
   }
-  string custom_custentitygwr_field1 {
-    field_instance = netsuite.entitycustomfield.instance.custentitygwr_field1.scriptid
-  }
+  
   string custom_custentityhqcontactcustomentity01 {
     field_instance = netsuite.entitycustomfield.instance.custentityhqcontactcustomentity01.scriptid
   }
   string custom_custentityscript_id_2 {
     field_instance = netsuite.entitycustomfield.instance.custentityscript_id_2.scriptid
+  }
+  string custom_custentity_docusign_role {
+    field_instance = netsuite.entitycustomfield.instance.custentity_docusign_role.scriptid
   }
 }

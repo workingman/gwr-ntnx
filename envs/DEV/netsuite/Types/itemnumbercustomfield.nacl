@@ -108,7 +108,14 @@ type netsuite.itemnumbercustomfield {
       highlighted = true
       indexed = false
     },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
   ]
+  netsuite.bundle bundle {
+  }
 }
 type netsuite.itemnumbercustomfield_customfieldfilters_customfieldfilter {
   string fldfilter {

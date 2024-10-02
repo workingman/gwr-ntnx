@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_dp_dp_suitelet_js@dduv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_dp_dp_suitelet_js@dduv {
     netsuite.folder.instance.SuiteScripts_dp@d,
   ]
   _alias = "dp_suitelet.js"
+  isInactive = false
 }

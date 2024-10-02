@@ -657,4 +657,7 @@ settings netsuite.companyFeatures {
     label = "SuiteApp Control Center"
   }
   _alias = "Company Features"
+  boolean UPLIFTPRICING {
+    label = "Uplift Pricing"
+  }
 }

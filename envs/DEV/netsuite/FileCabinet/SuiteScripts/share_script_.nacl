@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_share_script_@duu {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_share_script_@duu {
     netsuite.folder.instance.SuiteScripts,
   ]
   _alias = "share_script_"
+  isInactive = false
 }

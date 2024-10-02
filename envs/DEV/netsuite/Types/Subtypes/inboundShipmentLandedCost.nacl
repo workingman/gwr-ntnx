@@ -15,6 +15,7 @@ type netsuite.inboundShipmentLandedCost {
   }
   unknown landedCostAllocationMethod {
   }
-  netsuite.recordRefList landedCostShipmentItemsList {
+  "List<netsuite.recordRef>" landedCostShipmentItemsList {
+    isReference = true
   }
 }

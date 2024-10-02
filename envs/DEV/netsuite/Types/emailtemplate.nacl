@@ -15,8 +15,7 @@ type netsuite.emailtemplate {
   }
   netsuite.emailtemplate_recordtype recordtype {
   }
-  boolean isinactive {
-  }
+  
   string subject {
   }
   boolean isprivate {
@@ -53,9 +52,19 @@ type netsuite.emailtemplate {
       indexed = false
     },
     {
-      value = "isinactive"
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },
   ]
+  netsuite.bundle bundle {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
 }

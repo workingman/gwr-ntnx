@@ -62,8 +62,7 @@ type netsuite.customrecordtestrecordtype {
     }
     boolean includename {
     }
-    boolean isinactive {
-    }
+    
     boolean isordered {
     }
     boolean showcreationdate {
@@ -100,11 +99,15 @@ type netsuite.customrecordtestrecordtype {
     }
     hidden_string internalId {
     }
+    netsuite.bundle bundle {
+    }
+    boolean isInactive {
+    }
   }
-  serviceid scriptid {
+  string scriptid {
     _required = true
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.customRecordTranslationsList translationsList {
@@ -177,7 +180,7 @@ type netsuite.customrecordtestrecordtype {
   iconbuiltin = true
   includeinsearchmenu = true
   includename = true
-  isinactive = false
+  
   isordered = false
   recordname = "Test Record Type2"
   showcreationdate = false
@@ -212,7 +215,12 @@ type netsuite.customrecordtestrecordtype {
       indexed = false
     },
     {
-      value = "isinactive"
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },
@@ -233,5 +241,11 @@ type netsuite.customrecordtestrecordtype {
       highlighted = true
       indexed = true
     },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
   ]
+  isInactive = false
 }

@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_dashboard_refresh_dashboard_refresh_pl_js@dbdbbv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -18,4 +18,5 @@ netsuite.file SuiteScripts_dashboard_refresh_dashboard_refresh_pl_js@dbdbbv {
     },
   ]
   _alias = "dashboard-refresh-pl.js"
+  isInactive = false
 }

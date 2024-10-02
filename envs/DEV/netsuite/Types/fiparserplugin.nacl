@@ -14,8 +14,7 @@ type netsuite.fiparserplugin {
   }
   string description {
   }
-  boolean isinactive {
-  }
+  
   boolean notifyadmins {
   }
   string notifyemails {
@@ -55,9 +54,19 @@ type netsuite.fiparserplugin {
       indexed = false
     },
     {
-      value = "isinactive"
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },
   ]
+  netsuite.bundle bundle {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
 }

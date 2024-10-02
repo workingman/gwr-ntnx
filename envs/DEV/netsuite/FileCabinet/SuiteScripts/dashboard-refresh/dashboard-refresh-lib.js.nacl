@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_dashboard_refresh_dashboard_refresh_lib_js@dbdbbv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_dashboard_refresh_dashboard_refresh_lib_js@dbdbbv {
     netsuite.folder.instance.SuiteScripts_dashboard_refresh@db,
   ]
   _alias = "dashboard-refresh-lib.js"
+  isInactive = false
 }

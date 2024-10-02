@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_dp_dp_multi_deploy_js@dduuv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -15,4 +15,5 @@ netsuite.file SuiteScripts_dp_dp_multi_deploy_js@dduuv {
     },
   ]
   _alias = "dp_multi_deploy.js"
+  isInactive = false
 }

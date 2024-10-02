@@ -1,6 +1,6 @@
 netsuite.clientscript customscripthq_share_script01_lat {
   scriptid = "customscripthq_share_script01_lat"
-  isinactive = false
+  
   name = "hq_share_script01_lat"
   notifyadmins = false
   notifyowner = true
@@ -23,4 +23,5 @@ netsuite.clientscript customscripthq_share_script01_lat {
     }
   }
   _alias = "hq_share_script01_lat"
+  isInactive = false
 }

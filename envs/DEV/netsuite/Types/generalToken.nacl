@@ -32,7 +32,7 @@ type netsuite.generalToken {
   }
   string tokenNamespace {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

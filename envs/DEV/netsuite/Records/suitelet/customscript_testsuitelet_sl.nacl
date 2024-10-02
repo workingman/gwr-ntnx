@@ -1,6 +1,6 @@
 netsuite.suitelet customscript_testsuitelet_sl {
   scriptid = "customscript_testsuitelet_sl"
-  isinactive = false
+  
   name = "test-suitelet-sl"
   notifyadmins = false
   notifyowner = true
@@ -44,4 +44,5 @@ netsuite.suitelet customscript_testsuitelet_sl {
     }
   }
   _alias = "test-suitelet-sl"
+  isInactive = false
 }

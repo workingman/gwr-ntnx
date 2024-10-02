@@ -19,7 +19,7 @@ define (['N/currentRecord', 'N/runtime', 'N/ui/serverWidget'], function (current
                     details: month + ' ' + date
                 });
 
-                // February
+                // February (here is a change)
                 if (month === 1) {
                     if (date === 24 | date === 25 | date === 26 | date === 27 | date === 28 | date === 29) {
                         context.form.addField({

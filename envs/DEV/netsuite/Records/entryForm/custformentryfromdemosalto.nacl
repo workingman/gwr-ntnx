@@ -3,7 +3,7 @@ netsuite.entryForm custformentryfromdemosalto {
   standard = "STANDARDCUSTOMERFORM"
   name = "Entry Form Demo Salto"
   recordType = "CUSTOMER"
-  inactive = false
+  
   preferred = false
   storedWithRecord = false
   mainFields = {
@@ -443,6 +443,17 @@ netsuite.entryForm custformentryfromdemosalto {
               sameRowAsPrevious = false
               quickAdd = false
               index = 4
+            }
+            custentity_naw_trans_need_approval = {
+              id = "[scriptid=custentity_naw_trans_need_approval]"
+              label = "Transactions Need Approval"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+              index = 5
             }
           }
           index = 0
@@ -1979,13 +1990,13 @@ netsuite.entryForm custformentryfromdemosalto {
             }
           }
         }
-        index = 13
+        index = 12
       }
       custtab_2_3368792_208 = {
         id = netsuite.subtab.instance.custtab_2_3368792_208.scriptid
         label = "Partners"
         visible = true
-        index = 12
+        index = 13
       }
       custtab_4_3368792_208 = {
         id = netsuite.subtab.instance.custtab_4_3368792_208.scriptid
@@ -2133,4 +2144,5 @@ netsuite.entryForm custformentryfromdemosalto {
     },
   ]
   _alias = "Entry Form Demo Salto"
+  isInactive = false
 }

@@ -22,7 +22,7 @@ type netsuite.note {
   }
   netsuite.recordRef entity {
   }
-  netsuite.folder folder {
+  netsuite.folderReference folder {
     isReference = true
   }
   netsuite.recordRef item {
@@ -43,7 +43,7 @@ type netsuite.note {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

@@ -62,8 +62,7 @@ type netsuite.customrecord108 {
     }
     boolean includename {
     }
-    boolean isinactive {
-    }
+    
     boolean isordered {
     }
     boolean showcreationdate {
@@ -100,11 +99,15 @@ type netsuite.customrecord108 {
     }
     hidden_string internalId {
     }
+    netsuite.bundle bundle {
+    }
+    boolean isInactive {
+    }
   }
-  serviceid scriptid {
+  string scriptid {
     _required = true
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.customRecordTranslationsList translationsList {
@@ -130,7 +133,7 @@ type netsuite.customrecord108 {
     storevalue = true
     index = 0
   }
-  netsuite.file custom_custrecord1394 {
+  netsuite.fileReference custom_custrecord1394 {
     scriptid = "custrecord1394"
     accesslevel = "2"
     allowquickadd = false
@@ -217,7 +220,7 @@ type netsuite.customrecord108 {
   iconbuiltin = true
   includeinsearchmenu = true
   includename = true
-  isinactive = false
+  
   isordered = false
   recordname = "DA Customrecord"
   showcreationdate = false
@@ -243,7 +246,12 @@ type netsuite.customrecord108 {
       indexed = false
     },
     {
-      value = "isinactive"
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },
@@ -264,5 +272,11 @@ type netsuite.customrecord108 {
       highlighted = true
       indexed = true
     },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
   ]
+  isInactive = false
 }

@@ -18,8 +18,7 @@ type netsuite.advancedpdftemplate {
   }
   boolean preferred {
   }
-  boolean isinactive {
-  }
+  
   string trantype {
   }
   string printtype {
@@ -46,9 +45,19 @@ type netsuite.advancedpdftemplate {
       indexed = false
     },
     {
-      value = "isinactive"
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },
   ]
+  netsuite.bundle bundle {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
 }

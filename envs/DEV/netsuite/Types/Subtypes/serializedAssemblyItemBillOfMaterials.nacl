@@ -9,10 +9,13 @@ type netsuite.serializedAssemblyItemBillOfMaterials {
   }
   boolean masterDefault {
   }
-  netsuite.recordRefList defaultForLocationList {
+  "List<netsuite.recordRef>" defaultForLocationList {
+    isReference = true
   }
-  string inactive {
-  }
+  
   string memo {
+  }
+  string isInactive {
+    originalName = "inactive"
   }
 }

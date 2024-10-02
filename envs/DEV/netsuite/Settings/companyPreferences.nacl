@@ -15,6 +15,10 @@ netsuite.companyPreferences {
     value = "0"
     text = "2.0"
   }
+  ORACLE_GUIDED_LEARNING_ENV = {
+    value = "PROD"
+    text = "Production"
+  }
   HORIZONTALLABEL = false
   CALENDARSYSTEM = {
     value = "Gregorian"
@@ -132,5 +136,5 @@ netsuite.companyPreferences {
     text = "Images"
   }
   _alias = "Company Preferences"
-  USE_DART_SASS_COMPILER = false
+  BUNDLE_FILES_PUBLIC = true
 }

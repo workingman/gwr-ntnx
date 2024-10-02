@@ -58,7 +58,8 @@ type netsuite.campaign {
   netsuite.promotionCode promotionCode {
     isReference = true
   }
-  netsuite.recordRefList itemList {
+  "List<netsuite.recordRef>" itemList {
+    isReference = true
   }
   netsuite.recordRef family {
   }
@@ -76,7 +77,7 @@ type netsuite.campaign {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

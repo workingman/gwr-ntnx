@@ -17,7 +17,8 @@ type netsuite.vendorReturnAuthorizationItem {
   }
   netsuite.inventoryDetail inventoryDetail {
   }
-  netsuite.recordRefList serialNumbersList {
+  "List<netsuite.recordRef>" serialNumbersList {
+    isReference = true
   }
   string description {
   }

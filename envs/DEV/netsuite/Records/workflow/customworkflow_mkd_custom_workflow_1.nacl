@@ -5,7 +5,7 @@ netsuite.workflow customworkflow_mkd_custom_workflow_1 {
   initonvieworupdate = false
   initsavedsearchcondition = netsuite.savedsearch.instance.customsearch_mkd_search_demo1.scriptid
   inittriggertype = "AFTERSUBMIT"
-  isinactive = false
+  
   islogenabled = false
   keephistory = "ONLYWHENTESTING"
   name = "MKD Custom Workflow 1"
@@ -31,7 +31,7 @@ netsuite.workflow customworkflow_mkd_custom_workflow_1 {
                 scriptid = "workflowaction1304"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 field = "STDBODYDATEELIGIBLE"
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valuedate = "TM"
@@ -40,12 +40,13 @@ netsuite.workflow customworkflow_mkd_custom_workflow_1 {
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
               workflowaction1305 = {
                 scriptid = "workflowaction1305"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 field = netsuite.transactionbodycustomfield.instance.custbody_mkd_transaction_body_field_1.scriptid
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valuetext = "WOOHOO!  You successfully updated the field!!"
@@ -54,6 +55,7 @@ netsuite.workflow customworkflow_mkd_custom_workflow_1 {
                   type = "VISUAL_BUILDER"
                 }
                 index = 1
+                isInactive = false
               }
             }
           }
@@ -63,4 +65,5 @@ netsuite.workflow customworkflow_mkd_custom_workflow_1 {
     }
   }
   _alias = "MKD Custom Workflow 1"
+  isInactive = false
 }

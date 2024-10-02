@@ -34,11 +34,11 @@ netsuite.transactionbodycustomfield custbody_aw_edit {
   isformula = false
   ismandatory = false
   isparent = false
-  label = "GWR Amp Edit - WA"
+  label = "GWR Amp Edit - WA (2)"
   searchlevel = "2"
   showhierarchy = false
   showinlist = false
   storevalue = true
   subtab = "TRANSACTIONSYSTEMINFORMATION"
-  _alias = "GWR Amp Edit - WA"
+  _alias = "GWR Amp Edit - WA (2)"
 }

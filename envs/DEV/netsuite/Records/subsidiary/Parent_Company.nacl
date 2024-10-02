@@ -10,10 +10,13 @@ netsuite.subsidiary Parent_Company@s {
     override = false
     customFieldList = {
       customField = [
-        netsuite.customFieldRef.instance.subsidiary_customField_466,
+        {
+          value = false
+          scriptId = "custrecordsame_as_shipping_address"
+        },
       ]
     }
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
   }
   legalName = "Salto Demo"
   isElimination = false
@@ -29,8 +32,8 @@ netsuite.subsidiary Parent_Company@s {
     ]
   }
   checkLayout = {
-    name = "Standard Check Layout"
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
+    id = "[ACCOUNT_SPECIFIC_VALUE] (object) (Standard Check Layout)"
   }
   classTranslationList = {
     classTranslation = {

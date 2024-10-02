@@ -71,7 +71,14 @@ type netsuite.savedcsvimport {
       highlighted = true
       indexed = false
     },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
   ]
+  netsuite.bundle bundle {
+  }
 }
 type netsuite.savedcsvimport_audience {
   boolean ispublic {

@@ -5,7 +5,7 @@ netsuite.workflow customworkflowhq_workflow01 {
   initoncreate = false
   initonvieworupdate = false
   inittriggertype = "AFTERSUBMIT"
-  isinactive = false
+  
   islogenabled = false
   keephistory = "ONLYWHENTESTING"
   name = "hq_workflow01"
@@ -49,4 +49,5 @@ netsuite.workflow customworkflowhq_workflow01 {
     }
   }
   _alias = "hq_workflow01"
+  isInactive = false
 }

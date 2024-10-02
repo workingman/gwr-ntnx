@@ -5,7 +5,7 @@ netsuite.role customrole_eshed_role {
   coreadminpermission = false
   employeerestriction = "NONE"
   employeeselectionunrestricted = false
-  isinactive = false
+  
   ispartnerrole = false
   issalesrole = false
   issinglesignononly = false
@@ -360,6 +360,10 @@ netsuite.role customrole_eshed_role {
         permkey = "LIST_COMPETITOR"
         permlevel = "EDIT"
       }
+      LIST_CONTACTSUBSIDIARYRELATION = {
+        permkey = "LIST_CONTACTSUBSIDIARYRELATION"
+        permlevel = "VIEW"
+      }
       LIST_CONTACT = {
         permkey = "LIST_CONTACT"
         permlevel = "FULL"
@@ -543,4 +547,6 @@ netsuite.role customrole_eshed_role {
     }
   }
   _alias = "Eshed's Super Custom Role"
+  isInactive = false
+  restrictip = false
 }

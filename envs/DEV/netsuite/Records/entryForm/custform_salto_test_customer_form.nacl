@@ -3,7 +3,7 @@ netsuite.entryForm custform_salto_test_customer_form {
   standard = "STANDARDCUSTOMERFORM"
   name = "Salto NS UAT Customer Form Standard"
   recordType = "CUSTOMER"
-  inactive = false
+  
   preferred = false
   storedWithRecord = false
   mainFields = {
@@ -446,6 +446,17 @@ netsuite.entryForm custform_salto_test_customer_form {
               sameRowAsPrevious = false
               quickAdd = false
               index = 4
+            }
+            custentity_naw_trans_need_approval = {
+              id = "[scriptid=custentity_naw_trans_need_approval]"
+              label = "Transactions Need Approval"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+              index = 5
             }
           }
           index = 0
@@ -2119,4 +2130,5 @@ netsuite.entryForm custform_salto_test_customer_form {
     },
   ]
   _alias = "Salto NS UAT Customer Form Standard"
+  isInactive = false
 }

@@ -6,7 +6,7 @@ netsuite.role customrole1198 {
   employeerestriction = "OWNONLY"
   employeeselectionunrestricted = false
   employeeviewingallowed = false
-  isinactive = false
+  
   ispartnerrole = false
   issalesrole = false
   issinglesignononly = false
@@ -100,4 +100,6 @@ netsuite.role customrole1198 {
     }
   }
   _alias = "RG_Test Vendor Center"
+  isInactive = false
+  restrictip = false
 }

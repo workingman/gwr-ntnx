@@ -464,4 +464,8 @@ settings netsuite.userPreferences {
     _hidden_value = true
   }
   _alias = "User Preferences"
+  boolean DROPDOWN_FAVORITES {
+    label = "Allow Favorites in Dropdowns"
+    type = "checkbox"
+  }
 }

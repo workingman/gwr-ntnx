@@ -62,8 +62,6 @@ type netsuite.customrecord_cseg_nbc {
     }
     boolean includename {
     }
-    boolean isinactive {
-    }
     boolean isordered {
     }
     boolean showcreationdate {
@@ -96,15 +94,19 @@ type netsuite.customrecord_cseg_nbc {
     }
     string application_id {
     }
+    netsuite.bundle bundle {
+    }
     hidden_string source {
+    }
+    boolean isInactive {
     }
     hidden_string internalId {
     }
   }
-  serviceid scriptid {
+  string scriptid {
     _required = true
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.customRecordTranslationsList translationsList {
@@ -154,7 +156,12 @@ type netsuite.customrecord_cseg_nbc {
       indexed = false
     },
     {
-      value = "isinactive"
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },
@@ -172,6 +179,11 @@ type netsuite.customrecord_cseg_nbc {
     },
     {
       value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },

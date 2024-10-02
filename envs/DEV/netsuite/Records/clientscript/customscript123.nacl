@@ -1,6 +1,6 @@
 netsuite.clientscript customscript123 {
   scriptid = "customscript123"
-  isinactive = false
+  
   name = "CustomScript-HQ"
   notifyadmins = false
   notifyowner = true
@@ -23,4 +23,5 @@ netsuite.clientscript customscript123 {
     }
   }
   _alias = "CustomScript-HQ"
+  isInactive = false
 }

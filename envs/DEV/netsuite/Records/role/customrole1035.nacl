@@ -5,7 +5,7 @@ netsuite.role customrole1035 {
   coreadminpermission = false
   employeerestriction = "NONE"
   employeeselectionunrestricted = true
-  isinactive = false
+  
   ispartnerrole = false
   issalesrole = true
   issinglesignononly = true
@@ -27,4 +27,6 @@ netsuite.role customrole1035 {
     }
   }
   _alias = "Eshed's Custom Role"
+  isInactive = false
+  restrictip = false
 }

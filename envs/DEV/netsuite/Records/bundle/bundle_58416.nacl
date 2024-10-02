@@ -13,6 +13,6 @@ netsuite.bundle bundle_58416 {
     id = 115
     name = "Geoffrey W Routledge"
   }
-  isPrivate = false
+  
   _alias = "Enhanced Sales Center"
 }

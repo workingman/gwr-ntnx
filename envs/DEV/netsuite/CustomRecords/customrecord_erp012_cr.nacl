@@ -62,8 +62,7 @@ type netsuite.customrecord_erp012_cr {
     }
     boolean includename {
     }
-    boolean isinactive {
-    }
+    
     boolean isordered {
     }
     boolean showcreationdate {
@@ -100,11 +99,15 @@ type netsuite.customrecord_erp012_cr {
     }
     hidden_string internalId {
     }
+    netsuite.bundle bundle {
+    }
+    boolean isInactive {
+    }
   }
-  serviceid scriptid {
+  string scriptid {
     _required = true
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.customRecordTranslationsList translationsList {
@@ -177,7 +180,7 @@ type netsuite.customrecord_erp012_cr {
   iconbuiltin = true
   includeinsearchmenu = true
   includename = false
-  isinactive = false
+  
   isordered = false
   recordname = netsuite.translationcollection.instance.custcollection_account_translations.strings.string.t_customrecord_erp012_cr.scriptid
   showcreationdate = false
@@ -204,7 +207,12 @@ type netsuite.customrecord_erp012_cr {
       indexed = false
     },
     {
-      value = "isinactive"
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },
@@ -225,5 +233,11 @@ type netsuite.customrecord_erp012_cr {
       highlighted = true
       indexed = true
     },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
   ]
+  isInactive = false
 }

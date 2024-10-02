@@ -5,7 +5,7 @@ netsuite.workflow customworkflow6 {
   initoncreate = false
   initonvieworupdate = true
   inittriggertype = "AFTERSUBMIT"
-  isinactive = false
+  
   islogenabled = false
   keephistory = "ONLYWHENTESTING"
   name = "Approve Currency changes"
@@ -49,4 +49,5 @@ netsuite.workflow customworkflow6 {
     }
   }
   _alias = "Approve Currency changes"
+  isInactive = false
 }

@@ -37,7 +37,14 @@ type netsuite.translationcollection {
       highlighted = true
       indexed = false
     },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
   ]
+  netsuite.bundle bundle {
+  }
 }
 type netsuite.translationcollection_strings_string {
   serviceid scriptid {

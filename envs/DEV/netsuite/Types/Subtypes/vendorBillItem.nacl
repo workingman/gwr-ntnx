@@ -61,7 +61,8 @@ type netsuite.vendorBillItem {
   }
   unknown billVarianceStatus {
   }
-  netsuite.recordRefList billreceiptsList {
+  "List<netsuite.recordRef>" billreceiptsList {
+    isReference = true
   }
   netsuite.recordRef amortizationSched {
   }

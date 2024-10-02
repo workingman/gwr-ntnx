@@ -1,7 +1,7 @@
 netsuite.sspapplication webapp276 {
   scriptid = "webapp276"
   appfolder = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/Salto Demo/NetSuite Inc. - SCA 2020.1/]"
-  isinactive = false
+  
   loglevel = "DEBUG"
   name = "Development"
   rootpath = "/Salto-Demo/NetSuite-Inc_-SCA-2020_1"
@@ -15,4 +15,5 @@ netsuite.sspapplication webapp276 {
     ]
   }
   _alias = "Development"
+  isInactive = false
 }

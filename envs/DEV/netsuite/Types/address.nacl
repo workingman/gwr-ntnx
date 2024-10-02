@@ -5,7 +5,7 @@ type netsuite.address {
   }
   netsuite.nullField nullFieldList {
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   unknown country {

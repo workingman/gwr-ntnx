@@ -1,7 +1,7 @@
 netsuite.file Templates_E_mail_Templates_Inner_EmailTemplates_Folder_content_html@dbsdssdv {
   description = "bla bla"
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -11,4 +11,5 @@ netsuite.file Templates_E_mail_Templates_Inner_EmailTemplates_Folder_content_htm
     netsuite.folder.instance.Templates_E_mail_Templates_Inner_EmailTemplates_Folder@dbsdss,
   ]
   _alias = "content.html"
+  isInactive = false
 }

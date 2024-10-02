@@ -1,6 +1,6 @@
 netsuite.clientscript customscript_dp_searchdemo {
   scriptid = "customscript_dp_searchdemo"
-  isinactive = false
+  
   name = "DP Search Demo"
   notifyadmins = false
   notifyowner = true
@@ -32,4 +32,5 @@ netsuite.clientscript customscript_dp_searchdemo {
     },
   ]
   _alias = "DP Search Demo"
+  isInactive = false
 }

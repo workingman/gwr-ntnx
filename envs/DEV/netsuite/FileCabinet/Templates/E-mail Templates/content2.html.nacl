@@ -1,6 +1,6 @@
 netsuite.file Templates_E_mail_Templates_content2_html@dbsdv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file Templates_E_mail_Templates_content2_html@dbsdv {
     netsuite.folder.instance.Templates_E_mail_Templates@dbs,
   ]
   _alias = "content2.html"
+  isInactive = false
 }

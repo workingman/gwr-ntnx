@@ -3,8 +3,12 @@ netsuite.subsidiary Parent_Company_eshed___co_global@susess {
   parent = netsuite.subsidiary.instance.Parent_Company@s
   isInactive = false
   showSubsidiaryName = true
-  logo = netsuite.recordRef.instance.subsidiary_logo_2737
-  pageLogo = netsuite.recordRef.instance.subsidiary_pageLogo_2737
+  logo = {
+    id = "[ACCOUNT_SPECIFIC_VALUE] (object) (eshed salto logo)"
+  }
+  pageLogo = {
+    id = "[ACCOUNT_SPECIFIC_VALUE] (object) (eshed salto logo)"
+  }
   country = "_israel"
   mainAddress = {
     country = "_unitedStates"
@@ -13,10 +17,13 @@ netsuite.subsidiary Parent_Company_eshed___co_global@susess {
     override = false
     customFieldList = {
       customField = [
-        netsuite.customFieldRef.instance.subsidiary_customField_466,
+        {
+          value = false
+          scriptId = "custrecordsame_as_shipping_address"
+        },
       ]
     }
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
   }
   isElimination = false
   currency = netsuite.currency.instance.USA
@@ -30,8 +37,8 @@ netsuite.subsidiary Parent_Company_eshed___co_global@susess {
     ]
   }
   checkLayout = {
-    name = "Standard Check Layout"
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
+    id = "[ACCOUNT_SPECIFIC_VALUE] (object) (Standard Check Layout)"
   }
   classTranslationList = {
     classTranslation = {

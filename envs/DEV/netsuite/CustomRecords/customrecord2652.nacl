@@ -62,8 +62,7 @@ type netsuite.customrecord2652 {
     }
     boolean includename {
     }
-    boolean isinactive {
-    }
+    
     boolean isordered {
     }
     boolean showcreationdate {
@@ -100,11 +99,15 @@ type netsuite.customrecord2652 {
     }
     hidden_string internalId {
     }
+    netsuite.bundle bundle {
+    }
+    boolean isInactive {
+    }
   }
-  serviceid scriptid {
+  string scriptid {
     _required = true
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.customRecordTranslationsList translationsList {
@@ -130,7 +133,7 @@ type netsuite.customrecord2652 {
     storevalue = true
     index = 0
   }
-  netsuite.file custom_custrecord176 {
+  netsuite.fileReference custom_custrecord176 {
     scriptid = "custrecord176"
     accesslevel = "2"
     allowquickadd = false
@@ -194,7 +197,7 @@ type netsuite.customrecord2652 {
   iconbuiltin = true
   includeinsearchmenu = true
   includename = true
-  isinactive = false
+  
   isordered = false
   recordname = "Update PO_Sample"
   showcreationdate = false
@@ -220,7 +223,12 @@ type netsuite.customrecord2652 {
       indexed = false
     },
     {
-      value = "isinactive"
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },
@@ -241,5 +249,11 @@ type netsuite.customrecord2652 {
       highlighted = true
       indexed = true
     },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
   ]
+  isInactive = false
 }

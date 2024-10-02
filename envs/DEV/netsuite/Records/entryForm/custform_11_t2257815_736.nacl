@@ -3,7 +3,7 @@ netsuite.entryForm custform_11_t2257815_736 {
   standard = "STANDARDCUSTOMERFORM"
   name = "Custom Customer Form"
   recordType = "CUSTOMER"
-  inactive = false
+  
   preferred = true
   storedWithRecord = false
   mainFields = {
@@ -435,6 +435,17 @@ netsuite.entryForm custform_11_t2257815_736 {
               sameRowAsPrevious = false
               quickAdd = false
               index = 4
+            }
+            custentity_naw_trans_need_approval = {
+              id = "[scriptid=custentity_naw_trans_need_approval]"
+              label = "Transactions Need Approval"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+              index = 5
             }
           }
           index = 0
@@ -2125,4 +2136,5 @@ netsuite.entryForm custform_11_t2257815_736 {
     },
   ]
   _alias = "Custom Customer Form"
+  isInactive = false
 }

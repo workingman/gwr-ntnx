@@ -43,7 +43,7 @@ define(['N/log'],
 
         const map = (mapContext) => {
             log.debug("I'm mapping!")
-            log.debug("Yet another Log!")
+            log.debug("Yet another Log for targeted fetch")
 
         }
 
@@ -87,7 +87,7 @@ define(['N/log'],
          * @since 2015.2
          */
         const summarize = (summaryContext) => {
-
+            log.emergency("No Manifest, No Deploy xml");
         }
 
         return {getInputData, map, reduce, summarize}

@@ -62,8 +62,7 @@ type netsuite.customrecord_cs_asset_rental {
     }
     boolean includename {
     }
-    boolean isinactive {
-    }
+    
     boolean isordered {
     }
     boolean showcreationdate {
@@ -100,11 +99,15 @@ type netsuite.customrecord_cs_asset_rental {
     }
     hidden_string internalId {
     }
+    netsuite.bundle bundle {
+    }
+    boolean isInactive {
+    }
   }
-  serviceid scriptid {
+  string scriptid {
     _required = true
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.customRecordTranslationsList translationsList {
@@ -522,7 +525,7 @@ type netsuite.customrecord_cs_asset_rental {
   iconbuiltin = true
   includeinsearchmenu = true
   includename = false
-  isinactive = false
+  
   isordered = false
   recordname = "ProScope Asset Rental"
   showcreationdate = false
@@ -557,7 +560,12 @@ type netsuite.customrecord_cs_asset_rental {
       indexed = false
     },
     {
-      value = "isinactive"
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },
@@ -578,5 +586,11 @@ type netsuite.customrecord_cs_asset_rental {
       highlighted = true
       indexed = true
     },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
   ]
+  isInactive = false
 }

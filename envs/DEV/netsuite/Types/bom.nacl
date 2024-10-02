@@ -21,11 +21,13 @@ type netsuite.bom {
   }
   boolean availableForAllAssemblies {
   }
-  netsuite.recordRefList restrictToAssembliesList {
+  "List<netsuite.recordRef>" restrictToAssembliesList {
+    isReference = true
   }
   boolean availableForAllLocations {
   }
-  netsuite.recordRefList restrictToLocationsList {
+  "List<netsuite.recordRef>" restrictToLocationsList {
+    isReference = true
   }
   "List<netsuite.subsidiary>" subsidiaryList {
     isReference = true
@@ -34,7 +36,7 @@ type netsuite.bom {
   }
   netsuite.customFieldList customFieldList {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }

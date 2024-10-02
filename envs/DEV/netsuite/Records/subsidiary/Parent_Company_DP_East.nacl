@@ -16,10 +16,13 @@ netsuite.subsidiary Parent_Company_DP_East@sus {
     override = false
     customFieldList = {
       customField = [
-        netsuite.customFieldRef.instance.subsidiary_customField_466,
+        {
+          value = false
+          scriptId = "custrecordsame_as_shipping_address"
+        },
       ]
     }
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
   }
   isElimination = false
   currency = netsuite.currency.instance.DP_Dollar@s
@@ -32,9 +35,19 @@ netsuite.subsidiary Parent_Company_DP_East@sus {
       },
     ]
   }
+  accountingBookDetailList = {
+    subsidiaryAccountingBookDetail = [
+      {
+        accountingBook = {
+          id = "[ACCOUNT_SPECIFIC_VALUE] (object) (DP Accounting Book)"
+        }
+        bookStatus = "_pending"
+      },
+    ]
+  }
   checkLayout = {
-    name = "Standard Check Layout"
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
+    id = "[ACCOUNT_SPECIFIC_VALUE] (object) (Standard Check Layout)"
   }
   classTranslationList = {
     classTranslation = {

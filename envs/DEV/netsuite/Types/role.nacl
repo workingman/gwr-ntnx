@@ -32,8 +32,7 @@ type netsuite.role {
   }
   boolean employeeselectionunrestricted {
   }
-  boolean isinactive {
-  }
+  
   boolean subsidiaryviewingallowed {
   }
   netsuite.rolesubsidiaryoption subsidiaryoption {
@@ -72,11 +71,21 @@ type netsuite.role {
       indexed = false
     },
     {
-      value = "isinactive"
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },
   ]
+  netsuite.bundle bundle {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
 }
 type netsuite.role_permissions_permission {
   string permkey {

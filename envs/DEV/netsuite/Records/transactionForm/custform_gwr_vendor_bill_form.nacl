@@ -3,8 +3,8 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
   standard = "STANDARDVENDORBILL"
   name = "Custom Vendor Bill"
   recordType = "VENDORBILL"
-  inactive = false
-  preferred = true
+  
+  preferred = false
   storedWithRecord = true
   mainFields = {
     fieldGroup = {
@@ -571,19 +571,31 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
                     id = netsuite.transactioncolumncustomfield.instance.custcol_gwr_rma1.scriptid
                     label = "GWR RMA custom field"
                     visible = false
-                    index = 20
+                    index = 21
                   }
                   csegcseg_rg_seg_cc = {
                     id = "[type=transactioncolumncustomfield, scriptid=csegcseg_rg_seg_cc]"
                     label = "Cost Center"
                     visible = true
-                    index = 21
+                    index = 20
                   }
                   cseg_nbc = {
                     id = "[type=transactioncolumncustomfield, scriptid=cseg_nbc]"
                     label = "Nearest Big City"
                     visible = false
+                    index = 24
+                  }
+                  custcol1 = {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol1.scriptid
+                    label = "dge_transaction_line_field"
+                    visible = false
                     index = 22
+                  }
+                  cseg3 = {
+                    id = "[type=transactioncolumncustomfield, scriptid=cseg3]"
+                    label = "zgy_music"
+                    visible = false
+                    index = 23
                   }
                 }
               }
@@ -606,175 +618,175 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
                     id = "VENDORNAME"
                     label = "Vendor Name"
                     visible = true
-                    index = 1
+                    index = 2
                   }
                   QUANTITY = {
                     id = "QUANTITY"
                     label = "Quantity"
                     visible = true
-                    index = 2
+                    index = 3
                   }
                   UNITS = {
                     id = "UNITS"
                     label = "Units"
                     visible = true
-                    index = 3
+                    index = 4
                   }
                   INVENTORYDETAIL = {
                     id = "INVENTORYDETAIL"
                     label = "Inventory Detail"
                     visible = true
-                    index = 5
+                    index = 6
                   }
                   DESCRIPTION = {
                     id = "DESCRIPTION"
                     label = "Description"
                     visible = true
-                    index = 4
+                    index = 5
                   }
                   RATE = {
                     id = "RATE"
                     label = "Rate"
                     visible = true
-                    index = 6
+                    index = 7
                   }
                   AMOUNT = {
                     id = "AMOUNT"
                     label = "Amount"
                     visible = true
-                    index = 7
+                    index = 8
                   }
                   TAXCODE = {
                     id = "TAXCODE"
                     label = "Tax Code"
                     visible = true
-                    index = 8
+                    index = 9
                   }
                   TAXRATE1 = {
                     id = "TAXRATE1"
                     label = "Tax Rate"
                     visible = true
-                    index = 9
+                    index = 10
                   }
                   TAXRATE2 = {
                     id = "TAXRATE2"
                     label = "PST"
                     visible = true
-                    index = 10
+                    index = 11
                   }
                   GROSSAMT = {
                     id = "GROSSAMT"
                     label = "Gross Amt"
                     visible = true
-                    index = 11
+                    index = 12
                   }
                   TAX1AMT = {
                     id = "TAX1AMT"
                     label = "Tax Amt"
                     visible = true
-                    index = 12
+                    index = 13
                   }
                   OPTIONS = {
                     id = "OPTIONS"
                     label = "Options"
                     visible = true
-                    index = 13
+                    index = 14
                   }
                   DEPARTMENT = {
                     id = "DEPARTMENT"
                     label = "Department"
                     visible = true
-                    index = 14
+                    index = 15
                   }
                   CLASS = {
                     id = "CLASS"
                     label = "Class"
                     visible = true
-                    index = 15
+                    index = 16
                   }
                   LOCATION = {
                     id = "LOCATION"
                     label = "Location"
                     visible = true
-                    index = 16
+                    index = 17
                   }
                   CUSTOMER = {
                     id = "CUSTOMER"
                     label = "Customer"
                     visible = true
-                    index = 17
+                    index = 18
                   }
                   ISBILLABLE = {
                     id = "ISBILLABLE"
                     label = "Billable"
                     visible = true
-                    index = 18
+                    index = 19
                   }
                   BILLRECEIPTS = {
                     id = "BILLRECEIPTS"
                     label = "Receipts"
                     visible = true
-                    index = 19
+                    index = 20
                   }
                   BILLVARIANCESTATUS = {
                     id = "BILLVARIANCESTATUS"
                     label = "Bill Variance Status"
                     visible = false
-                    index = 20
+                    index = 21
                   }
                   custcol_slt_billable = {
                     id = netsuite.transactioncolumncustomfield.instance.custcol_slt_billable.scriptid
                     label = "Billable"
                     visible = false
-                    index = 21
+                    index = 22
                   }
                   custcol_slt_e2e_test = {
                     id = netsuite.transactioncolumncustomfield.instance.custcol_slt_e2e_test.scriptid
                     label = "created by oss e2e - 8060213"
                     visible = false
-                    index = 22
+                    index = 23
                   }
                   custcoltransactionterms = {
                     id = netsuite.transactioncolumncustomfield.instance.custcoltransactionterms.scriptid
                     label = "Terms"
                     visible = true
-                    index = 23
+                    index = 24
                   }
                   cseg2 = {
                     id = "[type=transactioncolumncustomfield, scriptid=cseg2]"
                     label = "Region"
                     visible = false
-                    index = 24
+                    index = 25
                   }
                   cseg1 = {
                     id = "[type=transactioncolumncustomfield, scriptid=cseg1]"
                     label = "Stam"
                     visible = false
-                    index = 25
+                    index = 26
                   }
                   GLNUMBER = {
                     id = "GLNUMBER"
                     label = "GL #"
                     visible = true
-                    index = 26
+                    index = 27
                   }
                   GLSEQUENCE = {
                     id = "GLSEQUENCE"
                     label = "GL Audit Numbering Sequence"
                     visible = true
-                    index = 27
+                    index = 28
                   }
                   custcol_gwr_return_reason = {
                     id = netsuite.transactioncolumncustomfield.instance.custcol_gwr_return_reason.scriptid
                     label = "GWR Return Reason"
                     visible = true
-                    index = 28
+                    index = 29
                   }
                   custcol_gwr_rma1 = {
                     id = netsuite.transactioncolumncustomfield.instance.custcol_gwr_rma1.scriptid
                     label = "GWR RMA custom field"
                     visible = false
-                    index = 29
+                    index = 31
                   }
                   csegcseg_rg_seg_cc = {
                     id = "[type=transactioncolumncustomfield, scriptid=csegcseg_rg_seg_cc]"
@@ -786,7 +798,25 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
                     id = "[type=transactioncolumncustomfield, scriptid=cseg_nbc]"
                     label = "Nearest Big City"
                     visible = false
-                    index = 31
+                    index = 34
+                  }
+                  cseg3 = {
+                    id = "[type=transactioncolumncustomfield, scriptid=cseg3]"
+                    label = "zgy_music"
+                    visible = false
+                    index = 33
+                  }
+                  custcol1 = {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol1.scriptid
+                    label = "dge_transaction_line_field"
+                    visible = true
+                    index = 32
+                  }
+                  DISPLAYNAME = {
+                    id = "DISPLAYNAME"
+                    label = "Display Name"
+                    visible = false
+                    index = 1
                   }
                 }
               }
@@ -1017,8 +1047,8 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
               MIDDLE = {
                 position = "MIDDLE"
                 field = {
-                  custbody_aw_edit = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_aw_edit.scriptid
+                  custbody_gwr_edit = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_edit.scriptid
                     label = "GWR Amp Edit - WA"
                     visible = false
                     mandatory = false
@@ -1028,8 +1058,8 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
                     checkBoxDefault = "USE_FIELD_DEFAULT"
                     index = 0
                   }
-                  custbody_aw_first_lvl_approval = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_aw_first_lvl_approval.scriptid
+                  custbody_gwr_first_lvl_approval = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_first_lvl_approval.scriptid
                     label = "GWR Amp 1st Level Approval"
                     visible = false
                     mandatory = false
@@ -1039,8 +1069,8 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
                     checkBoxDefault = "USE_FIELD_DEFAULT"
                     index = 1
                   }
-                  custbody_aw_second_lvl_approval = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_aw_second_lvl_approval.scriptid
+                  custbody_gwr_second_lvl_approval = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_gwr_second_lvl_approval.scriptid
                     label = "GWR Amp 2nd Level Approval"
                     visible = false
                     mandatory = false
@@ -1049,6 +1079,39 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
                     sameRowAsPrevious = false
                     checkBoxDefault = "USE_FIELD_DEFAULT"
                     index = 2
+                  }
+                  custbody_aw_edit = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_aw_edit.scriptid
+                    label = "GWR Amp Edit - WA (2)"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "USE_FIELD_DEFAULT"
+                    index = 3
+                  }
+                  custbody_aw_first_lvl_approval = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_aw_first_lvl_approval.scriptid
+                    label = "GWR Amp 1st Level Approval (2)"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "USE_FIELD_DEFAULT"
+                    index = 4
+                  }
+                  custbody_aw_second_lvl_approval = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_aw_second_lvl_approval.scriptid
+                    label = "GWR Amp 2nd Level Approval (2)"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "USE_FIELD_DEFAULT"
+                    index = 5
                   }
                 }
                 index = 0
@@ -1221,7 +1284,27 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
+                    index = 13
+                  }
+                  custbody2 = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody2.scriptid
+                    label = "GWR change ID"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
                     index = 12
+                  }
+                  cseg3 = {
+                    id = "[type=transactionbodycustomfield, scriptid=cseg3]"
+                    label = "zgy_music"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 14
                   }
                 }
                 index = 0
@@ -1549,6 +1632,9 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
       reference = netsuite.customsegment.instance.cseg2.scriptid
     },
     {
+      reference = netsuite.customsegment.instance.cseg3.scriptid
+    },
+    {
       reference = netsuite.customsegment.instance.cseg_nbc.scriptid
     },
     {
@@ -1556,4 +1642,5 @@ netsuite.transactionForm custform_gwr_vendor_bill_form {
     },
   ]
   _alias = "Custom Vendor Bill"
+  isInactive = false
 }

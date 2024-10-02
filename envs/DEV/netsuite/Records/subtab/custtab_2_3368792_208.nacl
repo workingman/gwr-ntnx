@@ -1,7 +1,7 @@
 netsuite.subtab custtab_2_3368792_208 {
   scriptid = "custtab_2_3368792_208"
   tabtype = "ENTITY"
-  title = "Partners"
-  bundle = netsuite.bundle.instance.bundle_58416
-  _alias = "Partners"
+  title = "Partners_1"
+  
+  _alias = "Partners_1"
 }

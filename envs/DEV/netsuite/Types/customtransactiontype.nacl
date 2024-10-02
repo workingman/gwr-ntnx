@@ -50,7 +50,14 @@ type netsuite.customtransactiontype {
       highlighted = true
       indexed = false
     },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
   ]
+  netsuite.bundle bundle {
+  }
 }
 type netsuite.customtransactiontype_accounting {
   boolean specifyaccountontransaction {

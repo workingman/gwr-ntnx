@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_dp_dp_searchdemo_js@dduv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -18,4 +18,5 @@ netsuite.file SuiteScripts_dp_dp_searchdemo_js@dduv {
     },
   ]
   _alias = "dp_searchdemo.js"
+  isInactive = false
 }

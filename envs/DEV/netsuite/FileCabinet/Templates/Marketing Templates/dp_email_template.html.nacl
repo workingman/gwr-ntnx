@@ -1,6 +1,6 @@
 netsuite.file Templates_Marketing_Templates_dp_email_template_html@dsduuv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file Templates_Marketing_Templates_dp_email_template_html@dsduuv {
     netsuite.folder.instance.Templates_Marketing_Templates@ds,
   ]
   _alias = "dp_email_template.html"
+  isInactive = false
 }

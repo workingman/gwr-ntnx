@@ -3,7 +3,7 @@ netsuite.entryForm custform_dp_lead_form {
   standard = "STANDARDLEADFORM"
   name = "DP Lead Form"
   recordType = "CUSTOMER"
-  inactive = false
+  
   preferred = false
   storedWithRecord = false
   mainFields = {
@@ -457,6 +457,17 @@ netsuite.entryForm custform_dp_lead_form {
               sameRowAsPrevious = false
               quickAdd = false
               index = 4
+            }
+            custentity_naw_trans_need_approval = {
+              id = "[scriptid=custentity_naw_trans_need_approval]"
+              label = "Transactions Need Approval"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+              index = 5
             }
           }
           index = 0
@@ -2117,4 +2128,5 @@ netsuite.entryForm custform_dp_lead_form {
     },
   ]
   _alias = "DP Lead Form"
+  isInactive = false
 }

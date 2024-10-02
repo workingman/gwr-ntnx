@@ -46,6 +46,7 @@ netsuite.accountingPreferences {
   SEND_GIFT_CERTIFICATE_EMAILS = true
   OVERFULFILLMENTS = false
   REMOVECLIENTGOVERNANCELIMIT = false
+  NO_NEGATIVE_RCOMMITTED = false
   ALLOWASSEMBLYPURCHASE = false
   UNRECEIVEDRTNAUTHS = false
   ASSETACCOUNT = {
@@ -467,4 +468,7 @@ netsuite.accountingPreferences {
   }
   ENABLEINVDEMANDSUPPLYTRACKING = true
   _alias = "Accounting Preferences"
+  ARC_BETA_REENABLED = false
+  REST_BETA_RECORD_REENABLED = false
+  SCM_BULK_PROC_SUBMISSIONS_TO_DELETE = 25
 }

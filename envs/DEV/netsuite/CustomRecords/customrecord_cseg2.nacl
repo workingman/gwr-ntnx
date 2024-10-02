@@ -62,8 +62,6 @@ type netsuite.customrecord_cseg2 {
     }
     boolean includename {
     }
-    boolean isinactive {
-    }
     boolean isordered {
     }
     boolean showcreationdate {
@@ -96,15 +94,19 @@ type netsuite.customrecord_cseg2 {
     }
     string application_id {
     }
+    netsuite.bundle bundle {
+    }
     hidden_string source {
+    }
+    boolean isInactive {
     }
     hidden_string internalId {
     }
   }
-  serviceid scriptid {
+  string scriptid {
     _required = true
   }
-  string internalId {
+  serviceid internalId {
     _hidden_value = true
   }
   netsuite.customRecordTranslationsList translationsList {
@@ -136,15 +138,15 @@ type netsuite.customrecord_cseg2 {
     instance = {
       val_5934_2239021_682 = {
         scriptid = "val_5934_2239021_682"
-        isinactive = false
         name = "EMEA"
         index = 0
+        isInactive = false
       }
       val_5935_2239021_730 = {
         scriptid = "val_5935_2239021_730"
-        isinactive = false
         name = "APAC"
         index = 1
+        isInactive = false
       }
     }
   }
@@ -170,7 +172,12 @@ type netsuite.customrecord_cseg2 {
       indexed = false
     },
     {
-      value = "isinactive"
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },
@@ -188,6 +195,11 @@ type netsuite.customrecord_cseg2 {
     },
     {
       value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
       highlighted = true
       indexed = true
     },

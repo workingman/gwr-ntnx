@@ -1,6 +1,6 @@
 netsuite.clientscript customscripthq_employee_script {
   scriptid = "customscripthq_employee_script"
-  isinactive = false
+  
   name = "HQ-Employee-Validations"
   notifyadmins = false
   notifyowner = true
@@ -23,4 +23,5 @@ netsuite.clientscript customscripthq_employee_script {
     }
   }
   _alias = "HQ-Employee-Validations"
+  isInactive = false
 }

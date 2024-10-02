@@ -29,7 +29,7 @@ type netsuite.consolidatedExchangeRate {
   }
   boolean isEliminationSubsidiary {
   }
-  string internalId {
+  serviceid internalId {
     isAttribute = true
     _hidden_value = true
   }
