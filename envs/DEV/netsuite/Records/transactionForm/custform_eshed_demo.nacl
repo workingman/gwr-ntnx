@@ -541,6 +541,12 @@ netsuite.transactionForm custform_eshed_demo {
                     visible = false
                     index = 1
                   }
+                  custcol_suiteworld_column = {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_suiteworld_column.scriptid
+                    label = "SuiteWorld Column"
+                    visible = true
+                    index = 32
+                  }
                 }
               }
               index = 0
@@ -699,6 +705,12 @@ netsuite.transactionForm custform_eshed_demo {
                     label = "zgy_music"
                     visible = false
                     index = 23
+                  }
+                  custcol_suiteworld_column = {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_suiteworld_column.scriptid
+                    label = "SuiteWorld Column"
+                    visible = false
+                    index = 25
                   }
                 }
               }
@@ -1151,6 +1163,16 @@ netsuite.transactionForm custform_eshed_demo {
                     sameRowAsPrevious = false
                     index = 11
                   }
+                  custbody_srd_opp_source = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_srd_opp_source.scriptid
+                    label = "SRD - Opportunity Source"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 13
+                  }
                   cseg3 = {
                     id = "[type=transactionbodycustomfield, scriptid=cseg3]"
                     label = "zgy_music"
@@ -1159,7 +1181,7 @@ netsuite.transactionForm custform_eshed_demo {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 13
+                    index = 14
                   }
                 }
                 index = 0

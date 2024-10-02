@@ -79,6 +79,7 @@ netsuite {
           name = "workflow"
           ids = [
             "customworkflow4",
+            "customworkflow_gwr_test_asv",
           ]
         },
       ]

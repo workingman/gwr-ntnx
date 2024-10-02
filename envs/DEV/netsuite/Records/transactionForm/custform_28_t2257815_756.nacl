@@ -731,6 +731,12 @@ netsuite.transactionForm custform_28_t2257815_756 {
                     visible = false
                     index = 34
                   }
+                  custcol_suiteworld_column = {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_suiteworld_column.scriptid
+                    label = "SuiteWorld Column"
+                    visible = true
+                    index = 36
+                  }
                 }
               }
               index = 0
@@ -1569,6 +1575,16 @@ netsuite.transactionForm custform_28_t2257815_756 {
                     sameRowAsPrevious = false
                     index = 12
                   }
+                  custbody_srd_opp_source = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_srd_opp_source.scriptid
+                    label = "SRD - Opportunity Source"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 14
+                  }
                   cseg3 = {
                     id = "[type=transactionbodycustomfield, scriptid=cseg3]"
                     label = "zgy_music"
@@ -1577,7 +1593,7 @@ netsuite.transactionForm custform_28_t2257815_756 {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 14
+                    index = 15
                   }
                 }
                 index = 0

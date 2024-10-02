@@ -1382,6 +1382,16 @@ netsuite.entryForm custform_employee {
                     sameRowAsPrevious = false
                     index = 8
                   }
+                  custentity_suiteworld_field = {
+                    id = netsuite.entitycustomfield.instance.custentity_suiteworld_field.scriptid
+                    label = "Suite World Field"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 9
+                  }
                 }
                 index = 0
               }

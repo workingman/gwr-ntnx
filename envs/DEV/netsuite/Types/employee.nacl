@@ -254,6 +254,9 @@ type netsuite.employee {
   number custom_custentity_slt_tax_reg {
     field_instance = netsuite.entitycustomfield.instance.custentity_slt_tax_reg.scriptid
   }
+  string custom_custentity_suiteworld_field {
+    field_instance = netsuite.entitycustomfield.instance.custentity_suiteworld_field.scriptid
+  }
   boolean custom_custentitycust_active {
     field_instance = netsuite.entitycustomfield.instance.custentitycust_active.scriptid
   }

@@ -199,7 +199,7 @@ type netsuite.customrecord108 {
     index = 3
   }
   scriptid = "customrecord108"
-  accesstype = "CUSTRECORDENTRYPERM"
+  accesstype = "NONENEEDED"
   allowattachments = true
   allowinlinedeleting = false
   allowinlinedetaching = true
@@ -216,12 +216,14 @@ type netsuite.customrecord108 {
   enablenumbering = false
   enableoptimisticlocking = true
   enablesystemnotes = true
+  externalrolepermissionlevel = "NONE"
   hierarchical = false
   iconbuiltin = true
   includeinsearchmenu = true
   includename = true
   
   isordered = false
+  publicpermissionlevel = "NONE"
   recordname = "DA Customrecord"
   showcreationdate = false
   showcreationdateonlist = false

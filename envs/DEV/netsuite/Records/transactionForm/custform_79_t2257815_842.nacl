@@ -861,6 +861,12 @@ netsuite.transactionForm custform_79_t2257815_842 {
                     visible = false
                     index = 2
                   }
+                  custcol_suiteworld_column = {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_suiteworld_column.scriptid
+                    label = "SuiteWorld Column"
+                    visible = true
+                    index = 53
+                  }
                 }
               }
               index = 0
@@ -2084,6 +2090,16 @@ netsuite.transactionForm custform_79_t2257815_842 {
                     sameRowAsPrevious = false
                     index = 15
                   }
+                  custbody_srd_opp_source = {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_srd_opp_source.scriptid
+                    label = "SRD - Opportunity Source"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    index = 16
+                  }
                   cseg3 = {
                     id = "[type=transactionbodycustomfield, scriptid=cseg3]"
                     label = "zgy_music"
@@ -2092,7 +2108,7 @@ netsuite.transactionForm custform_79_t2257815_842 {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 16
+                    index = 17
                   }
                 }
                 index = 0
@@ -2500,7 +2516,7 @@ netsuite.transactionForm custform_79_t2257815_842 {
       }
       CEO = {
         id = "CEO"
-        preferred = true
+        preferred = false
       }
       CEO_HANDS_OFF = {
         id = "CEO_HANDS_OFF"

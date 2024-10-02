@@ -7,9 +7,9 @@ netsuite.role customrole1030 {
   employeeselectionunrestricted = false
   
   ispartnerrole = false
-  issalesrole = false
+  issalesrole = true
   issinglesignononly = false
-  issupportrole = false
+  issupportrole = true
   iswebserviceonlyrole = true
   name = "Workato-Integration-Role"
   restrictbydevice = false
