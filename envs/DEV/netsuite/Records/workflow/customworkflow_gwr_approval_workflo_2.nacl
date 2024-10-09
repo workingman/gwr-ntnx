@@ -123,7 +123,7 @@ netsuite.workflow customworkflow_gwr_approval_workflo_2 {
                       Account1 = {
                         name = "Account1"
                         selectrecordtype = "-112"
-                        value = "[ACCOUNT_SPECIFIC_VALUE]"
+                        value = "[ACCOUNT_SPECIFIC_VALUE] (Acc. Dep-Automotive Equip.)"
                       }
                     }
                   }
@@ -486,7 +486,7 @@ netsuite.workflow customworkflow_gwr_approval_workflo_2 {
                 field = "STDBODYDECISIONMAKER"
                 schedulemode = "DELAY"
                 valuechecked = false
-                valueselect = "[ACCOUNT_SPECIFIC_VALUE]"
+                valueselect = "[ACCOUNT_SPECIFIC_VALUE] (Eshed Gal-Or)"
                 valuetype = "STATIC"
                 initcondition = {
                   type = "VISUAL_BUILDER"
@@ -500,7 +500,7 @@ netsuite.workflow customworkflow_gwr_approval_workflo_2 {
                 field = "STDBODYEMPLOYEE"
                 schedulemode = "DELAY"
                 valuechecked = false
-                valueselect = "[ACCOUNT_SPECIFIC_VALUE]"
+                valueselect = "[ACCOUNT_SPECIFIC_VALUE] (Geoffrey W Routledge)"
                 valuetype = "STATIC"
                 initcondition = {
                   type = "VISUAL_BUILDER"

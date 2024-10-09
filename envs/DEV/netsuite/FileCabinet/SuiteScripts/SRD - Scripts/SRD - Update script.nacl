@@ -9,11 +9,6 @@ netsuite.file SuiteScripts_SRD___Scripts_SRD___Update_script@dsbsdsbss {
   _parent = [
     netsuite.folder.instance.SuiteScripts_SRD___Scripts@dsbs,
   ]
-  _generated_dependencies = [
-    {
-      reference = netsuite.transactionbodycustomfield.instance.custbody_aw_second_lvl_approval.scriptid
-    },
-  ]
   _alias = "SRD - Update script"
   isInactive = false
 }

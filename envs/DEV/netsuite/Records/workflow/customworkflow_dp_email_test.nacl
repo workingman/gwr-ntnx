@@ -33,10 +33,10 @@ netsuite.workflow customworkflow_dp_email_test {
                 includerecordlink = false
                 includetransaction = false
                 
-                recipient = "[ACCOUNT_SPECIFIC_VALUE]"
+                recipient = "[ACCOUNT_SPECIFIC_VALUE] (Hadas Birin)"
                 recipienttype = "SPECIFIC"
                 schedulemode = "DELAY"
-                sender = "[ACCOUNT_SPECIFIC_VALUE]"
+                sender = "[ACCOUNT_SPECIFIC_VALUE] (Salto User)"
                 sendertype = "SPECIFIC"
                 subject = "DP made a transaction"
                 usetemplate = false

@@ -2090,16 +2090,6 @@ netsuite.transactionForm custform_dp_enhanced_order_form {
                     sameRowAsPrevious = false
                     index = 15
                   }
-                  custbody_srd_opp_source = {
-                    id = netsuite.transactionbodycustomfield.instance.custbody_srd_opp_source.scriptid
-                    label = "SRD - Opportunity Source"
-                    visible = false
-                    mandatory = false
-                    displayType = "NORMAL"
-                    columnBreak = false
-                    sameRowAsPrevious = false
-                    index = 16
-                  }
                   cseg3 = {
                     id = "[type=transactionbodycustomfield, scriptid=cseg3]"
                     label = "zgy_music"
@@ -2108,7 +2098,7 @@ netsuite.transactionForm custform_dp_enhanced_order_form {
                     displayType = "NORMAL"
                     columnBreak = false
                     sameRowAsPrevious = false
-                    index = 17
+                    index = 16
                   }
                 }
                 index = 0
