@@ -194,7 +194,7 @@ type netsuite.customrecord1234567 {
     },
   ]
   isInactive = false
-  unknown custom_custrecord_email_template {
+  netsuite.emailtemplateReference custom_custrecord_email_template {
     scriptid = "custrecord_email_template"
     accesslevel = "2"
     allowquickadd = false

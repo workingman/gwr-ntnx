@@ -49,17 +49,17 @@ netsuite.workflow customworkflow_slt_with_error {
                       Account1 = {
                         name = "Account1"
                         selectrecordtype = "-112"
-                        value = "[ACCOUNT_SPECIFIC_VALUE]"
+                        value = "[ACCOUNT_SPECIFIC_VALUE] (Acc. Dep-Building)"
                       }
                       Account2 = {
                         name = "Account2"
                         selectrecordtype = "-112"
-                        value = "[ACCOUNT_SPECIFIC_VALUE]"
+                        value = "[ACCOUNT_SPECIFIC_VALUE] (Acc. Dep-Building1)"
                       }
                       Account3 = {
                         name = "Account3"
                         selectrecordtype = "-112"
-                        value = "[ACCOUNT_SPECIFIC_VALUE]"
+                        value = "[ACCOUNT_SPECIFIC_VALUE] (Acc. Dep-Building2)"
                       }
                     }
                   }
@@ -76,7 +76,7 @@ netsuite.workflow customworkflow_slt_with_error {
                 
                 schedulemode = "DELAY"
                 valuechecked = false
-                valueselect = "[ACCOUNT_SPECIFIC_VALUE]"
+                valueselect = "[ACCOUNT_SPECIFIC_VALUE] (Acc. Dep-Furniture & Fixtures)"
                 valuetype = "STATIC"
                 initcondition = {
                   formula = "\"User Role\" IN (\"Role1\")"

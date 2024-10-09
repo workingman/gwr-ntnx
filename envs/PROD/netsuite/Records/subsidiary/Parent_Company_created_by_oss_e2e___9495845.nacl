@@ -6,7 +6,7 @@ netsuite.subsidiary Parent_Company_created_by_oss_e2e___9495845@sussssbs {
   state = "AZ"
   country = "_unitedStates"
   mainAddress = {
-    country = "_uSMinorOutlyingIslands"
+    country = "_unitedStatesMinorOutlyingIslands"
     addressee = "testSub"
     state = "AZ"
     addrText = "testSub<br>AZ <br>US Minor Outlying Islands"

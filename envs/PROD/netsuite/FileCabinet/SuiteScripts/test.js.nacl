@@ -17,7 +17,7 @@ netsuite.file SuiteScripts_test_js@dv {
       reference = netsuite.file.instance.SuiteScripts_oauth_1_js@duv.path
     },
     {
-      reference = netsuite.workflow.instance.customworkflow_changed_id.scriptid
+      reference = netsuite.role.instance.customrole_controller1.scriptid
     },
   ]
   _alias = "test.js"

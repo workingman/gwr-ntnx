@@ -1,5 +1,5 @@
 netsuite.currency British_pound@s {
-  name = "British pound"
+  name = "British pound with change"
   symbol = "GBP"
   isBaseCurrency = false
   isInactive = false
@@ -9,5 +9,5 @@ netsuite.currency British_pound@s {
   locale = "_unitedKingdomEnglish"
   formatSample = "£‎1,234.56"
   currencyPrecision = "_two"
-  _alias = "British pound"
+  _alias = "British pound with change"
 }

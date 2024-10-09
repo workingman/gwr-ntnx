@@ -33,32 +33,32 @@ Complexity: Low
         Account1 = {
           name = "Account1"
           selectrecordtype = "-112"
-          value = "[ACCOUNT_SPECIFIC_VALUE]"
+          value = "[ACCOUNT_SPECIFIC_VALUE] (Checking222)"
         }
         Account2 = {
           name = "Account2"
           selectrecordtype = "-112"
-          value = "[ACCOUNT_SPECIFIC_VALUE]"
+          value = "[ACCOUNT_SPECIFIC_VALUE] (Chid Bank)"
         }
         Account3 = {
           name = "Account3"
           selectrecordtype = "-112"
-          value = "[ACCOUNT_SPECIFIC_VALUE]"
+          value = "[ACCOUNT_SPECIFIC_VALUE] (Accrued Wages)"
         }
         Account4 = {
           name = "Account4"
           selectrecordtype = "-112"
-          value = "[ACCOUNT_SPECIFIC_VALUE]"
+          value = "[ACCOUNT_SPECIFIC_VALUE] (Accrued Vacation & Sick Pay)"
         }
         Account5 = {
           name = "Account5"
           selectrecordtype = "-112"
-          value = "[ACCOUNT_SPECIFIC_VALUE]"
+          value = "[ACCOUNT_SPECIFIC_VALUE] (Accrued Expenses)"
         }
         Account6 = {
           name = "Account6"
           selectrecordtype = "-112"
-          value = "[ACCOUNT_SPECIFIC_VALUE]"
+          value = "[ACCOUNT_SPECIFIC_VALUE] (Accounts Receivable)"
         }
         Employee = {
           name = "Employee"
@@ -67,7 +67,7 @@ Complexity: Low
         Employee1 = {
           name = "Employee1"
           selectrecordtype = "-4"
-          value = "[ACCOUNT_SPECIFIC_VALUE]"
+          value = "[ACCOUNT_SPECIFIC_VALUE] (Omri Litvak)"
         }
       }
     }

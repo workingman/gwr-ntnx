@@ -141,6 +141,10 @@ settings netsuite.userPreferences {
     type = "checkbox"
   }
   
+  boolean DO_NOT_SHOW_IN_APP_POPUP {
+    label = "Do not show in-app advertisment"
+    type = "checkbox"
+  }
   netsuite.selectOption TIMEFORMAT {
     label = "Time Format"
     type = "select"
@@ -373,6 +377,10 @@ settings netsuite.userPreferences {
     label = "Expand Tabs on Entry Forms "
     type = "checkbox"
   }
+  boolean USER_AI_CONFIRMATION {
+    label = "Show notification when AI feature is used"
+    type = "checkbox"
+  }
   netsuite.selectOption DATEFORMAT {
     label = "Date Format"
     type = "select"
@@ -440,6 +448,10 @@ settings netsuite.userPreferences {
   }
   boolean ONLYSHOWLASTSUBENT {
     label = "Only Show Last Subentity"
+    type = "checkbox"
+  }
+  boolean REDWOOD {
+    label = "Enable Redwood theme"
     type = "checkbox"
   }
   netsuite.selectOption KPIACCOUNTINGBOOK {

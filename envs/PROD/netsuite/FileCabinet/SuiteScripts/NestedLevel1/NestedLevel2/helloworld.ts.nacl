@@ -9,11 +9,6 @@ netsuite.file SuiteScripts_NestedLevel1_NestedLevel2_helloworld_ts@dddv {
   _parent = [
     netsuite.folder.instance.SuiteScripts_NestedLevel1_NestedLevel2@d,
   ]
-  _generated_dependencies = [
-    {
-      reference = netsuite.entitycustomfield.instance.custentity10.scriptid
-    },
-  ]
   _alias = "helloworld.ts"
   isInactive = false
 }

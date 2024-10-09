@@ -9,11 +9,6 @@ netsuite.file SuiteScripts_InnerFolder6_helloworld6_ts@ddv {
   _parent = [
     netsuite.folder.instance.SuiteScripts_InnerFolder6@d,
   ]
-  _generated_dependencies = [
-    {
-      reference = netsuite.entitycustomfield.instance.custentity15.scriptid
-    },
-  ]
   _alias = "helloworld6.ts"
   isInactive = false
 }
