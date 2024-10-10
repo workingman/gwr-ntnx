@@ -10,4 +10,9 @@ netsuite.file SuiteScripts_dp_dp_searchdemo_js@dduv {
     netsuite.folder.instance.SuiteScripts_dp@d,
   ]
   _alias = "dp_searchdemo.js"
+  _generated_dependencies = [
+    {
+      reference = netsuite.customrecord_dp_prospect.attr.scriptid
+    },
+  ]
 }
